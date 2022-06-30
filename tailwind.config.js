@@ -1,0 +1,26 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+// const plugin = require('tailwindcss/plugin');
+
+module.exports = {
+  content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
+  safelist: [],
+  theme: {
+    extend: {
+      colors: {
+        white: '#FFFFFF',
+        error: '#e55039',
+        info: '#4a69bd',
+        success: '#78e08f',
+        warning: '#f6b93b',
+        transparent: 'transparent',
+        discord: '#7289DA',
+        spotify: '#1DB954',
+        twitch: '#6441A5',
+      },
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/line-clamp'), require('tailwind-animatecss')],
+};

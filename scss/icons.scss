@@ -1,0 +1,28 @@
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.icon {
+  mask-size: 100% !important;
+  mask-repeat: no-repeat !important;
+
+  &.icon-refresh {
+    mask: url('/icons/refresh.svg') no-repeat 50% 50%;
+
+    &.animate {
+      animation: spin 1s linear infinite;
+    }
+  }
+
+  $icons: "check-circle", "close", "info-circle", "sad", "smile", "check", "copy", "download", "arrow-down", 'pencil';
+
+  @each $icon in $icons {
+    &.icon-#{$icon} {
+      mask: url('/icons/#{$icon}.svg');
+    }
+    &.bg-#{$icon} {
+      background: url('/icons/#{$icon}.svg') no-repeat;
+      background-size: 100%;
+    }
+  }
+}
