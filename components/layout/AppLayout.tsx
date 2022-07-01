@@ -74,7 +74,7 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
           </div>
         </div>
         <div>
-          <button className="rounded-full p-3 hover:bg-gray-100 dark:hover:bg-[#151519]" onClick={() => toggle()}>
+          <button className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]" onClick={() => toggle()}>
             <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', isDarkMode ? 'icon-sun' : 'icon-moon')} />
           </button>
         </div>
