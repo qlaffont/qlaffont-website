@@ -22,6 +22,7 @@ specifiers:
   husky: ^8.0.1
   lint-staged: ^13.0.3
   next: 12.2.0
+  next-seo: ^5.4.0
   prettier: ^2.7.1
   prettier-plugin-tailwindcss: ^0.1.11
   react: 18.2.0
@@ -39,6 +40,7 @@ specifiers:
 dependencies:
   clsx: 1.1.1
   next: 12.2.0_0fe4a934aa1e1081e7f5c8003433fd83
+  next-seo: 5.4.0_d716a047297bb761313a77a188aa86e6
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.33.0_react@18.2.0
@@ -3035,6 +3037,18 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
     dev: true
+
+  /next-seo/5.4.0_d716a047297bb761313a77a188aa86e6:
+    resolution: {integrity: sha512-R9DhajPwJnR/lsF2hZ8cN8uqr5CVITsRrCG1AF5+ufcaybKYOvnH8sH9MaH4/hpkps3PQ9H71S7J7SPYixAYzQ==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      next: 12.2.0_0fe4a934aa1e1081e7f5c8003433fd83
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /next/12.2.0_0fe4a934aa1e1081e7f5c8003433fd83:
     resolution: {integrity: sha512-B4j7D3SHYopLYx6/Ark0fenwIar9tEaZZFAaxmKjgcMMexhVJzB3jt7X+6wcdXPPMeUD6r09weUtnDpjox/vIA==}
