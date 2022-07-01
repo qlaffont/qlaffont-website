@@ -3,6 +3,7 @@ import '../scss/index.scss';
 import type { AppProps } from 'next/app';
 import { locales, RosettyProvider } from 'rosetty-react';
 
+import { AppLayout } from '../components/layout/AppLayout';
 import enDict from '../i18n/en';
 import frDict from '../i18n/fr';
 
@@ -14,7 +15,9 @@ const rosettyLocales = {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <RosettyProvider languages={rosettyLocales} defaultLanguage="en">
-      <Component {...pageProps} />
+      <AppLayout>
+        <Component {...pageProps} />
+      </AppLayout>
     </RosettyProvider>
   );
 }

@@ -1,5 +1,12 @@
 const lng = {
-  navbar: {},
+  navbar: {
+    home: 'Home',
+    about: 'About',
+    projects: 'Projects',
+    gaming: 'Gaming',
+    news: 'News',
+    tools: 'Tools',
+  },
   components: {
     generic: {
       day: 'day(s)',

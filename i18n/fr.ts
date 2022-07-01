@@ -1,5 +1,14 @@
-const lng = {
-  navbar: {},
+import enDict from './en';
+
+const lng: typeof enDict = {
+  navbar: {
+    home: 'Accueil',
+    about: 'A propos',
+    projects: 'Projets',
+    gaming: 'Gaming',
+    news: 'Actualités',
+    tools: 'Outils',
+  },
   components: {
     generic: {
       day: 'jour(s)',

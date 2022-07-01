@@ -14,7 +14,7 @@
     }
   }
 
-  $icons: "check-circle", "close", "info-circle", "sad", "smile", "check", "copy", "download", "arrow-down", 'pencil';
+  $icons: "check-circle", "close", "info-circle", "sad", "smile", "check", "copy", "download", "arrow-down", 'pencil', 'sun', 'moon';
 
   @each $icon in $icons {
     &.icon-#{$icon} {

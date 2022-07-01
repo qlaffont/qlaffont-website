@@ -4,7 +4,11 @@
 module.exports = {
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   safelist: [],
+  darkMode: 'class',
   theme: {
+    fontFamily: {
+      sans: ['"Montserrat"', '"Helvetica"', '"Arial"', 'sans-serif'],
+    },
     extend: {
       colors: {
         white: '#FFFFFF',
@@ -12,7 +16,6 @@ module.exports = {
         info: '#4a69bd',
         success: '#78e08f',
         warning: '#f6b93b',
-        transparent: 'transparent',
         discord: '#7289DA',
         spotify: '#1DB954',
         twitch: '#6441A5',
