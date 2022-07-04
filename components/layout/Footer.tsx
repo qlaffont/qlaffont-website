@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="mt-12 flex flex-wrap items-center justify-between">
+    <footer className="mt-12 mb-6 flex shrink-0 flex-wrap items-center justify-between">
       <p className="italic">© {new Date().getFullYear()} Quentin Laffont</p>
 
       <div className="flex items-center space-x-6">

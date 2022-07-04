@@ -95,58 +95,63 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
   }, [isBrowser, isDarkMode]);
 
   return (
-    <div className="container mx-auto px-4 pt-5">
-      <div className="flex items-center justify-between">
-        <div>
-          <Image src="/imgs/qlaffont.jpg" height="50" width="50" className="rounded-full" />
-        </div>
-        <div>
-          <div className="flex gap-[2vw]">
-            {links.map((link, index) => (
-              <LinkItem {...link} key={index} isActive={isLinkActive(link.href, asPath)} />
-            ))}
+    <div className="container mx-auto flex min-h-screen flex-col px-4 pt-5">
+      <div className="grow">
+        <div className="flex items-center justify-between">
+          <div>
+            <Image src="/imgs/qlaffont.jpg" height="50" width="50" className="rounded-full" />
+          </div>
+          <div>
+            <div className="flex gap-[2vw]">
+              {links.map((link, index) => (
+                <LinkItem {...link} key={index} isActive={isLinkActive(link.href, asPath)} />
+              ))}
+            </div>
+          </div>
+          <div className="relative flex gap-1">
+            <button
+              className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]"
+              onClick={() => toggle()}
+            >
+              <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', darkMode ? 'icon-sun' : 'icon-moon')} />
+            </button>
+            <Menu>
+              <Menu.Button as="div" className="block md:hidden">
+                <button className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]">
+                  <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', 'icon-menu')} />
+                </button>
+              </Menu.Button>
+              <Transition
+                enter="transition duration-100 ease-out"
+                enterFrom="transform scale-95 opacity-0"
+                enterTo="transform scale-100 opacity-100"
+                leave="transition duration-75 ease-out"
+                leaveFrom="transform scale-100 opacity-100"
+                leaveTo="transform scale-95 opacity-0"
+              >
+                <Menu.Items
+                  className={
+                    'absolute top-0 right-0  w-[80vw] max-w-[100vw] rounded-lg bg-white p-6 shadow-lg dark:bg-[#1E1D24] dark:text-gray-400'
+                  }
+                >
+                  {links.map((link, index) => (
+                    <Menu.Item as="div" key={index} className="my-3">
+                      <LinkItemMobile {...link} key={index} isActive={isLinkActive(link.href, asPath)} />
+                    </Menu.Item>
+                  ))}
+                  <Menu.Item as="div" className={'absolute top-1 right-1'}>
+                    <button className="m-1 rounded-full bg-gray-100 p-2 hover:opacity-50 dark:bg-[#151519]">
+                      <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', 'icon-close')} />
+                    </button>
+                  </Menu.Item>
+                </Menu.Items>
+              </Transition>
+            </Menu>
           </div>
         </div>
-        <div className="relative flex gap-1">
-          <button className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]" onClick={() => toggle()}>
-            <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', darkMode ? 'icon-sun' : 'icon-moon')} />
-          </button>
-          <Menu>
-            <Menu.Button as="div" className="block md:hidden">
-              <button className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]">
-                <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', 'icon-menu')} />
-              </button>
-            </Menu.Button>
-            <Transition
-              enter="transition duration-100 ease-out"
-              enterFrom="transform scale-95 opacity-0"
-              enterTo="transform scale-100 opacity-100"
-              leave="transition duration-75 ease-out"
-              leaveFrom="transform scale-100 opacity-100"
-              leaveTo="transform scale-95 opacity-0"
-            >
-              <Menu.Items
-                className={
-                  'absolute top-0 right-0  w-[80vw] max-w-[100vw] rounded-lg bg-white p-6 shadow-lg dark:bg-[#1E1D24] dark:text-gray-400'
-                }
-              >
-                {links.map((link, index) => (
-                  <Menu.Item as="div" key={index} className="my-3">
-                    <LinkItemMobile {...link} key={index} isActive={isLinkActive(link.href, asPath)} />
-                  </Menu.Item>
-                ))}
-                <Menu.Item as="div" className={'absolute top-1 right-1'}>
-                  <button className="m-1 rounded-full bg-gray-100 p-2 hover:opacity-50 dark:bg-[#151519]">
-                    <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', 'icon-close')} />
-                  </button>
-                </Menu.Item>
-              </Menu.Items>
-            </Transition>
-          </Menu>
-        </div>
-      </div>
 
-      {children}
+        {children}
+      </div>
 
       <Footer />
     </div>
