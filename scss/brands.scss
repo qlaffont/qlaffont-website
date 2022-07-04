@@ -6,7 +6,7 @@
   mask-size: 100% !important;
   mask-repeat: no-repeat !important;
 
-  $icons: "spotify", 'twitch';
+  $icons: "spotify", 'twitch', 'twitter', 'linkedin', 'github', 'discord';
 
   @each $icon in $icons {
     &.icon-#{$icon} {

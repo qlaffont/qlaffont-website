@@ -8,6 +8,7 @@ import { useBoolean, useSsr } from 'usehooks-ts';
 
 import { useI18n } from '../../i18n/useI18n';
 import { useDark } from '../../services/dark/useDark';
+import { Footer } from './Footer';
 
 interface LinkType {
   title: string;
@@ -146,6 +147,8 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
       </div>
 
       {children}
+
+      <Footer />
     </div>
   );
 };

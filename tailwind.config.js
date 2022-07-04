@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-// const plugin = require('tailwindcss/plugin');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
@@ -25,5 +25,18 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/line-clamp'), require('tailwind-animatecss')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('tailwind-animatecss'),
+    plugin(function ({ addComponents }) {
+      const components = {
+        '.mask-center': {
+          maskPosition: 'center !important',
+        },
+      };
+
+      addComponents(components);
+    }),
+  ],
 };
