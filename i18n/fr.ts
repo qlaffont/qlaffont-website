@@ -3,7 +3,7 @@ import enDict from './en';
 const lng: typeof enDict = {
   navbar: {
     home: 'Accueil',
-    about: 'A propos',
+    about: 'À propos',
     projects: 'Projets',
     gaming: 'Gaming',
     news: 'Actualités',
@@ -50,6 +50,13 @@ const lng: typeof enDict = {
       notFound: {
         title: 'Page non trouvée !',
       },
+    },
+    home: {
+      Im: "Je m'appelle",
+      jobTitle: 'Je suis Lead Developer et Full-Stack JS Developer (Node, React) chez {{company}}',
+      freelanceInfo: "Dans mon temps libre, Je suis dévelopeur freelance et j'adore créer des choses pour le fun.",
+      moreAbouteMe: 'À propos de moi',
+      contactMe: 'Me contacter',
     },
   },
   yup: {

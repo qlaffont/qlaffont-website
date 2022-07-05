@@ -49,6 +49,13 @@ const lng = {
         title: 'Page not found !',
       },
     },
+    home: {
+      Im: "I'm",
+      jobTitle: "I'm a Lead Developer and Full-Stack JS Developer (Node, React) at {{company}}",
+      freelanceInfo: "On my free time, I'm a freelance developer and I love to create stuff for fun.",
+      moreAbouteMe: 'More about me',
+      contactMe: 'Contact me',
+    },
   },
   yup: {
     mixed: {

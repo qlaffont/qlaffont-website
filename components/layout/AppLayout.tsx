@@ -99,7 +99,13 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
       <div className="grow">
         <div className="flex items-center justify-between">
           <div>
-            <Image src="/imgs/qlaffont.jpg" height="50" width="50" className="rounded-full" />
+            <Image
+              src="/imgs/qlaffont.jpg"
+              height="50"
+              width="50"
+              className="rounded-full"
+              alt="navbar profile picture"
+            />
           </div>
           <div>
             <div className="flex gap-[2vw]">
