@@ -15,7 +15,7 @@
   }
 
   $icons: "check-circle", "close", "info-circle", "sad", "smile", "check", "copy", "download", "arrow-down",
-  'pencil', 'sun', 'moon', "menu";
+  'pencil', 'sun', 'moon', "menu", "fr", "en";
 
   @each $icon in $icons {
     &.icon-#{$icon} {

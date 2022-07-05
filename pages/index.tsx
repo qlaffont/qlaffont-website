@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-[75vh] flex-col justify-center">
       <div className="space-y-5">
-        <div className="mt-12 grid grid-cols-1 items-center gap-x-0 gap-y-3 text-center md:mt-24 md:grid-cols-6 md:gap-x-6 md:text-left">
+        <div className="grid grid-cols-1 items-center gap-x-0 gap-y-3 text-center md:mt-24 md:grid-cols-6 md:gap-x-6 md:text-left">
           <div className="order-2 col-span-5 mb-5 md:order-1">
             <h1 className="text-3xl leading-tight sm:text-5xl md:leading-normal">
               <span className="animatecss animatecss-infinite animatecss-slow animatecss-tada">👋</span>{' '}

@@ -8,6 +8,7 @@ import { useBoolean, useSsr } from 'usehooks-ts';
 
 import { useI18n } from '../../i18n/useI18n';
 import { useDark } from '../../services/dark/useDark';
+import { useI18nSEO } from '../../services/seo/useI18nSEO';
 import { Footer } from './Footer';
 
 interface LinkType {
@@ -86,7 +87,9 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
   const { asPath } = useRouter();
   const { isDarkMode, toggle } = useDark();
   const { value: darkMode, setValue: setDarkMode } = useBoolean();
+  const { actualLang, changeLang } = useI18n();
   const { isBrowser } = useSsr();
+  useI18nSEO();
 
   useEffect(() => {
     if (isBrowser) {
@@ -120,6 +123,19 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
               onClick={() => toggle()}
             >
               <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', darkMode ? 'icon-sun' : 'icon-moon')} />
+            </button>
+            <button
+              className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]"
+              onClick={() => {
+                if (isBrowser) {
+                  const newLang = actualLang === 'fr' ? 'en' : 'fr';
+
+                  changeLang(newLang);
+                  localStorage.setItem('lang', newLang);
+                }
+              }}
+            >
+              <i className={clsx('icon mask-center block h-2 w-4', actualLang === 'fr' ? 'bg-en' : 'bg-fr')} />
             </button>
             <Menu>
               <Menu.Button as="div" className="block md:hidden">

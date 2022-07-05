@@ -14,10 +14,13 @@ const rosettyLocales = {
   en: { dict: enDict, locale: locales.enGB },
 };
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   const { asPath } = useRouter();
+  const defaultLanguage =
+    typeof navigator !== 'undefined' ? (navigator?.language?.toLowerCase()?.startsWith('fr') ? 'fr' : 'en') : 'en';
+
   return (
-    <RosettyProvider languages={rosettyLocales} defaultLanguage="en">
+    <RosettyProvider languages={rosettyLocales} defaultLanguage={defaultLanguage}>
       <AppLayout>
         <AnimatePresence initial={false} exitBeforeEnter>
           <motion.div
@@ -49,6 +52,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </AppLayout>
     </RosettyProvider>
   );
-}
+};
 
 export default MyApp;

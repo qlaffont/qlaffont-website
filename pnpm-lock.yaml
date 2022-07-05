@@ -30,7 +30,7 @@ specifiers:
   react: 18.2.0
   react-dom: 18.2.0
   react-hook-form: ^7.33.0
-  rosetty-react: ^1.2.2
+  rosetty-react: ^1.3.1
   sass: ^1.53.0
   tailwind: ^4.0.0
   tailwind-animatecss: ^1.0.0
@@ -48,7 +48,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.33.0_react@18.2.0
-  rosetty-react: 1.2.2
+  rosetty-react: 1.3.1
   sass: 1.53.0
   usehooks-ts: 2.6.0_react@18.2.0
   yup: 0.32.11
@@ -3857,8 +3857,8 @@ packages:
       templite: 1.2.0
     dev: false
 
-  /rosetty-react/1.2.2:
-    resolution: {integrity: sha512-8TzZA3d83J5Wi/xZVJCdjlVpV2A13qz1BsYt7L1UGZZ/ICXYOSrTwoRSdVPfdnqDsCRQ1VyxAEG+itGYLbJc2g==}
+  /rosetty-react/1.3.1:
+    resolution: {integrity: sha512-ce5lOAthucLpZP0Zf8Kr/HayZs0MDRbDJWkBs/TDieyE4KJF444sZhNHDufkJnzY95ScbNv9Je7alSz1uAVqzg==}
     engines: {node: '>=10'}
     dependencies:
       rosetty: 1.3.25
