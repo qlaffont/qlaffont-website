@@ -100,7 +100,7 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
   return (
     <div className="container mx-auto flex min-h-screen flex-col px-4 pt-5">
       <div className="grow">
-        <div className="flex items-center justify-between">
+        <div className="relative z-50 flex items-center justify-between">
           <div>
             <Image
               src="/imgs/qlaffont.jpg"
