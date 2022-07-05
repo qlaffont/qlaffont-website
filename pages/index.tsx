@@ -25,18 +25,18 @@ const Home: NextPage = () => {
             <Image src="/imgs/qlaffont.jpg" height="150" width="150" className="rounded-full " />
           </div>
         </div>
-        <div className="space-y-6 md:space-y-0 md:space-x-4">
-          <a target="_blank" href="mailto:contact@qlaffont.com" rel="noreferrer">
+        <div className="flex flex-wrap items-center space-y-4 md:space-y-0 md:space-x-4">
+          <a target="_blank" href="mailto:contact@qlaffont.com" rel="noreferrer" className="w-full md:w-auto">
             <button
               aria-label="button"
               type="button"
-              className="w-full items-center justify-center rounded-full bg-[#1c1b22] py-3 px-2 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:inline-flex md:w-auto md:px-12"
+              className="w-full rounded-full bg-[#1c1b22] py-3 px-2 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-auto md:px-12"
             >
               {t('pages.home.contactMe')}
             </button>
           </a>
-          <Link href="/about">
-            <a className="w-full items-center justify-center rounded-full border bg-gray-200 py-3 px-2 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:inline-flex md:w-auto md:px-12">
+          <Link href="/about" passHref>
+            <a className="w-full rounded-full border bg-gray-200 py-3 px-2 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12">
               {t('pages.home.moreAbouteMe')}
             </a>
           </Link>
