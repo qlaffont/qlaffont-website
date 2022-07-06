@@ -68,6 +68,29 @@ const lng: typeof enDict = {
         '4': 'Vous pouvez me trouver sur Twitter (@qlaffont) où parfois je partage mes projets. Sur mon Github (@qlaffont), vous pouvez trouver certaines de mes librairies / projets open source. Sur mon serveur Discord, vous pouvez me contacter et parfois je partage des conseils / nouvelles techniques qui, je pense, sont intéressantes.',
       },
       experiences: 'Mes expériences',
+      diplomas: 'Mes diplômes',
+      services: 'Services',
+      servicesDetails: {
+        website: {
+          title: 'Site Internet',
+          description:
+            "Avez-vous besoin d'un nouveau site Web ? Vous voulez un site Web statique, vous souhaitez être connecté à un CMS comme WordPress, vous voulez avoir un thème et coder votre site Web ? J'ai ce dont vous avez besoin et ce que vous attendez !",
+        },
+        application: {
+          title: 'Application',
+          description:
+            'Vous souhaitez créer une application pour vous faciliter votre flux de travail, vous devez créer une solution de commerce électronique ? Je peux le faire !',
+        },
+        discord: {
+          title: 'Bot Discord',
+          description:
+            "J'adore Discord ! Probablement comme vous ! Mais vous souhaitez connecter votre application, vos données et vos services (comme Stripe, ChargeBee, Twitch, Github, Trello, etc.) sur votre serveur, mais vous ne savez pas comment le faire ? Je peux le faire !",
+        },
+      },
+      servicesHero: {
+        title: 'Travaillons ensemble !',
+        description: 'Envoyez-moi un e-mail avec toutes les informations et je vais essayer de vous répondre en 48 h !',
+      },
     },
   },
   yup: {

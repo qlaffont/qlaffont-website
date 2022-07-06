@@ -66,6 +66,29 @@ const lng = {
         '4': 'You can find me on Twitter (@qlaffont) where sometimes I share my thoughts about my work and my life. On my Github (@qlaffont), you can found some of my open source libraries / projects. On my Discord server, you can contact me and sometimes I share some advices / tech news that I think are interesting.',
       },
       experiences: 'My experiences',
+      diplomas: 'My diplomas',
+      services: 'Services',
+      servicesDetails: {
+        website: {
+          title: 'Website',
+          description:
+            'Do you need a new website ? You want a static website, you want to be connected to a CMS like Wordpress, you want to have a theme and code your website ? I have what you need and what you are waiting for !',
+        },
+        application: {
+          title: 'Application',
+          description:
+            'You need to build a application to make your workflow easier, you need to create an ecommerce solution ? We can do it !',
+        },
+        discord: {
+          title: 'Discord bot',
+          description:
+            "I love Discord ! Probably like you ! But you want to connect your application, your data and your services (like Stripe, Chargebee, Twitch, Github, Trello, etc.) on your company server, but you don't know how to do it ? I can do it !",
+        },
+      },
+      servicesHero: {
+        title: "Let's work together !",
+        description: 'Send me an email with all informations and I will try to answer you in 48 h !',
+      },
     },
   },
   yup: {
