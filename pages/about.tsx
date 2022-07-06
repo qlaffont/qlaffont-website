@@ -135,7 +135,12 @@ const Home: NextPage = () => {
                 <h1 className="mb-5 text-5xl font-bold text-white">{t('pages.about.servicesHero.title')}</h1>
                 <p className="mb-5 text-white">{t('pages.about.servicesHero.description')}</p>
 
-                <a target="_blank" href="mailto:contact@qlaffont.com" rel="noreferrer" className="mx-auto inline-block">
+                <a
+                  target="_blank"
+                  href="mailto:contact@qlaffont.com"
+                  rel="noreferrer"
+                  className="mx-auto inline-block w-full md:w-auto"
+                >
                   <button
                     aria-label="button"
                     type="button"
@@ -145,7 +150,12 @@ const Home: NextPage = () => {
                     <span>contact@qlaffont.com</span>
                   </button>
                 </a>
-                <a target="_blank" href="tel:+33629869841" rel="noreferrer" className="mx-auto inline-block">
+                <a
+                  target="_blank"
+                  href="tel:+33629869841"
+                  rel="noreferrer"
+                  className="mx-auto inline-block w-full md:w-auto"
+                >
                   <button
                     aria-label="button"
                     type="button"
