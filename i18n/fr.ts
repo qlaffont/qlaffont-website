@@ -54,9 +54,20 @@ const lng: typeof enDict = {
     home: {
       Im: "Je m'appelle",
       jobTitle: 'Je suis Lead Developer et Full-Stack JS Developer (Node, React) chez {{company}}',
-      freelanceInfo: "Dans mon temps libre, Je suis développeur freelance et j'adore créer des choses pour m'amuser.",
+      freelanceInfo: 'Dans mon temps libre, Je suis développeur freelance ou je créé des projets.',
       moreAbouteMe: 'À propos de moi',
       contactMe: 'Me contacter',
+    },
+    about: {
+      title: 'À propos',
+      description: 'Mon parcours',
+      presentation: {
+        '1': "Je suis Quentin, un <u>développeur JS Full Stack</u> spécialisé pour assurer la qualité de vos projets et qui <u>facilite le développement mais aussi la vie de l'utilisateur</u>. Ma mission est de traduire les besoins des utilisateurs sur des site internets ainsi que applications qui s'exécutent rapidement, mais avec une excellente expérience de développement.",
+        '2': "Je travaille actuellement comme {{jobTitle}} à <u>{{company}}</u>. Je travaille dur sur mes tâches pour aider l'équipe Dev dans tous les aspects: Stack technique, pratiques de développement, gestion produits, tests, déploiement, etc.",
+        '3': "En tant que freelance, je fais la même chose avec un niveau d'expertise client. <u>Je me concentre sur la livraison, la qualité ainsi que les conseils sur votre stratégie en ligne</u>. Avec mon expertise SEO/SEA, je peux vous conseiller afin de créer votre site Web afin d'être sur la 1ère page de Google.",
+        '4': 'Vous pouvez me trouver sur Twitter (@qlaffont) où parfois je partage mes projets. Sur mon Github (@qlaffont), vous pouvez trouver certaines de mes librairies / projets open source. Sur mon serveur Discord, vous pouvez me contacter et parfois je partage des conseils / nouvelles techniques qui, je pense, sont intéressantes.',
+      },
+      experiences: 'Mes expériences',
     },
   },
   yup: {
