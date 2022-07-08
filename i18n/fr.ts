@@ -49,6 +49,7 @@ const lng: typeof enDict = {
     error: {
       notFound: {
         title: 'Page non trouvée !',
+        action: "Aller à la page d'accueil",
       },
     },
     home: {

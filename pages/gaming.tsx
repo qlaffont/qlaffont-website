@@ -7,7 +7,7 @@ import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
 
-const Home: NextPage = () => {
+const Gaming: NextPage = () => {
   const { t, format } = useI18n();
   const { isBrowser } = useSsr();
 
@@ -99,4 +99,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Gaming;

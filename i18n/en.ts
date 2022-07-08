@@ -47,6 +47,7 @@ const lng = {
     error: {
       notFound: {
         title: 'Page not found !',
+        action: 'Go to homepage',
       },
     },
     home: {

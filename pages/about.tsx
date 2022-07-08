@@ -7,7 +7,7 @@ import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
 import { HTMLStyleText } from '../services/textUtils/HTMLStyleText';
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   const { t, format } = useI18n();
 
   const experiences = [
@@ -168,4 +168,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default About;
