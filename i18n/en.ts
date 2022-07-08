@@ -102,6 +102,12 @@ const lng = {
       title: 'Projects',
       description: 'Some recent works',
     },
+    news: {
+      title: 'News / Conferences',
+      description: 'Some articles and presentations',
+      moreNews: 'More Articles',
+      presentations: 'Presentations',
+    },
   },
   yup: {
     mixed: {

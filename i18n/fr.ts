@@ -105,6 +105,12 @@ const lng: typeof enDict = {
       title: 'Projets',
       description: 'Quelques réalisations récentes',
     },
+    news: {
+      title: 'Actualités',
+      description: 'Mes articles et présentations',
+      moreNews: "Plus d'articles",
+      presentations: 'Présentations',
+    },
   },
   yup: {
     mixed: {
