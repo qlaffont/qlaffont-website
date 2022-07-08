@@ -92,6 +92,13 @@ const lng: typeof enDict = {
         description: 'Envoyez-moi un e-mail avec toutes les informations et je vais essayer de vous répondre en 48 h !',
       },
     },
+    gaming: {
+      title: 'Gaming',
+      description: 'Mon passe-temps favori',
+      experiences: 'Mes expériences',
+      twitch: 'Voir sur Twitch',
+      donation: 'Don',
+    },
   },
   yup: {
     mixed: {

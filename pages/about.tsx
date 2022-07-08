@@ -74,7 +74,8 @@ const Home: NextPage = () => {
                 </p>
                 <span className="hidden grow border-t border-dashed border-gray-300 dark:border-gray-700 md:block"></span>
                 <p className="text-gray-500">
-                  {format(experience.dateFrom, 'P')} {experience.dateTo && `- ${format(experience.dateTo!, 'P')}`}
+                  {format(experience.dateFrom, 'MMM yyyy')}{' '}
+                  {experience.dateTo && `- ${format(experience.dateTo!, 'MMM yyyy')}`}
                 </p>
               </div>
             ))}
@@ -91,7 +92,7 @@ const Home: NextPage = () => {
                   {diploma.name} - <span className="border-b border-sky-500">{diploma.name}</span>
                 </p>
                 <span className="hidden grow border-t border-dashed border-gray-300 dark:border-gray-700 md:block"></span>
-                <p className="text-gray-500">{format(diploma.date, 'P')}</p>
+                <p className="text-gray-500">{format(diploma.date, 'MMM yyyy')}</p>
               </div>
             ))}
           </div>

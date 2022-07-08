@@ -90,6 +90,13 @@ const lng = {
         description: 'Send me an email with all informations and I will try to answer you in 48 h !',
       },
     },
+    gaming: {
+      title: 'Gaming',
+      description: "Here's my other side",
+      experiences: 'My experiences',
+      twitch: 'See on Twitch',
+      donation: 'Donation',
+    },
   },
   yup: {
     mixed: {
