@@ -55,7 +55,8 @@ const lng: typeof enDict = {
     home: {
       Im: "Je m'appelle",
       jobTitle: 'Je suis Lead Developer et Full-Stack JS Developer (Node, React) chez {{company}}',
-      freelanceInfo: 'Dans mon temps libre, Je suis développeur freelance ou je créé des projets.',
+      freelanceInfo:
+        'Dans mon temps libre, Je suis développeur freelance ou je créé des projets sur différents sujets.',
       moreAbouteMe: 'À propos de moi',
       contactMe: 'Me contacter',
     },
@@ -99,6 +100,10 @@ const lng: typeof enDict = {
       experiences: 'Mes expériences',
       twitch: 'Voir sur Twitch',
       donation: 'Don',
+    },
+    projects: {
+      title: 'Projets',
+      description: 'Quelques réalisations récentes',
     },
   },
   yup: {

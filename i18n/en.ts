@@ -98,6 +98,10 @@ const lng = {
       twitch: 'See on Twitch',
       donation: 'Donation',
     },
+    projects: {
+      title: 'Projects',
+      description: 'Some recent works',
+    },
   },
   yup: {
     mixed: {
