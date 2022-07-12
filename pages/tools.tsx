@@ -1,40 +1,60 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import type { NextPage } from 'next';
+import ColorHash from 'color-hash';
 import { useMemo } from 'react';
 
 import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
+import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
+import { normalize } from '../services/textUtils/normalizeString';
 
-const Tools: NextPage = () => {
-  const { t } = useI18n();
+const colorHash = new ColorHash({ saturation: 0.5 });
 
-  const tools = [
-    {
-      name: 'Full Stack Dev',
-      url: 'https://google.com',
-      category: 'Ceci est une category',
-    },
-    {
-      name: 'Full Stack Dev',
-      url: 'https://google.com',
-      color: 'red',
-      category: 'Ceci est une category',
-    },
-  ];
+export async function getStaticProps() {
+  const results = await getAllFieldsFromNotion('ad90bac785dc4d3a9eebf91fa542573a');
+
+  return {
+    props: { data: JSON.parse(JSON.stringify(results)) },
+    revalidate: 60 * 10, // 10 minutes
+  };
+}
+
+const Tools = ({
+  data,
+}: {
+  data: { Link: string; 'Name FR': string; 'Name EN': string; Color: string; Category: string }[];
+}) => {
+  const { t, actualLang } = useI18n();
+
+  const tools = useMemo(
+    () =>
+      data?.map((item) => ({
+        name: actualLang === 'fr' ? item['Name FR'] : item['Name EN'],
+        url: item['Link'],
+        color: item['Color'],
+        category: item['Category'],
+      })) || [],
+    [data, actualLang],
+  );
 
   const categories: Record<string, { items: typeof tools }> = useMemo(() => {
-    return tools.reduce(
-      (prev, next) =>
-        ({
-          ...prev,
-          [next.category]: {
-            //@ts-ignore
-            items: [...(prev[next.category]?.items || []), next],
-          },
-        } as Record<string, { items: typeof tools }>),
-      {},
-    );
+    return Object.entries(
+      tools.reduce(
+        (prev, next) =>
+          ({
+            ...prev,
+            [next.category]: {
+              //@ts-ignore
+              items: [...(prev[next.category]?.items || []), next],
+            },
+          } as Record<string, { items: typeof tools }>),
+        {},
+      ),
+    )
+      .sort(([k], [nextK]) => {
+        return normalize(k)!.localeCompare(normalize(nextK)!);
+      })
+      .reduce((prev, next) => ({ ...prev, [next[0]]: next[1] }), {});
   }, [tools]);
 
   return (
@@ -107,7 +127,7 @@ const Tools: NextPage = () => {
         </div>
 
         <div className="mb-12 space-y-5 pt-12">
-          <div className="space-y-5 pt-5">
+          <div className="space-y-12 pt-5">
             {Object.entries(categories).map(([category, data], index) => (
               <div key={index} className="space-y-3">
                 <div>
@@ -115,19 +135,21 @@ const Tools: NextPage = () => {
                 </div>
 
                 <div className="flex flex-wrap items-center gap-2">
-                  {data.items.map((link, j) => (
-                    <div key={j}>
-                      <a
-                        target="_blank"
-                        href={link.url}
-                        className="flex w-full items-center justify-center gap-2 rounded-lg bg-gray-200 py-3 px-2 font-medium shadow-lg hover:opacity-70 dark:bg-gray-500 md:px-6"
-                        style={{ backgroundColor: link?.color }}
-                        rel="noreferrer"
-                      >
-                        {link.name}
-                      </a>
-                    </div>
-                  ))}
+                  {data.items
+                    .sort((prev, next) => normalize(prev.name)!.localeCompare(next.name))
+                    .map((link, j) => (
+                      <div key={j}>
+                        <a
+                          target="_blank"
+                          href={link.url}
+                          className="flex w-full items-center justify-center gap-2 rounded-lg bg-gray-200 py-3 px-2 font-medium text-white shadow-lg hover:opacity-70 dark:bg-gray-500 md:px-6"
+                          style={{ backgroundColor: link?.color || colorHash.hex(link.name) }}
+                          rel="noreferrer"
+                        >
+                          {link.name}
+                        </a>
+                      </div>
+                    ))}
                 </div>
               </div>
             ))}
