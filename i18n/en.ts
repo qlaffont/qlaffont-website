@@ -108,6 +108,25 @@ const lng = {
       moreNews: 'More Articles',
       presentations: 'Presentations',
     },
+    tools: {
+      title: 'Tools & Config',
+      description: 'My tools and my PCs',
+      config: {
+        desktop: 'Desktop PC',
+        portable: 'Portable PC',
+        os: 'OS',
+        processor: 'Processor',
+        motherboard: 'Motherboard',
+        alimentation: 'Alimentation',
+        cooler: 'Cooler',
+        case: 'Case',
+        graphicCard: 'Graphic Card',
+        ram: 'RAM',
+        keyboardAndMouse: 'Keyboard & Mouse',
+        keyboard: 'Keyboard',
+        headset: 'Headset & Mic',
+      },
+    },
   },
   yup: {
     mixed: {

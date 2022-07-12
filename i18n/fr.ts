@@ -111,6 +111,25 @@ const lng: typeof enDict = {
       moreNews: "Plus d'articles",
       presentations: 'Présentations',
     },
+    tools: {
+      title: 'Outils & Config',
+      description: 'Mes outils & mes PCs',
+      config: {
+        desktop: 'Ordinateur fix',
+        portable: 'Ordinateur portable',
+        os: 'Système',
+        processor: 'Processeur',
+        motherboard: 'Carte Mère',
+        alimentation: 'Alimentation',
+        cooler: 'Ventilateur',
+        case: 'Boitier',
+        graphicCard: 'Carte Graphique',
+        ram: 'RAM',
+        keyboardAndMouse: 'Clavier & souris',
+        keyboard: 'Clavier',
+        headset: 'Casque & Micro',
+      },
+    },
   },
   yup: {
     mixed: {
