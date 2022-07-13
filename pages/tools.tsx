@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
+import clsx from 'clsx';
 import ColorHash from 'color-hash';
 import Head from 'next/head';
 import { useMemo } from 'react';
@@ -151,7 +152,7 @@ const Tools = ({
                           style={{ backgroundColor: link?.color || colorHash.hex(link.name) }}
                           rel="noreferrer"
                         >
-                          {link.icon && <i className={link.icon}></i>} <span>{link.name}</span>
+                          {link.icon && <i className={clsx(link.icon, 'pb-1')}></i>} <span>{link.name}</span>
                         </a>
                       </div>
                     ))}
