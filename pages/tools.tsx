@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import ColorHash from 'color-hash';
+import Head from 'next/head';
 import { useMemo } from 'react';
 
 import { PageTitle } from '../components/molecule/PageTitle';
@@ -22,7 +23,7 @@ export async function getStaticProps() {
 const Tools = ({
   data,
 }: {
-  data: { Link: string; 'Name FR': string; 'Name EN': string; Color: string; Category: string }[];
+  data: { Link: string; 'Name FR': string; 'Name EN': string; Color: string; Category: string; Icon: string }[];
 }) => {
   const { t, actualLang } = useI18n();
 
@@ -33,6 +34,7 @@ const Tools = ({
         url: item['Link'],
         color: item['Color'],
         category: item['Category'],
+        icon: item['Icon'],
       })) || [],
     [data, actualLang],
   );
@@ -59,6 +61,9 @@ const Tools = ({
 
   return (
     <div>
+      <Head>
+        <script src="https://kit.fontawesome.com/af1ad25b4f.js" crossOrigin="anonymous" async></script>
+      </Head>
       <PageTitle title={t('pages.tools.title')!} description={t('pages.tools.description')!} />
 
       <div className="divide-y divide-dotted divide-gray-500/50">
@@ -146,7 +151,7 @@ const Tools = ({
                           style={{ backgroundColor: link?.color || colorHash.hex(link.name) }}
                           rel="noreferrer"
                         >
-                          {link.name}
+                          {link.icon && <i className={link.icon}></i>} <span>{link.name}</span>
                         </a>
                       </div>
                     ))}
