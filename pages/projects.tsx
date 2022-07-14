@@ -13,8 +13,6 @@ import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
 export async function getStaticProps() {
   const results = await getAllFieldsFromNotion('a861796b748d4867b4985655234a0c3e');
 
-  console.log(results);
-
   return {
     props: { data: JSON.parse(JSON.stringify(results)) },
     revalidate: 60 * 10, // 10 minutes

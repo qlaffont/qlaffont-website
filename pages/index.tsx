@@ -1,10 +1,28 @@
-import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { useI18n } from '../i18n/useI18n';
+import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
 
-const Home: NextPage = () => {
+export async function getStaticProps() {
+  const results = (await getAllFieldsFromNotion('39513d6c0e1b4935a65f61b6a11ee0f4')) as {
+    Company: string;
+    'Date To'?: { start: Date };
+  }[];
+  //Get only companies who haven't Date To
+
+  const companyNames = results
+    .filter((exp) => exp['Date To'] === undefined)
+    .reduce((prev, exp) => `${prev}, ${exp.Company}`, '')
+    .slice(2);
+
+  return {
+    props: { companyNames },
+    revalidate: 60 * 10, // 10 minutes
+  };
+}
+
+const Home = ({ companyNames }: { companyNames: string }) => {
   const { t } = useI18n();
 
   return (
@@ -16,7 +34,7 @@ const Home: NextPage = () => {
               <i className="float-left pr-3 animatecss animatecss-infinite animatecss-slow animatecss-tada">👋</i>
               <p>
                 {t('pages.home.Im')} <span className="text-sky-500 dark:text-sky-400">Quentin</span>.{' '}
-                {t('pages.home.jobTitle', { company: 'Flexper' })}.
+                {t('pages.home.jobTitle', { company: companyNames })}.
               </p>
             </h1>
             <p className="mt-5 text-xl italic md:mt-0">{t('pages.home.freelanceInfo')}</p>
