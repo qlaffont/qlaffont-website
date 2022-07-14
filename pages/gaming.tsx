@@ -1,14 +1,37 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import type { NextPage } from 'next';
-import { useEffect, useState } from 'react';
+import { isBefore } from 'date-fns';
+import { isEmpty } from 'lodash';
+import { useEffect, useMemo, useState } from 'react';
 import { useSsr } from 'usehooks-ts';
 
 import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
+import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
 
-const Gaming: NextPage = () => {
-  const { t, format } = useI18n();
+export async function getStaticProps() {
+  const results = await getAllFieldsFromNotion('3710d9123b314a0591997255fe100897');
+
+  return {
+    props: { data: JSON.parse(JSON.stringify(results)) },
+    revalidate: 60 * 10, // 10 minutes
+  };
+}
+
+const Gaming = ({
+  data,
+}: {
+  data: {
+    Company: string;
+    'Job Title EN': string;
+    'Description EN': string;
+    'Job Title FR': string;
+    'Description FR': string;
+    'Date From': { start: Date };
+    'Date To': { start: Date };
+  }[];
+}) => {
+  const { t, format, actualLang } = useI18n();
   const { isBrowser } = useSsr();
 
   const [domain, setDomain] = useState('');
@@ -19,19 +42,19 @@ const Gaming: NextPage = () => {
     }
   }, [isBrowser]);
 
-  const experiences = [
-    {
-      jobTitle: 'Full Stack Dev',
-      company: 'Flexper',
-      dateFrom: new Date(),
-    },
-    {
-      jobTitle: 'Full Stack Dev',
-      company: 'Flexper',
-      dateFrom: new Date(),
-      dateTo: new Date(),
-    },
-  ];
+  const experiences = useMemo(
+    () =>
+      (data || [])
+        ?.map((exp) => ({
+          jobTitle: actualLang === 'fr' ? exp['Job Title FR'] : exp['Job Title EN'],
+          description: actualLang === 'fr' ? exp['Description FR'] : exp['Job Title EN'],
+          company: exp.Company,
+          dateFrom: new Date(exp['Date From'].start),
+          dateTo: exp['Date To']?.start ? new Date(exp['Date To']?.start) : undefined,
+        }))
+        .sort((a, b) => (isBefore(a.dateFrom, b.dateFrom) ? 1 : -1)),
+    [actualLang, data],
+  );
 
   return (
     <div>
@@ -88,7 +111,7 @@ const Gaming: NextPage = () => {
                 <span className="hidden grow border-t border-dashed border-gray-300 dark:border-gray-700 md:block"></span>
                 <p className="text-gray-500">
                   {format(experience.dateFrom, 'MMM yyyy')}{' '}
-                  {experience.dateTo && `- ${format(experience.dateTo!, 'MMM yyyy')}`}
+                  {!isEmpty(experience.dateTo) && `- ${format(experience.dateTo!, 'MMM yyyy')}`}
                 </p>
               </div>
             ))}

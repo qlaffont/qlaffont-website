@@ -18,6 +18,7 @@ specifiers:
   clsx: ^1.1.1
   color-hash: ^2.0.1
   commitlint: ^17.0.3
+  date-fns: ^2.28.0
   eslint: 8.18.0
   eslint-config-next: 12.2.0
   eslint-config-prettier: ^8.5.0
@@ -26,6 +27,7 @@ specifiers:
   eslint-plugin-simple-import-sort: ^7.0.0
   husky: ^8.0.1
   lint-staged: ^13.0.3
+  lodash: ^4.17.21
   next: 12.2.0
   next-seo: ^5.4.0
   prettier: ^2.7.1
@@ -48,6 +50,8 @@ dependencies:
   '@notionhq/client': 2.0.0
   clsx: 1.1.1
   color-hash: 2.0.1
+  date-fns: 2.28.0
+  lodash: 4.17.21
   next: 12.2.0_0fe4a934aa1e1081e7f5c8003433fd83
   next-seo: 5.4.0_d716a047297bb761313a77a188aa86e6
   react: 18.2.0

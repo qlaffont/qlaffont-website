@@ -45,8 +45,15 @@ export const getAllFieldsFromNotion = async (
           }
 
           if (value?.results) {
-            result[key] = value?.results[0]?.rich_text.plain_text;
-            continue;
+            if (value?.results[0]?.rich_text?.plain_text) {
+              result[key] = value?.results[0]?.rich_text.plain_text;
+              continue;
+            }
+
+            if (value?.results[0]?.title?.plain_text) {
+              result[key] = value?.results[0]?.title?.plain_text;
+              continue;
+            }
           }
 
           if (value?.select) {
