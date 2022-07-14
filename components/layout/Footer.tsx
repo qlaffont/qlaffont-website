@@ -1,9 +1,15 @@
+import { useI18n } from '../../i18n/useI18n';
+
 export const Footer = () => {
+  const { t } = useI18n();
   return (
     <footer className="mt-12 mb-6 flex shrink-0 flex-wrap items-center justify-between">
       <p className="italic">© {new Date().getFullYear()} Quentin Laffont</p>
 
       <div className="flex items-center space-x-6">
+        <a href="https://github.com/qlaffont/qlaffont-website/" target="_blank" rel="noreferrer" className="text-xs">
+          {t('components.layout.footer.source')}
+        </a>
         <a href="https://twitter.com/qlaffont" target="_blank" rel="noreferrer">
           <i className="brand icon-twitter mask-center block h-6 w-6 bg-gray-700 hover:opacity-60 dark:bg-gray-400" />
         </a>

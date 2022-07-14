@@ -39,7 +39,7 @@ const lng = {
     },
     layout: {
       footer: {
-        language: 'Mettre en Français',
+        source: 'See Source',
       },
     },
   },

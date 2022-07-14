@@ -41,7 +41,7 @@ const lng: typeof enDict = {
     },
     layout: {
       footer: {
-        language: 'Mettre en Anglais',
+        source: 'Voir le code',
       },
     },
   },
