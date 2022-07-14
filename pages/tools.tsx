@@ -4,6 +4,7 @@ import ColorHash from 'color-hash';
 import Head from 'next/head';
 import { useMemo } from 'react';
 
+import { SEO } from '../components/atoms/SEO';
 import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
@@ -61,108 +62,111 @@ const Tools = ({
   }, [tools]);
 
   return (
-    <div>
+    <>
+      <SEO title={t('pages.tools.title')!} />
       <Head>
         <script src="https://kit.fontawesome.com/af1ad25b4f.js" crossOrigin="anonymous" async></script>
       </Head>
-      <PageTitle title={t('pages.tools.title')!} description={t('pages.tools.description')!} />
+      <div>
+        <PageTitle title={t('pages.tools.title')!} description={t('pages.tools.description')!} />
 
-      <div className="divide-y divide-dotted divide-gray-500/50">
-        <div className="mb-12 flex flex-wrap items-center justify-start gap-y-6 md:justify-around md:gap-y-0">
-          <div>
-            <p className="font-bold">{t('pages.tools.config.desktop')}</p>
-            <p>&nbsp;</p>
+        <div className="divide-y divide-dotted divide-gray-500/50">
+          <div className="mb-12 flex flex-wrap items-center justify-start gap-y-6 md:justify-around md:gap-y-0">
+            <div>
+              <p className="font-bold">{t('pages.tools.config.desktop')}</p>
+              <p>&nbsp;</p>
 
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.os')} :</span> Windows 11 / PopOS 22
-            </p>
-            <p>&nbsp;</p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.os')} :</span> Windows 11 / PopOS 22
+              </p>
+              <p>&nbsp;</p>
 
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.processor')} :</span> AMD RYZEN 7 3700X
-            </p>
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.motherboard')} :</span> GIGABYTE X570
-              GAMING X{' '}
-            </p>
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.alimentation')} :</span> CORSAIR
-              PROFESSIONAL PLATINUM SERIES HX750
-            </p>
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.cooler')} :</span> BE QUIET DARK ROCK 4
-            </p>
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.case')} :</span> FRACTAL DESIGN MESHIFY
-              S2 DARK TG (BLACK)
-            </p>
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.graphicCard')} :</span> KFA2 GeForce RTX
-              2070 SUPER EX (1-Click OC), 8 Go
-            </p>
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.ram')} :</span> HYPERX FURY BLACK DDR4 4
-              X 8 GO 3200 MHZ CAS 16
-            </p>
-            <p>&nbsp;</p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.processor')} :</span> AMD RYZEN 7 3700X
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.motherboard')} :</span> GIGABYTE X570
+                GAMING X{' '}
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.alimentation')} :</span> CORSAIR
+                PROFESSIONAL PLATINUM SERIES HX750
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.cooler')} :</span> BE QUIET DARK ROCK 4
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.case')} :</span> FRACTAL DESIGN MESHIFY
+                S2 DARK TG (BLACK)
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.graphicCard')} :</span> KFA2 GeForce
+                RTX 2070 SUPER EX (1-Click OC), 8 Go
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.ram')} :</span> HYPERX FURY BLACK DDR4
+                4 X 8 GO 3200 MHZ CAS 16
+              </p>
+              <p>&nbsp;</p>
 
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.keyboardAndMouse')} :</span> Logitech G
-              Pro
-            </p>
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.headset')} :</span> Logitech G Pro
-              Wireless
-            </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.keyboardAndMouse')} :</span> Logitech G
+                Pro
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.headset')} :</span> Logitech G Pro
+                Wireless
+              </p>
+            </div>
+            <div>
+              <p className="font-bold">{t('pages.tools.config.portable')}</p>
+              <p>&nbsp;</p>
+
+              <p>Macbook Pro 2017 (16 Go RAM / 256 SSD) </p>
+              <p>&nbsp;</p>
+
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.keyboard')} :</span> Keychron Q1
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.headset')} :</span> PLT BB PRO 2
+              </p>
+              <p>&nbsp;</p>
+            </div>
           </div>
-          <div>
-            <p className="font-bold">{t('pages.tools.config.portable')}</p>
-            <p>&nbsp;</p>
 
-            <p>Macbook Pro 2017 (16 Go RAM / 256 SSD) </p>
-            <p>&nbsp;</p>
+          <div className="mb-12 space-y-5 pt-12">
+            <div className="space-y-12 pt-5">
+              {Object.entries(categories).map(([category, data], index) => (
+                <div key={index} className="space-y-3">
+                  <div>
+                    <SectionTitle title={category} />
+                  </div>
 
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.keyboard')} :</span> Keychron Q1
-            </p>
-            <p>
-              <span className="border-b border-sky-500">{t('pages.tools.config.headset')} :</span> PLT BB PRO 2
-            </p>
-            <p>&nbsp;</p>
-          </div>
-        </div>
-
-        <div className="mb-12 space-y-5 pt-12">
-          <div className="space-y-12 pt-5">
-            {Object.entries(categories).map(([category, data], index) => (
-              <div key={index} className="space-y-3">
-                <div>
-                  <SectionTitle title={category} />
+                  <div className="flex flex-wrap items-center gap-2">
+                    {data.items
+                      .sort((prev, next) => normalize(prev.name)!.localeCompare(next.name))
+                      .map((link, j) => (
+                        <div key={j}>
+                          <a
+                            target="_blank"
+                            href={link.url}
+                            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gray-200 py-3 px-2 font-medium text-white shadow-lg hover:opacity-70 dark:bg-gray-500 md:px-6"
+                            style={{ backgroundColor: link?.color || colorHash.hex(link.name) }}
+                            rel="noreferrer"
+                          >
+                            {link.icon && <i className={clsx(link.icon, 'pb-1')}></i>} <span>{link.name}</span>
+                          </a>
+                        </div>
+                      ))}
+                  </div>
                 </div>
-
-                <div className="flex flex-wrap items-center gap-2">
-                  {data.items
-                    .sort((prev, next) => normalize(prev.name)!.localeCompare(next.name))
-                    .map((link, j) => (
-                      <div key={j}>
-                        <a
-                          target="_blank"
-                          href={link.url}
-                          className="flex w-full items-center justify-center gap-2 rounded-lg bg-gray-200 py-3 px-2 font-medium text-white shadow-lg hover:opacity-70 dark:bg-gray-500 md:px-6"
-                          style={{ backgroundColor: link?.color || colorHash.hex(link.name) }}
-                          rel="noreferrer"
-                        >
-                          {link.icon && <i className={clsx(link.icon, 'pb-1')}></i>} <span>{link.name}</span>
-                        </a>
-                      </div>
-                    ))}
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
