@@ -1,38 +1,51 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { PageTitle } from '../components/molecule/PageTitle';
 import { useI18n } from '../i18n/useI18n';
+import { execQueryForHashnode } from '../services/hashnode/execQueryForHashnode';
 
-const News: NextPage = () => {
+type News = {
+  title: string;
+  brief: string;
+  slug: string;
+  coverImage: string;
+  dateAdded: Date;
+};
+
+export async function getStaticProps() {
+  const results: News[] = (
+    await execQueryForHashnode(
+      `
+    query GetUserArticles($page: Int!, $username: String!) {
+        user(username: $username) {
+            publication {
+                posts(page: $page) {
+                    title
+                    brief
+                    slug
+                    coverImage
+                    dateAdded
+                }
+            }
+        }
+    }
+  `,
+      { page: 0, username: 'qlaffont' },
+    )
+  ).data.user.publication.posts;
+
+  return {
+    props: { data: JSON.parse(JSON.stringify(results.slice(0, 3))) },
+    revalidate: 60 * 10, // 10 minutes
+  };
+}
+
+const News = ({ data }: { data: News[] }) => {
   const { t, format } = useI18n();
 
-  const articles = [
-    {
-      name: 'mx-auto block w-max  mx-auto block w-max  mx-auto block w-max  mx-auto block w-max  mx-auto block w-max ',
-      description:
-        'Create a bot who link subscriptions to Discord roles. Create a bot who link subscriptions to Discord roles. Create a bot who link subscriptions to Discord roles. Create a bot who link subscriptions to Discord roles.Create a bot who link subscriptions to Discord roles.',
-      picture: 'https://placehold.jp/1920x1080.png',
-      date: new Date(),
-      link: 'https://google.com',
-    },
-    {
-      name: 'Wiseguy Bot v2',
-      description: 'Create a bot who link subscriptions to Discord roles.',
-      picture: 'https://placehold.jp/1920x1080.png',
-      link: 'https://google.com',
-      date: new Date(),
-    },
-    {
-      name: 'Wiseguy Bot v2',
-      description: 'Create a bot who link subscriptions to Discord roles.',
-      picture: 'https://placehold.jp/1920x1080.png',
-      link: 'https://google.com',
-      date: new Date(),
-    },
-  ];
+  const articles = data;
 
   return (
     <div>
@@ -42,15 +55,15 @@ const News: NextPage = () => {
         <div className="grid grid-cols-1 gap-6 py-12 md:grid-cols-3">
           {articles.map((article, index) => {
             return (
-              <Link href={article.link!} passHref key={index}>
+              <Link href={`https://blog.qlaffont.com/${article.slug}`} passHref key={index}>
                 <a target="_blank" className="flex flex-col space-y-3 hover:opacity-60">
-                  {article?.picture ? (
+                  {article?.coverImage ? (
                     <div className="flex h-[200px] w-full items-center justify-center">
                       <Image
-                        src={article?.picture}
+                        src={article?.coverImage}
                         height="200"
                         width="400"
-                        alt={`${article.name} cover`}
+                        alt={`${article.title} cover`}
                         className="mx-auto object-none"
                       />
                     </div>
@@ -62,12 +75,12 @@ const News: NextPage = () => {
 
                   <h2 className="w-max max-w-full">
                     <span className="border-b border-sky-500 text-base font-semibold uppercase line-clamp-1">
-                      {article.name}
+                      {article.title}
                     </span>
                   </h2>
-                  <p className="text-sm italic text-gray-500">{format(article.date, 'MMM yyyy')}</p>
+                  <p className="text-sm italic text-gray-500">{format(new Date(article.dateAdded), 'MMM yyyy')}</p>
 
-                  <p className="text-justify line-clamp-3">{article.description}</p>
+                  <p className="text-justify line-clamp-3">{article.brief}</p>
                 </a>
               </Link>
             );
