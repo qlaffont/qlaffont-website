@@ -184,7 +184,7 @@ const About = ({
                   className="mx-auto inline-block w-full md:w-auto"
                 >
                   <div className="flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] py-3 px-2 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
-                    <span className="icon icon-phone block h-4 w-4 bg-white dark:bg-black"></span>{' '}
+                    <span className="icon icon-mail block h-4 w-4 bg-white dark:bg-black"></span>{' '}
                     <span>contact@qlaffont.com</span>
                   </div>
                 </a>
@@ -195,7 +195,7 @@ const About = ({
                   className="mx-auto inline-block w-full md:w-auto"
                 >
                   <div className="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] py-3 px-2 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
-                    <span className="icon icon-mail block h-4 w-4 bg-white dark:bg-black"></span>{' '}
+                    <span className="icon icon-phone block h-4 w-4 bg-white dark:bg-black"></span>{' '}
                     <span>+33 6 29 86 98 41</span>
                   </div>
                 </a>
