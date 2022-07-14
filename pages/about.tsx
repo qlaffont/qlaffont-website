@@ -1,41 +1,77 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import type { NextPage } from 'next';
+import { isBefore } from 'date-fns';
+import { isEmpty } from 'lodash';
 import Image from 'next/image';
+import { useMemo } from 'react';
 
 import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
+import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
 import { HTMLStyleText } from '../services/textUtils/HTMLStyleText';
 
-const About: NextPage = () => {
-  const { t, format } = useI18n();
+export async function getStaticProps() {
+  const [resultExps, resultDiplomas] = await Promise.all([
+    getAllFieldsFromNotion('39513d6c0e1b4935a65f61b6a11ee0f4'),
+    getAllFieldsFromNotion('ad72018aa75b466193019a61c5331d7f'),
+  ]);
 
-  const experiences = [
-    {
-      jobTitle: 'Full Stack Dev',
-      company: 'Flexper',
-      dateFrom: new Date(),
-    },
-    {
-      jobTitle: 'Full Stack Dev',
-      company: 'Flexper',
-      dateFrom: new Date(),
-      dateTo: new Date(),
-    },
-  ];
+  return {
+    props: { exps: JSON.parse(JSON.stringify(resultExps)), educations: JSON.parse(JSON.stringify(resultDiplomas)) },
+    revalidate: 60 * 10, // 10 minutes
+  };
+}
 
-  const diplomas = [
-    {
-      name: 'IT Engineer',
-      company: 'Flexper',
-      date: new Date(),
-    },
-    {
-      name: 'IT Engineer',
-      company: 'Flexper',
-      date: new Date(),
-    },
-  ];
+const About = ({
+  exps,
+  educations,
+}: {
+  exps: {
+    Company: string;
+    'Job Title EN': string;
+    'Description EN': string;
+    'Job Title FR': string;
+    'Description FR': string;
+    'Date From': { start: Date };
+    'Date To': { start: Date };
+  }[];
+  educations: {
+    Company: string;
+    'Title EN': string;
+    'Description EN': string;
+    'Title FR': string;
+    'Description FR': string;
+    Date: { start: Date };
+  }[];
+}) => {
+  const { t, format, actualLang } = useI18n();
+
+  const experiences = useMemo(
+    () =>
+      (exps || [])
+        .map((exp) => ({
+          jobTitle: actualLang === 'fr' ? exp['Job Title FR'] : exp['Job Title EN'],
+          description: actualLang === 'fr' ? exp['Description FR'] : exp['Description EN'],
+          dateFrom: new Date(exp['Date From'].start),
+          dateTo: !isEmpty(exp['Date To']?.start) ? new Date(exp['Date To'].start) : undefined,
+          company: exp.Company,
+        }))
+        .sort((a, b) => (isBefore(a.dateFrom, b.dateFrom) ? 1 : -1)),
+    [actualLang, exps],
+  );
+
+  const diplomas = useMemo(
+    () =>
+      (educations || [])
+        .map((diploma) => ({
+          name: actualLang === 'fr' ? diploma['Title FR'] : diploma['Title EN'],
+          description: actualLang === 'fr' ? diploma['Description FR'] : diploma['Description EN'],
+          date: new Date(diploma.Date.start),
+          company: diploma.Company,
+        }))
+        .sort((a, b) => (isBefore(a.date, b.date) ? 1 : -1)),
+    [actualLang, exps],
+  );
 
   return (
     <div>
@@ -47,7 +83,12 @@ const About: NextPage = () => {
 
           <p
             dangerouslySetInnerHTML={{
-              __html: HTMLStyleText(t('pages.about.presentation.2', { jobTitle: 'FullStackJS', company: 'Flexper' })!),
+              __html: HTMLStyleText(
+                t('pages.about.presentation.2', {
+                  jobTitle: experiences[0].jobTitle,
+                  company: experiences[0].company,
+                })!,
+              ),
             }}
           ></p>
 
