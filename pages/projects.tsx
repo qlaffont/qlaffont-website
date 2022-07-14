@@ -1,43 +1,56 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import clsx from 'clsx';
-import type { NextPage } from 'next';
+import { isBefore } from 'date-fns';
+import { isEmpty } from 'lodash';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useMemo } from 'react';
 
 import { PageTitle } from '../components/molecule/PageTitle';
 import { useI18n } from '../i18n/useI18n';
+import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
 
-const Projects: NextPage = () => {
-  const { t, format } = useI18n();
+export async function getStaticProps() {
+  const results = await getAllFieldsFromNotion('a861796b748d4867b4985655234a0c3e');
 
-  const projects = [
-    {
-      name: 'Wiseguy Bot v2',
-      description: 'Create a bot who link subscriptions to Discord roles.',
-      picture: 'https://placehold.jp/1920x1080.png',
-      date: new Date(),
-      technologies: 'Typescript, Node, Discord.js, Stripe, Chargebee, Paypal, Wireguard, Caddy, Debian',
-      link: 'https://google.com',
-    },
-    {
-      name: 'Wiseguy Bot v2',
-      description: 'Create a bot who link subscriptions to Discord roles.',
-      date: new Date(),
-      technologies: 'Typescript, Node, Discord.js, Stripe, Chargebee, Paypal, Wireguard, Caddy, Debian',
-    },
-    {
-      name: 'Wiseguy Bot v2',
-      description: 'Create a bot who link subscriptions to Discord roles.',
-      date: new Date(),
-      technologies: 'Typescript, Node, Discord.js, Stripe, Chargebee, Paypal, Wireguard, Caddy, Debian',
-    },
-    {
-      name: 'Wiseguy Bot v2',
-      description: 'Create a bot who link subscriptions to Discord roles.',
-      date: new Date(),
-      technologies: 'Typescript, Node, Discord.js, Stripe, Chargebee, Paypal, Wireguard, Caddy, Debian',
-    },
-  ];
+  console.log(results);
+
+  return {
+    props: { data: JSON.parse(JSON.stringify(results)) },
+    revalidate: 60 * 10, // 10 minutes
+  };
+}
+
+const Projects = ({
+  data,
+}: {
+  data: {
+    'Title EN': string;
+    'Description EN': string;
+    'Title FR': string;
+    'Description FR': string;
+    Tech: string;
+    Date: { start: Date };
+    Image?: string;
+    Link?: string;
+  }[];
+}) => {
+  const { t, format, actualLang } = useI18n();
+
+  const projects = useMemo(
+    () =>
+      (data || [])
+        .map((project) => ({
+          name: actualLang === 'fr' ? project['Title FR'] : project['Title EN'],
+          description: actualLang === 'fr' ? project['Description FR'] : project['Description EN'],
+          picture: !isEmpty(project.Image) ? project.Image : undefined,
+          link: !isEmpty(project.Link) ? project.Link : undefined,
+          technologies: project.Tech,
+          date: new Date(project.Date.start),
+        }))
+        .sort((a, b) => (isBefore(a.date, b.date) ? 1 : -1)),
+    [actualLang, data],
+  );
 
   return (
     <div>
@@ -61,7 +74,7 @@ const Projects: NextPage = () => {
               {project?.picture ? (
                 <div className="flex h-[200px] w-full items-center justify-center">
                   <Image
-                    src={project?.picture}
+                    src={`/website/${project.picture}`}
                     height="200"
                     width="400"
                     alt={`${project.name} cover`}
@@ -69,7 +82,7 @@ const Projects: NextPage = () => {
                   />
                 </div>
               ) : (
-                <div className="hidden h-[200px] w-full grow items-center justify-center md:flex">
+                <div className="hidden h-[200px] w-full items-center justify-center md:flex">
                   <i className="icon icon-picture block h-8 w-8 bg-gray-500/50" />
                 </div>
               )}
@@ -79,7 +92,7 @@ const Projects: NextPage = () => {
                 <span className="text-center text-sm font-semibold">{format(project.date, 'MMM yyyy')}</span>
               </h2>
 
-              <p className="text-justify">{project.description}</p>
+              <p className="grow text-justify">{project.description}</p>
 
               <p className="text-center text-sm italic text-gray-500">{project.technologies}</p>
             </LayoutProject>
