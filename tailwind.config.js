@@ -3,7 +3,7 @@ const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
-  safelist: ['hover:text-sky-500'],
+  safelist: ['hover:text-sky-500', '!h-5', 'hover:bg-gray-100', 'dark:hover:bg-[#151519]'],
   darkMode: 'class',
   theme: {
     fontFamily: {
