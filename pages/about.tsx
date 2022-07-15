@@ -114,7 +114,7 @@ const About = ({
 
             <div className="space-y-3 pt-5">
               {experiences.map((experience, index) => (
-                <div className="flex items-center justify-between gap-3" key={index}>
+                <div className="flex flex-wrap items-center justify-between gap-3" key={index}>
                   <p className="font-semibold">
                     {experience.jobTitle} - <span className="border-b border-sky-500">{experience.company}</span>
                   </p>
@@ -133,7 +133,7 @@ const About = ({
 
             <div className="space-y-3 pt-5">
               {diplomas.map((diploma, index) => (
-                <div className="flex items-center justify-between gap-3" key={index}>
+                <div className="flex flex-wrap items-center justify-between gap-3" key={index}>
                   <p className="font-semibold">
                     {diploma.name} - <span className="border-b border-sky-500">{diploma.name}</span>
                   </p>
