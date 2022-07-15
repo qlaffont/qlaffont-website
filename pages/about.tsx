@@ -101,7 +101,13 @@ const About = ({
 
             <div className="grid grid-cols-1 items-center gap-y-5 md:grid-cols-4 md:gap-x-5">
               <div className="order-2 col-span-1 mx-auto md:order-1">
-                <Image src="/imgs/qlaffont.jpg" height="150" width="150" className="rounded-xl" />
+                <Image
+                  src="/imgs/qlaffont.jpg"
+                  height="150"
+                  width="150"
+                  className="rounded-xl"
+                  alt="Quentin Laffont profile"
+                />
               </div>
               <div className="order-1 col-span-3 space-y-3 md:order-2">
                 <p dangerouslySetInnerHTML={{ __html: HTMLStyleText(t('pages.about.presentation.4')!) }}></p>

@@ -44,7 +44,13 @@ const Home = ({ companyNames }: { companyNames: string }) => {
               <p className="mt-5 text-xl italic md:mt-0">{t('pages.home.freelanceInfo')}</p>
             </div>
             <div className="order-1 md:order-2">
-              <Image src="/imgs/qlaffont.jpg" height="150" width="150" className="rounded-full " />
+              <Image
+                src="/imgs/qlaffont.jpg"
+                height="150"
+                width="150"
+                className="rounded-full"
+                alt="Quentin Laffont profile"
+              />
             </div>
           </div>
           <div className="flex flex-wrap items-center space-y-4 md:space-y-0 md:space-x-4">

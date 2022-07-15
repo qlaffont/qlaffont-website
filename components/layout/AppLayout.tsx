@@ -108,7 +108,7 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
               height="50"
               width="50"
               className="rounded-full"
-              alt="navbar profile picture"
+              alt="Quentin Laffont profile"
             />
           </div>
           <div>
