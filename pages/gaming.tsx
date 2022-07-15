@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useSsr } from 'usehooks-ts';
 
 import { SEO } from '../components/atoms/SEO';
+import { DescriptionModal } from '../components/molecule/DescriptionModal';
 import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
@@ -49,7 +50,7 @@ const Gaming = ({
       (data || [])
         ?.map((exp) => ({
           jobTitle: actualLang === 'fr' ? exp['Job Title FR'] : exp['Job Title EN'],
-          description: actualLang === 'fr' ? exp['Description FR'] : exp['Job Title EN'],
+          description: actualLang === 'fr' ? exp['Description FR'] : exp['Description EN'],
           company: exp.Company,
           dateFrom: new Date(exp['Date From'].start),
           dateTo: exp['Date To']?.start ? new Date(exp['Date To']?.start) : undefined,
@@ -114,8 +115,9 @@ const Gaming = ({
                   </p>
                   <span className="hidden grow border-t border-dashed border-gray-300 dark:border-gray-700 md:block"></span>
                   <p className="text-gray-500">
-                    {format(experience.dateFrom, 'MMM yyyy')}{' '}
-                    {!isEmpty(experience.dateTo) && `- ${format(experience.dateTo!, 'MMM yyyy')}`}
+                    {format(experience.dateFrom, 'MMM yyyy')}
+                    {!isEmpty(experience.dateTo) && ` - ${format(experience.dateTo!, 'MMM yyyy')}`}
+                    {!isEmpty(experience.description) && <DescriptionModal description={experience.description} />}
                   </p>
                 </div>
               ))}

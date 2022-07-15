@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useMemo } from 'react';
 
 import { SEO } from '../components/atoms/SEO';
+import { DescriptionModal } from '../components/molecule/DescriptionModal';
 import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
@@ -128,6 +129,7 @@ const About = ({
                   <p className="text-gray-500">
                     {format(experience.dateFrom, 'MMM yyyy')}{' '}
                     {experience.dateTo && `- ${format(experience.dateTo!, 'MMM yyyy')}`}
+                    {!isEmpty(experience.description) && <DescriptionModal description={experience.description} />}
                   </p>
                 </div>
               ))}
@@ -144,7 +146,10 @@ const About = ({
                     {diploma.name} - <span className="border-b border-sky-500">{diploma.name}</span>
                   </p>
                   <span className="hidden grow border-t border-dashed border-gray-300 dark:border-gray-700 md:block"></span>
-                  <p className="text-gray-500">{format(diploma.date, 'MMM yyyy')}</p>
+                  <p className="text-gray-500">
+                    {format(diploma.date, 'MMM yyyy')}
+                    {!isEmpty(diploma.description) && <DescriptionModal description={diploma.description} />}
+                  </p>
                 </div>
               ))}
             </div>
