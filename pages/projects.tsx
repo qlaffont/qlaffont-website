@@ -54,7 +54,7 @@ const Projects = ({
 
   return (
     <>
-      <SEO title={t('pages.projects.title')!} />
+      <SEO title={t('pages.projects.title')!} description={t('pages.projects.description')!} />
       <div>
         <PageTitle title={t('pages.projects.title')!} description={t('pages.projects.description')!} />
 

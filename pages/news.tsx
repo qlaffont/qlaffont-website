@@ -50,7 +50,7 @@ const News = ({ data }: { data: News[] }) => {
 
   return (
     <>
-      <SEO title={t('pages.news.title')!} />
+      <SEO title={t('pages.news.title')!} description={t('pages.news.description')!} />
       <div>
         <PageTitle title={t('pages.news.title')!} description={t('pages.news.description')!} />
 

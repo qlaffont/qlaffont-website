@@ -29,7 +29,7 @@ const Home = ({ companyNames }: { companyNames: string }) => {
 
   return (
     <>
-      <SEO title="Lead Tech / Full-Stack JS Dev" />
+      <SEO title="Lead Tech / Full-Stack JS Dev" description={t('pages.about.presentation.1')} />
       <div className="flex min-h-[75vh] flex-col justify-center">
         <div className="space-y-5">
           <div className="grid grid-cols-1 items-center gap-x-0 gap-y-3 text-center md:mt-24 md:grid-cols-6 md:gap-x-6 md:text-left">

@@ -60,7 +60,7 @@ const Gaming = ({
 
   return (
     <>
-      <SEO title={t('pages.gaming.title')!} />
+      <SEO title={t('pages.gaming.title')!} description={t('pages.gaming.description')!} />
       <div>
         <PageTitle title={t('pages.gaming.title')!} description={t('pages.gaming.description')!} />
 

@@ -64,7 +64,7 @@ const Tools = ({
 
   return (
     <>
-      <SEO title={t('pages.tools.title')!} />
+      <SEO title={t('pages.tools.title')!} description={t('pages.tools.description')!} />
       <Head>
         <script src="https://kit.fontawesome.com/af1ad25b4f.js" crossOrigin="anonymous" async></script>
       </Head>

@@ -8,6 +8,7 @@ specifiers:
   '@tailwindcss/forms': ^0.5.2
   '@tailwindcss/line-clamp': ^0.4.0
   '@types/color-hash': ^1.0.2
+  '@types/lodash': ^4.14.182
   '@types/node': 18.0.0
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
@@ -74,6 +75,7 @@ devDependencies:
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.4
   '@tailwindcss/line-clamp': 0.4.0_tailwindcss@3.1.4
   '@types/color-hash': 1.0.2
+  '@types/lodash': 4.14.182
   '@types/node': 18.0.0
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
@@ -654,6 +656,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/lodash/4.14.182:
+    resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
     dev: true
 
   /@types/minimist/1.2.2:
