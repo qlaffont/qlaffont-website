@@ -20,7 +20,7 @@ const Error404: NextPage = () => {
           <Link href="/" passHref>
             <a className="block w-full text-center md:w-auto">
               <button
-                aria-label="button"
+                aria-label="go to home"
                 type="button"
                 className="w-full rounded-full bg-[#1c1b22] py-3 px-2 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-auto md:px-12"
               >

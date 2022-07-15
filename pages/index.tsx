@@ -50,7 +50,6 @@ const Home = ({ companyNames }: { companyNames: string }) => {
           <div className="flex flex-wrap items-center space-y-4 md:space-y-0 md:space-x-4">
             <a target="_blank" href="mailto:contact@qlaffont.com" rel="noreferrer" className="w-full md:w-auto">
               <button
-                aria-label="button"
                 type="button"
                 className="w-full rounded-full bg-[#1c1b22] py-3 px-2 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-auto md:px-12"
               >

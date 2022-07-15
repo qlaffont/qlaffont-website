@@ -66,6 +66,7 @@ const LinkItemMobile = ({ title, href, isActive }: LinkType & { isActive: boolea
 
   return (
     <button
+      aria-label={t(title as 'navbar.home')}
       onClick={() => {
         push(href);
       }}
@@ -119,12 +120,14 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
           </div>
           <div className="relative flex gap-1">
             <button
+              aria-label="toggle-dark-mode"
               className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]"
               onClick={() => toggle()}
             >
               <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', darkMode ? 'icon-sun' : 'icon-moon')} />
             </button>
             <button
+              aria-label={`lang-${actualLang === 'fr' ? 'en' : 'fr'}`}
               className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]"
               onClick={() => {
                 if (isBrowser) {
@@ -139,7 +142,10 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
             </button>
             <Menu>
               <Menu.Button as="div" className="block md:hidden">
-                <button className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]">
+                <button
+                  className="rounded-full bg-gray-100 p-3 hover:opacity-50 dark:bg-[#151519]"
+                  aria-label="open navbar"
+                >
                   <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', 'icon-menu')} />
                 </button>
               </Menu.Button>
@@ -162,7 +168,10 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
                     </Menu.Item>
                   ))}
                   <Menu.Item as="div" className={'absolute top-1 right-1'}>
-                    <button className="m-1 rounded-full bg-gray-100 p-2 hover:opacity-50 dark:bg-[#151519]">
+                    <button
+                      className="m-1 rounded-full bg-gray-100 p-2 hover:opacity-50 dark:bg-[#151519]"
+                      aria-label="close-navbar"
+                    >
                       <i className={clsx('icon block h-4 w-4 bg-black dark:bg-white', 'icon-close')} />
                     </button>
                   </Menu.Item>
