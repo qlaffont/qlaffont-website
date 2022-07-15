@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import clsx from 'clsx';
 import ColorHash from 'color-hash';
-import Head from 'next/head';
 import { useMemo } from 'react';
 
 import { SEO } from '../components/atoms/SEO';
@@ -65,9 +64,6 @@ const Tools = ({
   return (
     <>
       <SEO title={t('pages.tools.title')!} description={t('pages.tools.description')!} />
-      <Head>
-        <script src="https://kit.fontawesome.com/af1ad25b4f.js" crossOrigin="anonymous" async></script>
-      </Head>
       <div>
         <PageTitle title={t('pages.tools.title')!} description={t('pages.tools.description')!} />
 
@@ -156,7 +152,8 @@ const Tools = ({
                             style={{ backgroundColor: link?.color || colorHash.hex(link.name) }}
                             rel="noreferrer"
                           >
-                            {link.icon && <i className={clsx(link.icon, 'pb-1')}></i>} <span>{link.name}</span>
+                            {link.icon && <i className={clsx(link.icon, 'h-4 w-4 bg-white pb-1')}></i>}{' '}
+                            <span>{link.name}</span>
                           </a>
                         </div>
                       ))}
