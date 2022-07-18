@@ -3,7 +3,6 @@
 import clsx from 'clsx';
 import { isBefore } from 'date-fns';
 import { isEmpty } from 'lodash';
-import Image from 'next/image';
 import { useMemo } from 'react';
 
 import { useI18n } from '../i18n/useI18n';
@@ -150,7 +149,7 @@ const CV = ({
               <p>https://qlaffont.com</p>
             </div>
             <div className="mx-auto">
-              <Image
+              <img
                 src="/imgs/qlaffont.jpg"
                 height="75"
                 width="75"
@@ -194,7 +193,7 @@ const CV = ({
               <div className="space-y-4">
                 {diplomas.slice(0, 6).map((diploma, index) => (
                   <div key={index}>
-                    <p className="font-bold">{diploma.name}</p>
+                    <p className="font-bold line-clamp-2">{diploma.name}</p>
                     <p>{diploma.company}</p>
                     <p>{format(new Date(diploma.date), 'MMMM uuuu')}</p>
                   </div>
@@ -214,7 +213,7 @@ const CV = ({
                     <div className="absolute top-1 -left-[4.3px] ">
                       <img src="/icons/circle.svg" className="h-2 w-2 rounded-full " alt="circle exp" />
                     </div>
-                    <p className="font-bold">{experience.jobTitle}</p>
+                    <p className="font-bold line-clamp-2">{experience.jobTitle}</p>
                     <p>{experience.company}</p>
                     <div className="text-gray-700">
                       {!isEmpty(experience.dateTo)
