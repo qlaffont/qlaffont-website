@@ -1,10 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-// const plugin = require('tailwindcss/plugin');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
-  safelist: [],
+  safelist: ['hover:text-sky-500', '!h-5', 'hover:bg-gray-100', 'dark:hover:bg-[#151519]'],
+  darkMode: 'class',
   theme: {
+    fontFamily: {
+      sans: ['"Montserrat"', '"Helvetica"', '"Arial"', 'sans-serif'],
+    },
     extend: {
       colors: {
         white: '#FFFFFF',
@@ -12,7 +16,6 @@ module.exports = {
         info: '#4a69bd',
         success: '#78e08f',
         warning: '#f6b93b',
-        transparent: 'transparent',
         discord: '#7289DA',
         spotify: '#1DB954',
         twitch: '#6441A5',
@@ -22,5 +25,18 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/line-clamp'), require('tailwind-animatecss')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('tailwind-animatecss'),
+    plugin(function ({ addComponents }) {
+      const components = {
+        '.mask-center': {
+          maskPosition: 'center !important',
+        },
+      };
+
+      addComponents(components);
+    }),
+  ],
 };

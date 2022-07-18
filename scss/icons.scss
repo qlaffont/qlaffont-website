@@ -14,7 +14,12 @@
     }
   }
 
-  $icons: "check-circle", "close", "info-circle", "sad", "smile", "check", "copy", "download", "arrow-down", 'pencil';
+  $icons: 'check-circle', 'close', 'info-circle', 'sad', 'smile', 'check', 'copy', 'download', 'arrow-down',
+  'pencil', 'sun', 'moon', 'menu', 'fr', 'en', 'website', 'desktop', 'mail', 'phone', 'picture',
+  'binoculars', 'book', 'calendar-check', 'code', 'credit-card', 'database', 'diagram-project',
+  'envelopes-bulk', 'file-code', 'file', 'gauge-high', 'handshake-angle', 'icons', 'key', 'language',
+  'laptop-code', 'link', 'magnifying-glass-chart', 'minimize', 'tags', 'terminal', 'toggle-on', 'user-ninja',
+  'user', 'window-restore', 'server', 'car-tunnel', 'timeline';
 
   @each $icon in $icons {
     &.icon-#{$icon} {
