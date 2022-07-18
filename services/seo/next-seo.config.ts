@@ -4,6 +4,14 @@ const APP_DEFAULT_SEO = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
+    images: [
+      {
+        url: 'imgs/qlaffont.jpg',
+        height: 640,
+        width: 640,
+        alt: 'Quentin Laffont profile',
+      },
+    ],
   },
   twitter: {
     handle: '@qlaffont',

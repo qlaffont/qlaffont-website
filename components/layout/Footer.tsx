@@ -4,7 +4,7 @@ export const Footer = () => {
   const { t } = useI18n();
   return (
     <footer className="mt-12 mb-6 flex shrink-0 flex-wrap items-center justify-between">
-      <p className="italic">© {new Date().getFullYear()} Quentin Laffont</p>
+      <p className="text-xs italic">© {new Date().getFullYear()} Quentin Laffont</p>
 
       <div className="flex items-center space-x-6">
         <a href="https://github.com/qlaffont/qlaffont-website/" target="_blank" rel="noreferrer" className="text-xs">
