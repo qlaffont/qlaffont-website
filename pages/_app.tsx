@@ -15,19 +15,22 @@ const rosettyLocales = {
 };
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  //@ts-ignore
+  const Layout = Component.Layout ? Component.Layout : AppLayout;
+
   const { asPath } = useRouter();
   const defaultLanguage =
     typeof navigator !== 'undefined' ? (navigator?.language?.toLowerCase()?.startsWith('fr') ? 'fr' : 'en') : 'en';
 
   return (
     <RosettyProvider languages={rosettyLocales} defaultLanguage={defaultLanguage}>
-      <AppLayout>
+      <Layout>
         <SwitchTransition mode="out-in">
           <CSSTransition key={asPath} classNames="page" timeout={300}>
             <Component {...pageProps} />
           </CSSTransition>
         </SwitchTransition>
-      </AppLayout>
+      </Layout>
     </RosettyProvider>
   );
 };

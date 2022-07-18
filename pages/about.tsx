@@ -2,6 +2,7 @@
 import { isBefore } from 'date-fns';
 import { isEmpty } from 'lodash';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useMemo } from 'react';
 
 import { SEO } from '../components/atoms/SEO';
@@ -113,6 +114,19 @@ const About = ({
               <div className="order-1 col-span-3 space-y-3 md:order-2">
                 <p dangerouslySetInnerHTML={{ __html: HTMLStyleText(t('pages.about.presentation.4')!) }}></p>
               </div>
+            </div>
+
+            <div className="text-center">
+              <Link passHref href="/cv">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mx-auto flex w-max items-center gap-1 rounded-full border bg-gray-200 py-3 px-6 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
+                >
+                  <i className="icon icon-download h-5 w-5 bg-black dark:bg-white"></i>
+                  <p>{t('pages.about.cv')}</p>
+                </a>
+              </Link>
             </div>
           </div>
 
