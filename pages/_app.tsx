@@ -1,6 +1,7 @@
 import '../scss/index.scss';
 
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { locales, RosettyProvider } from 'rosetty-react';
@@ -23,15 +24,34 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     typeof navigator !== 'undefined' ? (navigator?.language?.toLowerCase()?.startsWith('fr') ? 'fr' : 'en') : 'en';
 
   return (
-    <RosettyProvider languages={rosettyLocales} defaultLanguage={defaultLanguage}>
-      <Layout>
-        <SwitchTransition mode="out-in">
-          <CSSTransition key={asPath} classNames="page" timeout={300}>
-            <Component {...pageProps} />
-          </CSSTransition>
-        </SwitchTransition>
-      </Layout>
-    </RosettyProvider>
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google" content="notranslate" />
+        <meta name="google" content="nositelinkssearchbox" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        {!process.env.NEXT_PUBLIC_DEV && (
+          <script
+            async
+            defer
+            data-website-id="73c3f86f-04e6-44f7-80a3-0441dcddfb42"
+            src="https://analytics.qlaffont.com/umami.js"
+          ></script>
+        )}
+      </Head>
+      <RosettyProvider languages={rosettyLocales} defaultLanguage={defaultLanguage}>
+        <Layout>
+          <SwitchTransition mode="out-in">
+            <CSSTransition key={asPath} classNames="page" timeout={300}>
+              <Component {...pageProps} />
+            </CSSTransition>
+          </SwitchTransition>
+        </Layout>
+      </RosettyProvider>
+    </>
   );
 };
 
