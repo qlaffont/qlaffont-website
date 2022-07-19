@@ -3,10 +3,9 @@ const APP_DEFAULT_SEO = {
   titleTemplate: '%s - Quentin Laffont',
   openGraph: {
     type: 'website',
-    locale: 'fr_FR',
     images: [
       {
-        url: 'imgs/qlaffont.jpg',
+        url: 'https://qlaffont.com/imgs/qlaffont.jpg',
         height: 640,
         width: 640,
         alt: 'Quentin Laffont profile',
