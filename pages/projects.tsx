@@ -80,7 +80,7 @@ const Projects = ({
                       height="200"
                       width="400"
                       alt={`${project.name} cover`}
-                      className="mx-auto object-none"
+                      className="mx-auto"
                     />
                   </div>
                 ) : (
