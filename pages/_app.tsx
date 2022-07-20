@@ -63,7 +63,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           </SwitchTransition>
           <ScrollToTop
             smooth
-            className="fixed bottom-5 right-5 z-50 flex items-center justify-center rounded-lg bg-white dark:bg-[#1c1b22]"
+            className="fixed bottom-5 right-5 z-50 flex items-center justify-center rounded-lg bg-white hover:opacity-70 dark:bg-[#1c1b22]"
             component={<i className="icon icon-arrow-up block h-10 w-10 bg-black dark:bg-white" />}
             aria-label="go back to top"
           />

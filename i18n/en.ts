@@ -24,7 +24,7 @@ const lng = {
     },
     atoms: {
       alert: {
-        wip: 'This fonctionnality is in work in progress !',
+        wip: 'This functionality is in work in progress !',
         info: 'Info',
         error: 'Error',
         success: 'Success',
@@ -83,7 +83,7 @@ const lng = {
       title: 'About',
       description: "Here's my story",
       presentation: {
-        '1': "I'm Quentin, a <u>Lead Dev / Full Stack JS developer</u> specialised to ensure quality of your projects and who make your <u>developer and user life easier</u>. My mission is to translate user needs on website and applications that run blazing fast but with a great developer experience.",
+        '1': "I'm Quentin, a <u>Lead Dev / Full Stack JS developer</u> specialized to ensure quality of your projects and who make your <u>developer and user life easier</u>. My mission is to translate user needs on website and applications that run blazing fast but with a great developer experience.",
         '2': "I'm currently working as a {{jobTitle}} at <u>{{company}}</u>. I work hard on my tasks to help tech team in every aspects : Tech Stack, Dev Practices, Product Management, Testing, Deployment, etc.",
         '3': "As a Freelance, I do the same thing with a customer level of expertise. <u>I'm focusing on delivery, quality and advices on your online strategy</u>. With my SEO/SEA expertise, I can advice you some strategies to make you website as we can on 1st page of Google.",
         '4': 'You can find me on Twitter (@qlaffont) where sometimes I share my thoughts about my work and my life. On my Github (@qlaffont), you can found some of my open source libraries / projects. On my Discord server, you can contact me and sometimes I share some advices / tech news that I think are interesting.',
@@ -101,7 +101,7 @@ const lng = {
         application: {
           title: 'Application',
           description:
-            'You need to build a application to make your workflow easier, you need to create an ecommerce solution ? We can do it !',
+            'You need to build a application to make your workflow easier, you need to create an e-commerce solution ? We can do it !',
         },
         discord: {
           title: 'Discord bot',
@@ -111,7 +111,7 @@ const lng = {
       },
       servicesHero: {
         title: "Let's work together !",
-        description: 'Send me an email with all informations and I will try to answer you in 48 h !',
+        description: 'Send me an email with all details and I will try to answer you in 48 h !',
       },
     },
     gaming: {
