@@ -7,7 +7,8 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      sans: ['"Montserrat"', '"Helvetica"', '"Arial"', 'sans-serif'],
+      sans: ['"Roboto Mono"', '"Helvetica"', '"Arial"', 'sans-serif'],
+      rubik: ['"Rubik"', '"Helvetica"', '"Arial"', 'sans-serif'],
     },
     extend: {
       colors: {

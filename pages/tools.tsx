@@ -83,7 +83,7 @@ const Tools = ({
               </p>
               <p>
                 <span className="border-b border-sky-500">{t('pages.tools.config.motherboard')} :</span> GIGABYTE X570
-                GAMING X{' '}
+                GAMING X
               </p>
               <p>
                 <span className="border-b border-sky-500">{t('pages.tools.config.alimentation')} :</span> CORSAIR

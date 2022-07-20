@@ -1,6 +1,6 @@
 {
   "name": "qlaffont-website",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3100",
@@ -20,6 +20,7 @@
     "next-seo": "^5.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-scroll-to-top": "^1.0.9",
     "react-transition-group": "^4.4.2",
     "rosetty-react": "^1.3.1",
     "sass": "^1.53.0",

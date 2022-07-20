@@ -53,7 +53,7 @@ const lng = {
     home: {
       Im: "I'm",
       jobTitle: "I'm a Lead Developer and Full-Stack JS Developer (Node, React) at {{company}}",
-      freelanceInfo: "On my free time, I'm a freelance developer and I love to create stuff for fun.",
+      freelanceInfo: 'Passionate, freelance developer, I create projects and launch your ideas 🚀',
       moreAbouteMe: 'More about me',
       contactMe: 'Contact me',
     },
