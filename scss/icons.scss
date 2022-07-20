@@ -19,7 +19,7 @@
   'binoculars', 'book', 'calendar-check', 'code', 'credit-card', 'database', 'diagram-project',
   'envelopes-bulk', 'file-code', 'file', 'gauge-high', 'handshake-angle', 'icons', 'key', 'language',
   'laptop-code', 'link', 'magnifying-glass-chart', 'minimize', 'tags', 'terminal', 'toggle-on', 'user-ninja',
-  'user', 'window-restore', 'server', 'car-tunnel', 'timeline';
+  'user', 'window-restore', 'server', 'car-tunnel', 'timeline', 'arrow-up';
 
   @each $icon in $icons {
     &.icon-#{$icon} {

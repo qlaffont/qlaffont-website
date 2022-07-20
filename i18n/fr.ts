@@ -55,8 +55,7 @@ const lng: typeof enDict = {
     home: {
       Im: "Je m'appelle",
       jobTitle: 'Je suis Lead Developer et Full-Stack JS Developer (Node, React) chez {{company}}',
-      freelanceInfo:
-        'Dans mon temps libre, Je suis développeur freelance ou je créé des projets sur différents sujets.',
+      freelanceInfo: 'Passioné, Développeur freelance, je créé des projets et lance vos idées 🚀',
       moreAbouteMe: 'À propos de moi',
       contactMe: 'Me contacter',
     },

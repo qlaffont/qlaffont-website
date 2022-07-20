@@ -3,6 +3,7 @@ import '../scss/index.scss';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import ScrollToTop from 'react-scroll-to-top';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { locales, RosettyProvider } from 'rosetty-react';
 
@@ -49,6 +50,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
               <Component {...pageProps} />
             </CSSTransition>
           </SwitchTransition>
+          <ScrollToTop
+            smooth
+            className="fixed bottom-5 right-5 z-50 flex items-center justify-center rounded-lg bg-white dark:bg-[#1c1b22]"
+            component={<i className="icon icon-arrow-up block h-10 w-10 bg-black dark:bg-white" />}
+            aria-label="go back to top"
+          />
         </Layout>
       </RosettyProvider>
     </>

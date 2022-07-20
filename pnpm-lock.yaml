@@ -35,6 +35,7 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.1.11
   react: 18.2.0
   react-dom: 18.2.0
+  react-scroll-to-top: ^1.0.9
   react-transition-group: ^4.4.2
   rosetty-react: ^1.3.1
   sass: ^1.53.0
@@ -55,6 +56,7 @@ dependencies:
   next-seo: 5.4.0_d716a047297bb761313a77a188aa86e6
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-scroll-to-top: 1.0.9_react@18.2.0
   react-transition-group: 4.4.2_react-dom@18.2.0+react@18.2.0
   rosetty-react: 1.3.1
   sass: 1.53.0
@@ -3693,6 +3695,14 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  /react-scroll-to-top/1.0.9_react@18.2.0:
+    resolution: {integrity: sha512-15R4HRW90idCg2taYSK2Sox/bNBv2Vq9acgu8wbR4mMSclDkNbS3EBenxfUrYh4JHB2WpxWbBty3bb6hQPzScA==}
+    peerDependencies:
+      react: ^16.8.0 || 17.x || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /react-transition-group/4.4.2_react-dom@18.2.0+react@18.2.0:
     resolution: {integrity: sha512-/RNYfRAMlZwDSr6z4zNKV6xu53/e2BuaBbGhbyYIXTrmgu/bGHzmqOs7mJSJBHy9Ud+ApHx3QjrkKSp1pxvlFg==}
