@@ -15,7 +15,7 @@ export const DescriptionModal = ({ description }: { description: string }) => {
 
   return (
     <>
-      <button type="button" onClick={openModal} className="pl-1 align-middle" aria-label="open description modal">
+      <button type="button" onClick={openModal} className="pl-1 pb-1 align-middle" aria-label="open description modal">
         <i className="icon icon-info-circle block h-4 w-4 bg-sky-500 hover:opacity-50" />
       </button>
 
