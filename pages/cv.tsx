@@ -129,12 +129,12 @@ const CV = ({
           {/* HEADER  */}
           <div className="grid grid-cols-4 gap-3">
             <div className="mx-auto">
-              <p className="!text-sm font-bold">Quentin Laffont</p>
+              <p className="font-rubik !text-sm font-semibold">Quentin Laffont</p>
               <p className="text-gray-600">{t('pages.cv.fullStack')}</p>
               <p className="text-gray-600">{t('pages.cv.leadDev')}</p>
             </div>
             <div className="mx-auto text-gray-700">
-              <p className="mb-2 font-semibold">{t('pages.cv.address')}</p>
+              <p className="mb-2 font-rubik font-semibold">{t('pages.cv.address')}</p>
 
               <p>Chemin des Gonagues</p>
               <p>Batiment le grenadier 1</p>
@@ -142,7 +142,7 @@ const CV = ({
               <p>FRANCE</p>
             </div>
             <div className="mx-auto text-gray-700">
-              <p className="mb-2 font-semibold">{t('pages.cv.contact')}</p>
+              <p className="mb-2 font-rubik font-semibold">{t('pages.cv.contact')}</p>
 
               <p>contact@qlaffont.com</p>
               <p>+33 6 29 86 98 41</p>
@@ -162,7 +162,7 @@ const CV = ({
           {/* ABOUT ME / PRIORITIES */}
           <div className="grid grid-cols-2 gap-6">
             <div className="">
-              <p className="mb-5 font-bold uppercase">{t('pages.cv.about')}</p>
+              <p className="mb-5 font-rubik font-semibold uppercase">{t('pages.cv.about')}</p>
 
               <div
                 className="text-justify"
@@ -171,7 +171,7 @@ const CV = ({
             </div>
 
             <div>
-              <p className="mb-5 font-bold uppercase">{t('pages.cv.priorities')}</p>
+              <p className="mb-5 font-rubik font-semibold uppercase">{t('pages.cv.priorities')}</p>
 
               <ul className="list-disc space-y-1 pl-3 ">
                 <li>{t('pages.cv.prioritiesDetails.projectManagement')}</li>
@@ -188,12 +188,12 @@ const CV = ({
           {/* EXPERIENCES / DIPLOMAS */}
           <div className="grid grid-cols-2 gap-6">
             <div className="">
-              <p className="mb-5 font-bold uppercase">{t('pages.cv.formation')}</p>
+              <p className="mb-5 font-rubik font-semibold uppercase">{t('pages.cv.formation')}</p>
 
               <div className="space-y-4">
                 {diplomas.slice(0, 6).map((diploma, index) => (
                   <div key={index}>
-                    <p className="font-bold line-clamp-2">{diploma.name}</p>
+                    <p className="font-rubik font-semibold line-clamp-2">{diploma.name}</p>
                     <p>{diploma.company}</p>
                     <p>{format(new Date(diploma.date), 'MMMM uuuu')}</p>
                   </div>
@@ -202,7 +202,7 @@ const CV = ({
             </div>
 
             <div>
-              <p className="mb-5 font-bold uppercase">{t('pages.cv.experiences')}</p>
+              <p className="mb-5 font-rubik font-semibold uppercase">{t('pages.cv.experiences')}</p>
 
               <div className="pl-1">
                 {experiences.slice(0, 6).map((experience, index) => (
@@ -213,7 +213,7 @@ const CV = ({
                     <div className="absolute top-1 -left-[4.3px] ">
                       <img src="/icons/circle.svg" className="h-2 w-2 rounded-full " alt="circle exp" />
                     </div>
-                    <p className="font-bold line-clamp-2">{experience.jobTitle}</p>
+                    <p className="font-rubik font-semibold line-clamp-2">{experience.jobTitle}</p>
                     <p>{experience.company}</p>
                     <div className="text-gray-700">
                       {!isEmpty(experience.dateTo)

@@ -52,7 +52,13 @@ const LinkItem = ({ title, href, isActive }: LinkType & { isActive: boolean }) =
   return (
     <Link href={href} passHref>
       <a className="hidden rounded-full p-1 hover:bg-gray-100 dark:hover:bg-[#151519] sm:px-6 sm:py-2 md:inline-block">
-        <span className={clsx(isActive ? 'm-1 border-b-2 border-sky-500 py-1 !font-semibold' : '', 'font-medium')}>
+        <span
+          className={clsx(
+            isActive ? 'm-1 border-b-2 border-sky-500 py-1 !font-semibold' : '',
+            'font-medium',
+            'font-rubik',
+          )}
+        >
           {t(title as 'navbar.home')}
         </span>
       </a>
@@ -78,7 +84,9 @@ const LinkItemMobile = ({ title, href, isActive }: LinkType & { isActive: boolea
           'hover:bg-gray-100 dark:hover:bg-[#151519]',
         )}
       >
-        <span className={clsx(isActive ? ' !font-semibold' : '', 'font-medium')}>{t(title as 'navbar.home')}</span>
+        <span className={clsx(isActive ? ' !font-semibold' : '', 'font-medium', 'font-rubik')}>
+          {t(title as 'navbar.home')}
+        </span>
       </a>
     </button>
   );

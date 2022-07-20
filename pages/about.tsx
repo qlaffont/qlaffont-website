@@ -177,7 +177,9 @@ const About = ({
                 <div>
                   <i className="icon icon-website mx-auto block h-12 w-12 bg-sky-500" />
                 </div>
-                <p className="mt-3 mb-1 block text-lg font-bold">{t('pages.about.servicesDetails.website.title')}</p>
+                <p className="mt-3 mb-1 block font-rubik text-lg font-bold">
+                  {t('pages.about.servicesDetails.website.title')}
+                </p>
                 <p className="text-justify">{t('pages.about.servicesDetails.website.description')}</p>
               </div>
 
@@ -185,7 +187,7 @@ const About = ({
                 <div>
                   <i className="icon icon-desktop mx-auto block h-12 w-12 bg-gray-500 dark:bg-white" />
                 </div>
-                <p className="mt-3 mb-1 block text-lg font-bold">
+                <p className="mt-3 mb-1 block font-rubik text-lg font-bold">
                   {t('pages.about.servicesDetails.application.title')}
                 </p>
                 <p className="text-justify">{t('pages.about.servicesDetails.application.description')}</p>
@@ -195,7 +197,9 @@ const About = ({
                 <div>
                   <i className="brand icon-discord mx-auto block h-12 w-12 bg-discord" />
                 </div>
-                <p className="mt-3 mb-1 block text-lg font-bold">{t('pages.about.servicesDetails.discord.title')}</p>
+                <p className="mt-3 mb-1 block font-rubik text-lg font-bold">
+                  {t('pages.about.servicesDetails.discord.title')}
+                </p>
                 <p className="text-justify">{t('pages.about.servicesDetails.discord.description')}</p>
               </div>
             </div>
@@ -206,7 +210,9 @@ const About = ({
             >
               <div className="sticky z-50 flex h-96 items-center justify-center text-center">
                 <div className="max-w-md">
-                  <h1 className="mb-5 text-5xl font-bold text-white">{t('pages.about.servicesHero.title')}</h1>
+                  <h1 className="mb-5 font-rubik text-5xl font-bold text-white">
+                    {t('pages.about.servicesHero.title')}
+                  </h1>
                   <p className="mb-5 text-white">{t('pages.about.servicesHero.description')}</p>
 
                   <a

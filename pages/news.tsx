@@ -77,7 +77,7 @@ const News = ({ data }: { data: News[] }) => {
                     )}
 
                     <h2 className="w-max max-w-full">
-                      <span className="border-b border-sky-500 text-base font-semibold uppercase line-clamp-1">
+                      <span className="border-b border-sky-500 font-rubik text-base font-semibold uppercase line-clamp-1">
                         {article.title}
                       </span>
                     </h2>

@@ -90,8 +90,11 @@ const Projects = ({
                 )}
 
                 <h2 className="mx-auto block w-max ">
-                  <span className="border-b border-sky-500 text-base font-semibold uppercase"> {project.name}</span> -{' '}
-                  <span className="text-center text-sm font-semibold">{format(project.date, 'MMM yyyy')}</span>
+                  <span className="border-b border-sky-500 font-rubik text-base font-semibold uppercase">
+                    {' '}
+                    {project.name}
+                  </span>{' '}
+                  - <span className="text-center text-sm font-semibold">{format(project.date, 'MMM yyyy')}</span>
                 </h2>
 
                 <p className="grow text-justify">{project.description}</p>
