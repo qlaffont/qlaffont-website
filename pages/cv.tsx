@@ -37,7 +37,7 @@ export async function getStaticProps() {
 
   return {
     props: { exps: JSON.parse(JSON.stringify(resultExps)), educations: JSON.parse(JSON.stringify(resultDiplomas)) },
-    revalidate: 60 * 10, // 10 minutes
+    revalidate: 60 * 60 * 24, // 24 hours
   };
 }
 
