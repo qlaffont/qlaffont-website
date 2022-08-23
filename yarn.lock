@@ -3649,10 +3649,10 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-scroll-to-top@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/react-scroll-to-top/-/react-scroll-to-top-1.0.9.tgz#8bbff6d996495aa25b9e43f7990a1f97524486b3"
-  integrity sha512-15R4HRW90idCg2taYSK2Sox/bNBv2Vq9acgu8wbR4mMSclDkNbS3EBenxfUrYh4JHB2WpxWbBty3bb6hQPzScA==
+react-scroll-to-top@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-scroll-to-top/-/react-scroll-to-top-3.0.0.tgz#002984419d4d10fdb5654c9e3dd3341f81209a60"
+  integrity sha512-I/k45Ujai097du59tHBbzGxN7Lyc6K8Uc3IChq6HMXaBfB8N/rrfm055T5Yv0DWfVpf6pOFaBmhD3LOfH5unGw==
 
 react-transition-group@4.4.5:
   version "4.4.5"
