@@ -5,7 +5,7 @@ specifiers:
   '@headlessui/react': 1.6.6
   '@notionhq/client': 2.1.1
   '@tailwindcss/forms': 0.5.2
-  '@tailwindcss/line-clamp': 0.4.0
+  '@tailwindcss/line-clamp': 0.4.1
   '@types/color-hash': 1.0.2
   '@types/lodash': 4.14.184
   '@types/node': 18.0.0
@@ -65,7 +65,7 @@ dependencies:
 devDependencies:
   '@commitlint/config-conventional': 17.1.0
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.8
-  '@tailwindcss/line-clamp': 0.4.0_tailwindcss@3.1.8
+  '@tailwindcss/line-clamp': 0.4.1_tailwindcss@3.1.8
   '@types/color-hash': 1.0.2
   '@types/lodash': 4.14.184
   '@types/node': 18.0.0
@@ -561,8 +561,8 @@ packages:
       tailwindcss: 3.1.8
     dev: true
 
-  /@tailwindcss/line-clamp/0.4.0_tailwindcss@3.1.8:
-    resolution: {integrity: sha512-HQZo6gfx1D0+DU3nWlNLD5iA6Ef4JAXh0LeD8lOGrJwEDBwwJNKQza6WoXhhY1uQrxOuU8ROxV7CqiQV4CoiLw==}
+  /@tailwindcss/line-clamp/0.4.1_tailwindcss@3.1.8:
+    resolution: {integrity: sha512-aeA3Dv4pjxIyIlsxZ9LX7KPI8U7T9oNpV1B2Xax7P57VuJH9Lh+p2H8Ad6+FXP+waR+Gu90Ga3rtkWHKcr3Y/A==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
