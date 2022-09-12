@@ -15,7 +15,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.36.2
   '@typescript-eslint/parser': 5.36.2
   animate.css: 4.1.1
-  autoprefixer: 10.4.8
+  autoprefixer: 10.4.9
   clsx: 1.2.1
   color-hash: 2.0.1
   commitlint: 17.1.2
@@ -75,7 +75,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.36.2_d2f51da36b679389407c00b705f1ba63
   '@typescript-eslint/parser': 5.36.2_eslint@8.23.0+typescript@4.8.3
   animate.css: 4.1.1
-  autoprefixer: 10.4.8
+  autoprefixer: 10.4.9
   commitlint: 17.1.2
   eslint: 8.23.0
   eslint-config-next: 12.3.0_eslint@8.23.0+typescript@4.8.3
@@ -1041,15 +1041,15 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
 
-  /autoprefixer/10.4.8:
-    resolution: {integrity: sha512-75Jr6Q/XpTqEf6D2ltS5uMewJIx5irCU1oBYJrWjFenq/m12WRRrz6g15L1EIoYvPLXTbEry7rDOwrcYNj77xw==}
+  /autoprefixer/10.4.9:
+    resolution: {integrity: sha512-Uu67eduPEmOeA0vyJby5ghu1AAELCCNSsLAjK+lz6kYzNM5sqnBO36MqfsjhPjQF/BaJM5U/UuFYyl7PavY/wQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.3
-      caniuse-lite: 1.0.30001382
+      caniuse-lite: 1.0.30001397
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1134,7 +1134,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001382
+      caniuse-lite: 1.0.30001397
       electron-to-chromium: 1.4.226
       node-releases: 2.0.6
       update-browserslist-db: 1.0.5_browserslist@4.21.3
@@ -1186,6 +1186,11 @@ packages:
 
   /caniuse-lite/1.0.30001382:
     resolution: {integrity: sha512-2rtJwDmSZ716Pxm1wCtbPvHtbDWAreTPxXbkc5RkKglow3Ig/4GNGazDI9/BVnXbG/wnv6r3B5FEbkfg9OcTGg==}
+    dev: false
+
+  /caniuse-lite/1.0.30001397:
+    resolution: {integrity: sha512-SW9N2TbCdLf0eiNDRrrQXx2sOkaakNZbCjgNpPyMJJbiOrU5QzMIrXOVMRM1myBXTD5iTkdrtU/EguCrBocHlA==}
+    dev: true
 
   /chalk/2.4.1:
     resolution: {integrity: sha512-ObN6h1v2fTJSmUXoS3nMQ92LbDK9be4TV+6G+omQlGJFdcUX5heKi1LZ1YnRMIgwTLEj3E24bT6tYni50rlCfQ==}

@@ -39,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "5.36.2",
     "@typescript-eslint/parser": "5.36.2",
     "animate.css": "4.1.1",
-    "autoprefixer": "10.4.8",
+    "autoprefixer": "10.4.9",
     "commitlint": "17.1.2",
     "eslint": "8.23.0",
     "eslint-config-next": "12.3.0",
