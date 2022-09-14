@@ -3849,10 +3849,10 @@ rosetta@^1.1.0:
     dlv "^1.1.3"
     templite "^1.1.0"
 
-rosetty-react@1.3.42:
-  version "1.3.42"
-  resolved "https://registry.yarnpkg.com/rosetty-react/-/rosetty-react-1.3.42.tgz#01ec46ed352881329a6fd7d4a3fbe93757e8255d"
-  integrity sha512-sPfRpZ6+fP9BLYd/GPdSY81CNOlCubtvVnQjqHF3qzmCryLW7KDTvtavYxdkAK1xeR1e/dGT7HmZSb+aSp57mQ==
+rosetty-react@1.3.43:
+  version "1.3.43"
+  resolved "https://registry.yarnpkg.com/rosetty-react/-/rosetty-react-1.3.43.tgz#ee74bfe0de971c957d99d549e7786e58924a4617"
+  integrity sha512-YW8n9K9iKz7nxZGGm6gS+sW6zdLrM6IgfLkts+r2STDLKuJqqai7RRZFLWqLA07U2aRIm4BK1TPNGeLd1ZRtPQ==
   dependencies:
     rosetty "^1.3.25"
 
