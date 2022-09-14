@@ -19,7 +19,7 @@ specifiers:
   clsx: 1.2.1
   color-hash: 2.0.1
   commitlint: 17.1.2
-  date-fns: 2.29.2
+  date-fns: 2.29.3
   eslint: 8.23.1
   eslint-config-next: 12.3.0
   eslint-config-prettier: 8.5.0
@@ -50,7 +50,7 @@ dependencies:
   '@notionhq/client': 2.2.0
   clsx: 1.2.1
   color-hash: 2.0.1
-  date-fns: 2.29.2
+  date-fns: 2.29.3
   lodash: 4.17.21
   next: 12.3.0_b19c13641bf40810e64128a76d4dc77e
   next-seo: 5.5.0_16ced270f64fb870fe6e2a0c3d86aa4a
@@ -1507,8 +1507,8 @@ packages:
       lodash: 4.17.5
     dev: true
 
-  /date-fns/2.29.2:
-    resolution: {integrity: sha512-0VNbwmWJDS/G3ySwFSJA3ayhbURMTJLtwM2DTxf9CWondCnh6DTNlO9JgRSq6ibf4eD0lfMJNBxUdEAHHix+bA==}
+  /date-fns/2.29.3:
+    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
     engines: {node: '>=0.11'}
     dev: false
 
@@ -4035,7 +4035,7 @@ packages:
     resolution: {integrity: sha512-+Kpi3nbpHiOGP8uym2yIN1L7POBHi4Ul71Io46zT9BW0z7JIz7enEOOxsdC6YWMNc80iKuDw42nd+HW7twOSnA==}
     engines: {node: '>=10'}
     dependencies:
-      date-fns: 2.29.2
+      date-fns: 2.29.3
       rosetta: 1.1.0
     dev: false
 
