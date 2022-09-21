@@ -116,7 +116,7 @@ const Gaming = ({
                   <span className="hidden grow border-t border-dashed border-gray-300 dark:border-gray-700 md:block"></span>
                   <p className="text-gray-500">
                     {format(experience.dateFrom, 'MMM yyyy')}
-                    {!isEmpty(experience.dateTo) && ` - ${format(experience.dateTo!, 'MMM yyyy')}`}
+                    {experience.dateTo && ` - ${format(experience.dateTo!, 'MMM yyyy')}`}
                     {!isEmpty(experience.description) && <DescriptionModal description={experience.description} />}
                   </p>
                 </div>
