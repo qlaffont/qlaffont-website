@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const results = await getAllFieldsFromNotion('ad90bac785dc4d3a9eebf91fa542573a');
 
   return {
-    props: { data: JSON.parse(JSON.stringify(results)) },
+    props: { data: [] || JSON.parse(JSON.stringify(results)) },
     // revalidate: 60 * 60 * 24, // 24 hours
   };
 }
@@ -113,6 +113,14 @@ const Tools = ({
               <p>
                 <span className="border-b border-sky-500">{t('pages.tools.config.headset')} :</span> Logitech G Pro
                 Wireless
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.flight')} :</span> Joystick Logitech G
+                X52 Professional Space & Flight Simulator HOTAS Joystick
+              </p>
+              <p>
+                <span className="border-b border-sky-500">{t('pages.tools.config.driving')} :</span> Logitech G 923 Pro
+                TRUEFORCE
               </p>
             </div>
             <div>

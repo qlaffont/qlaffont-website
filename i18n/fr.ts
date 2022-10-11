@@ -150,6 +150,8 @@ const lng: typeof enDict = {
         keyboardAndMouse: 'Clavier & souris',
         keyboard: 'Clavier',
         headset: 'Casque & Micro',
+        flight: 'Config pour les vols (Sim Flight)',
+        driving: 'Config pour la conduite (Sim Racing)',
       },
     },
   },
