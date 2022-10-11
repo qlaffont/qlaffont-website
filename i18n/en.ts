@@ -148,6 +148,8 @@ const lng = {
         keyboardAndMouse: 'Keyboard & Mouse',
         keyboard: 'Keyboard',
         headset: 'Headset & Mic',
+        flight: 'Sim Flight',
+        driving: 'Sim Racing',
       },
     },
   },
