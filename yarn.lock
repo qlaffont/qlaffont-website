@@ -4483,10 +4483,10 @@ use-sync-external-store@1.2.0:
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
 
-usehooks-ts@2.7.2:
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/usehooks-ts/-/usehooks-ts-2.7.2.tgz#5b1c166153f59fc63ae5408102be53608103c1d5"
-  integrity sha512-DeLqSnGg9VvpwPZA+6lKVURJKM9EBu7bbIXuYclQ9COO3w4lacnJa0uP0iJbC/lAmY7GlmPinjZfGNNmDTlUpg==
+usehooks-ts@2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/usehooks-ts/-/usehooks-ts-2.9.0.tgz#cb4d07375f248ee4be48e064197cb298dad7d945"
+  integrity sha512-FNiUPolidOXktWP8+dgRhaPnudeHGNeyDqwYRGYeEz/ZsQ2JfV5ZoRJpBjvqPF3byf7p01X0p4lT7Q856ZO2kg==
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   version "1.0.2"
