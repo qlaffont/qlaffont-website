@@ -3850,10 +3850,10 @@ rosetta@^1.1.0:
     dlv "^1.1.3"
     templite "^1.1.0"
 
-rosetty-react@1.4.14:
-  version "1.4.14"
-  resolved "https://registry.yarnpkg.com/rosetty-react/-/rosetty-react-1.4.14.tgz#75a6f2e2bacee2111adff72007750c66f1282f8b"
-  integrity sha512-AJw/ZhR1Bywv8c362t+e9+XV/Fzvw+/HjTJyrqBcqLmm9GfY5SkGMEffdpUi1qUi6N+PtkhcqKsW4rlPWUrIew==
+rosetty-react@1.4.16:
+  version "1.4.16"
+  resolved "https://registry.yarnpkg.com/rosetty-react/-/rosetty-react-1.4.16.tgz#fdc62b083f3ff2255ef0fe4806fd3f4d3bc9a4d5"
+  integrity sha512-BvuWywAoeH5nL02HmBfuCMPBA7kcTsb7mQnho7AJGfptK9Etr7DQncEpqmKA/iZKjX6k9E/bWCvjexCdGJDs0Q==
   dependencies:
     rosetty "^1.4.0"
 
