@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@commitlint/config-conventional': 17.2.0
-  '@headlessui/react': 1.7.3
+  '@headlessui/react': 1.7.4
   '@notionhq/client': 2.2.2
   '@tailwindcss/forms': 0.5.3
   '@tailwindcss/line-clamp': 0.4.2
@@ -46,7 +46,7 @@ specifiers:
   usehooks-ts: 2.9.1
 
 dependencies:
-  '@headlessui/react': 1.7.3_react-dom@18.2.0+react@18.2.0
+  '@headlessui/react': 1.7.4_react-dom@18.2.0+react@18.2.0
   '@notionhq/client': 2.2.2
   clsx: 1.2.1
   color-hash: 2.0.1
@@ -333,13 +333,14 @@ packages:
       - supports-color
     dev: true
 
-  /@headlessui/react/1.7.3_react-dom@18.2.0+react@18.2.0:
-    resolution: {integrity: sha512-LGp06SrGv7BMaIQlTs8s2G06moqkI0cb0b8stgq7KZ3xcHdH3qMP+cRyV7qe5x4XEW/IGY48BW4fLesD6NQLng==}
+  /@headlessui/react/1.7.4_react-dom@18.2.0+react@18.2.0:
+    resolution: {integrity: sha512-D8n5yGCF3WIkPsjEYeM8knn9jQ70bigGGb5aUvN6y4BGxcT3OcOQOKcM3zRGllRCZCFxCZyQvYJF6ZE7bQUOyQ==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16 || ^17 || ^18
       react-dom: ^16 || ^17 || ^18
     dependencies:
+      client-only: 0.0.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
