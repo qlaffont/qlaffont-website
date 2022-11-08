@@ -38,7 +38,7 @@ specifiers:
   react-scroll-to-top: 3.0.0
   react-transition-group: 4.4.5
   rosetty-react: 1.4.28
-  sass: 1.55.0
+  sass: 1.56.0
   tailwind: 4.0.0
   tailwind-animatecss: 1.0.0
   tailwindcss: 3.2.2
@@ -52,14 +52,14 @@ dependencies:
   color-hash: 2.0.1
   date-fns: 2.29.3
   lodash: 4.17.21
-  next: 13.0.2_d3306206c530f0e7c765c6a031d3445a
+  next: 13.0.2_745f74eea60116ecd9e2fa114021b0cf
   next-seo: 5.14.0_7a9ae32699bf035fe6f304c41d00f394
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scroll-to-top: 3.0.0_react@18.2.0
   react-transition-group: 4.4.5_react-dom@18.2.0+react@18.2.0
   rosetty-react: 1.4.28
-  sass: 1.55.0
+  sass: 1.56.0
   usehooks-ts: 2.9.1_react-dom@18.2.0+react@18.2.0
 
 devDependencies:
@@ -3275,12 +3275,12 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      next: 13.0.2_d3306206c530f0e7c765c6a031d3445a
+      next: 13.0.2_745f74eea60116ecd9e2fa114021b0cf
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /next/13.0.2_d3306206c530f0e7c765c6a031d3445a:
+  /next/13.0.2_745f74eea60116ecd9e2fa114021b0cf:
     resolution: {integrity: sha512-uQ5z5e4D9mOe8+upy6bQdYYjo/kk1v3jMW87kTy2TgAyAsEO+CkwRnMgyZ4JoHEnhPZLHwh7dk0XymRNLe1gFw==}
     engines: {node: '>=14.6.0'}
     hasBin: true
@@ -3304,7 +3304,7 @@ packages:
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      sass: 1.55.0
+      sass: 1.56.0
       styled-jsx: 5.1.0_react@18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
     optionalDependencies:
@@ -4080,8 +4080,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass/1.55.0:
-    resolution: {integrity: sha512-Pk+PMy7OGLs9WaxZGJMn7S96dvlyVBwwtToX895WmCpAOr5YiJYEUJfiJidMuKb613z2xNWcXCHEuOvjZbqC6A==}
+  /sass/1.56.0:
+    resolution: {integrity: sha512-WFJ9XrpkcnqZcYuLRJh5qiV6ibQOR4AezleeEjTjMsCocYW59dEG19U3fwTTXxzi2Ed3yjPBp727hbbj53pHFw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
