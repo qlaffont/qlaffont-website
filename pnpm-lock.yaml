@@ -32,7 +32,7 @@ specifiers:
   next: 13.0.5
   next-seo: 5.14.1
   prettier: 2.8.0
-  prettier-plugin-tailwindcss: 0.1.13
+  prettier-plugin-tailwindcss: 0.2.0
   react: 18.2.0
   react-dom: 18.2.0
   react-scroll-to-top: 3.0.0
@@ -86,7 +86,7 @@ devDependencies:
   husky: 8.0.2
   lint-staged: 13.0.4
   prettier: 2.8.0
-  prettier-plugin-tailwindcss: 0.1.13_prettier@2.8.0
+  prettier-plugin-tailwindcss: 0.2.0_prettier@2.8.0
   tailwind: 4.0.0
   tailwind-animatecss: 1.0.0_4barwtn6pql6au3txwdg6suega
   tailwindcss: 3.2.4
@@ -3865,8 +3865,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-tailwindcss/0.1.13_prettier@2.8.0:
-    resolution: {integrity: sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw==}
+  /prettier-plugin-tailwindcss/0.2.0_prettier@2.8.0:
+    resolution: {integrity: sha512-Ruqig/mdWCSpqdq9WK44nrmqM4BFWTzBPhPGwC5NK3coV9eZntEQPB84MGZbjAg0XQU02jVRHXNRPREBzxvM+A==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       prettier: '>=2.2.0'
