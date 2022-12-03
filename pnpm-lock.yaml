@@ -30,7 +30,7 @@ specifiers:
   lint-staged: 13.0.4
   lodash: 4.17.21
   next: 13.0.6
-  next-seo: 5.14.1
+  next-seo: 5.15.0
   prettier: 2.8.0
   prettier-plugin-tailwindcss: 0.2.0
   react: 18.2.0
@@ -53,7 +53,7 @@ dependencies:
   date-fns: 2.29.3
   lodash: 4.17.21
   next: 13.0.6_m5sxuueb27gk6ddc5gums6vtgq
-  next-seo: 5.14.1_6jx7hpii6hgsrmhxgqrmo3277u
+  next-seo: 5.15.0_6jx7hpii6hgsrmhxgqrmo3277u
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scroll-to-top: 3.0.0_react@18.2.0
@@ -3370,8 +3370,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /next-seo/5.14.1_6jx7hpii6hgsrmhxgqrmo3277u:
-    resolution: {integrity: sha512-NiJeQbxYP3z+EMp52q8k3Q+OfX2+Yv2WehERDj98r2wjXxL+woKpRBdsSVYolTD0Hm8IWs42SzaISE93RoQdOw==}
+  /next-seo/5.15.0_6jx7hpii6hgsrmhxgqrmo3277u:
+    resolution: {integrity: sha512-LGbcY91yDKGMb7YI+28n3g+RuChUkt6pXNpa8FkfKkEmNiJkeRDEXTnnjVtwT9FmMhG6NH8qwHTelGrlYm9rgg==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
