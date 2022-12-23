@@ -68,7 +68,7 @@ const Tools = ({
         <PageTitle title={t('pages.tools.title')!} description={t('pages.tools.description')!} />
 
         <div className="divide-y divide-dotted divide-gray-500/50">
-          <div className="mb-12 flex flex-wrap items-center justify-start gap-y-6 md:justify-around md:gap-y-0">
+          <div className="mb-12 flex flex-wrap items-center justify-start gap-y-6 ">
             <div>
               <p className="font-bold">{t('pages.tools.config.desktop')}</p>
               <p>&nbsp;</p>
