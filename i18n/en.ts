@@ -86,7 +86,7 @@ const lng = {
         '1': "I'm Quentin, a <u>Lead Dev / Full Stack JS developer</u> specialized to ensure quality of your projects and who make your <u>developer and user life easier</u>. My mission is to translate user needs on website and applications that run blazing fast but with a great developer experience.",
         '2': "I'm currently working as a {{jobTitle}} at <u>{{company}}</u>. I work hard on my tasks to help tech team in every aspects : Tech Stack, Dev Practices, Product Management, Testing, Deployment, etc.",
         '3': "As a Freelance, I do the same thing with a customer level of expertise. <u>I'm focusing on delivery, quality and advices on your online strategy</u>. With my SEO/SEA expertise, I can advice you some strategies to make you website as we can on 1st page of Google.",
-        '4': 'You can find me on Twitter (@qlaffont) where sometimes I share my thoughts about my work and my life. On my Github (@qlaffont), you can found some of my open source libraries / projects. On my Discord server, you can contact me and sometimes I share some advices / tech news that I think are interesting.',
+        '4': 'You can find me on my Discord where sometimes I share my thoughts about my work and my life. On my Github (@qlaffont), you can found some of my open source libraries / projects. On my Discord server, you can contact me and sometimes I share some advices / tech news that I think are interesting.',
       },
       cv: 'Download Resume',
       experiences: 'My experiences',

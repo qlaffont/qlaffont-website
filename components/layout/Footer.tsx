@@ -10,9 +10,6 @@ export const Footer = () => {
         <a href="https://github.com/qlaffont/qlaffont-website/" target="_blank" rel="noreferrer" className="text-xs">
           {t('components.layout.footer.source')}
         </a>
-        <a href="https://twitter.com/qlaffont" target="_blank" rel="noreferrer">
-          <i className="brand icon-twitter mask-center block h-6 w-6 bg-gray-700 hover:opacity-60 dark:bg-gray-400" />
-        </a>
         <a href="https://www.linkedin.com/in/qlaffont" target="_blank" rel="noreferrer">
           <i className="brand icon-linkedin mask-center block h-6 w-4 bg-gray-700 hover:opacity-60 dark:bg-gray-400" />
         </a>
