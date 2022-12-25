@@ -67,7 +67,7 @@ const News = ({ data }: { data: News[] }) => {
                           height="200"
                           width="400"
                           alt={`${article.title} cover`}
-                          className="mx-auto"
+                          className="mx-auto max-h-[200px]"
                         />
                       </div>
                     ) : (
