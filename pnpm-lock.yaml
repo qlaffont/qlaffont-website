@@ -18,7 +18,7 @@ specifiers:
   autoprefixer: 10.4.13
   clsx: 1.2.1
   color-hash: 2.0.2
-  commitlint: 17.4.0
+  commitlint: 17.4.1
   date-fns: 2.29.3
   eslint: 8.31.0
   eslint-config-next: 13.1.1
@@ -76,7 +76,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.48.0_iukboom6ndih5an6iafl45j2fe
   animate.css: 4.1.1
   autoprefixer: 10.4.13
-  commitlint: 17.4.0_@types+node@18.11.18
+  commitlint: 17.4.1
   eslint: 8.31.0
   eslint-config-next: 13.1.1_iukboom6ndih5an6iafl45j2fe
   eslint-config-prettier: 8.6.0_eslint@8.31.0
@@ -147,14 +147,14 @@ packages:
       regenerator-runtime: 0.12.1
     dev: true
 
-  /@commitlint/cli/17.4.0_@types+node@18.11.18:
-    resolution: {integrity: sha512-SEY4sYe8yVlgxPP7X0wJb96DBAGBPsCsy6QbqJt/UECbIAjDeDV5xXBV4jnS7T/qMC10sk6Ub9kDhEX0VWvblw==}
+  /@commitlint/cli/17.4.1:
+    resolution: {integrity: sha512-W8OJwz+izY+fVwyUt1HveCDmABMZNRVZHSVPw/Bh9Y62tp11SmmQaycgbsYLMiMy7JGn4mAJqEGlSHS9Uti9ZQ==}
     engines: {node: '>=v14'}
     hasBin: true
     dependencies:
       '@commitlint/format': 17.4.0
       '@commitlint/lint': 17.4.0
-      '@commitlint/load': 17.4.0_@types+node@18.11.18
+      '@commitlint/load': 17.4.1
       '@commitlint/read': 17.4.0
       '@commitlint/types': 17.4.0
       execa: 5.1.1
@@ -165,7 +165,6 @@ packages:
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
-      - '@types/node'
     dev: true
 
   /@commitlint/config-conventional/17.4.0:
@@ -226,14 +225,15 @@ packages:
       '@commitlint/types': 17.4.0
     dev: true
 
-  /@commitlint/load/17.4.0_@types+node@18.11.18:
-    resolution: {integrity: sha512-wDKNvAJqukqZqKmhRlf3KNo/12QGo1AQcd80EbV01SxtGvyHOsJ/g+/IbrZpopZv8rvzmEVktcpfDYH6ITepFA==}
+  /@commitlint/load/17.4.1:
+    resolution: {integrity: sha512-6A7/LhIaQpL4ieciIDcVvK2d5z/UI1GBrtDaHm6sQSCL0265clB2/F7XKQNTJHXv9yG4LByT2r+QCpM4GugIfw==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/config-validator': 17.4.0
       '@commitlint/execute-rule': 17.4.0
       '@commitlint/resolve-extends': 17.4.0
       '@commitlint/types': 17.4.0
+      '@types/node': 18.11.18
       chalk: 4.1.2
       cosmiconfig: 8.0.0
       cosmiconfig-typescript-loader: 4.0.0_bxtyj3et3xbsdyxhh3oblnfbj4
@@ -246,7 +246,6 @@ packages:
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
-      - '@types/node'
     dev: true
 
   /@commitlint/message/17.4.0:
@@ -1326,17 +1325,16 @@ packages:
       uuidv4: 2.0.0
     dev: true
 
-  /commitlint/17.4.0_@types+node@18.11.18:
-    resolution: {integrity: sha512-ec+KR2iBx0NVxkUvgbG19ZAZhFUyXlhrvFpJhcijXn7oVIzorlxHLMdXrC5iUAs4+3GkL/c/IMd0ZqXYVjnJJg==}
+  /commitlint/17.4.1:
+    resolution: {integrity: sha512-stTT0LYdoIUMstnaqwuVzwb7ujVWvw/1qLxFNY9jFlwX8/kLMEWX0iFOPMeiLRda4T90beNExWFc8mPe98tLzQ==}
     engines: {node: '>=v14'}
     hasBin: true
     dependencies:
-      '@commitlint/cli': 17.4.0_@types+node@18.11.18
+      '@commitlint/cli': 17.4.1
       '@commitlint/types': 17.4.0
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
-      - '@types/node'
     dev: true
 
   /compare-func/2.0.0:
