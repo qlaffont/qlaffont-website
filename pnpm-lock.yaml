@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/config-conventional': 17.4.2
-  '@headlessui/react': 1.7.8
+  '@headlessui/react': 1.7.9
   '@notionhq/client': 2.2.3
   '@tailwindcss/forms': 0.5.3
   '@tailwindcss/line-clamp': 0.4.2
@@ -46,7 +46,7 @@ specifiers:
   usehooks-ts: 2.9.1
 
 dependencies:
-  '@headlessui/react': 1.7.8_biqbaboplfbrettd7655fr4n2y
+  '@headlessui/react': 1.7.9_biqbaboplfbrettd7655fr4n2y
   '@notionhq/client': 2.2.3
   clsx: 1.2.1
   color-hash: 2.0.2
@@ -339,8 +339,8 @@ packages:
       - supports-color
     dev: true
 
-  /@headlessui/react/1.7.8_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-zcwb0kd7L05hxmoAMIioEaOn235Dg0fUO+iGbLPgLVSjzl/l39V6DTpC2Df49PE5aG5/f5q0PZ9ZHZ78ENNV+A==}
+  /@headlessui/react/1.7.9_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Bobh/+mDciu8kEE2hvdukFYjbfaG4MEkK/6TjWOgqcODLKYpRhWPKPE+dCcCSz/YrwjFVrEAMOiWtfk6sW20/w==}
     engines: {node: '>=10'}
     peerDependencies:
       react: ^16 || ^17 || ^18
