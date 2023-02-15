@@ -37,7 +37,7 @@ specifiers:
   react-dom: 18.2.0
   react-scroll-to-top: 3.0.0
   react-transition-group: 4.4.5
-  rosetty-react: 1.4.81
+  rosetty-react: 1.4.82
   sass: 1.58.1
   tailwind: 4.0.0
   tailwind-animatecss: 1.0.0
@@ -58,7 +58,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-scroll-to-top: 3.0.0_react@18.2.0
   react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
-  rosetty-react: 1.4.81
+  rosetty-react: 1.4.82
   sass: 1.58.1
   usehooks-ts: 2.9.1_biqbaboplfbrettd7655fr4n2y
 
@@ -4227,15 +4227,15 @@ packages:
       templite: 1.2.0
     dev: false
 
-  /rosetty-react/1.4.81:
-    resolution: {integrity: sha512-WAXXBtCe0di2xdOcTUbMI3ULOQu4xUSvjCDdmgABUIpLGWHixpvWMys8WQ+rLEVMCapWcMwvwUdow/iEFGJtaw==}
+  /rosetty-react/1.4.82:
+    resolution: {integrity: sha512-BQKG2b7jR9wRQLrLWxVEylHnf2FQAadffvFM10DV2Mg7cAzIZz+RLPjf+nEkF8fzktZ7Qt8eS2tVxRptOABMBg==}
     engines: {node: '>=10'}
     dependencies:
-      rosetty: 1.4.1
+      rosetty: 1.4.84
     dev: false
 
-  /rosetty/1.4.1:
-    resolution: {integrity: sha512-AlGMNngAcYqQXrjbHrCOA7A51GkGET2afhEGyObSx1rImTBP+hrZx31wtIWgp+I7W4zIJKUMoRnnxSi6EOCDKg==}
+  /rosetty/1.4.84:
+    resolution: {integrity: sha512-NdlnDdKieH/5knmEMC34ZvsKcsPejyv642NuKZ71QIcu8XfU9o6gTfs0lREeoYyQ038ToBDckmgyUPDK7a/3Cw==}
     engines: {node: '>=10'}
     dependencies:
       date-fns: 2.29.3
