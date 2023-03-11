@@ -12,7 +12,7 @@ import { useI18n } from '../i18n/useI18n';
 import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
 
 export async function getStaticProps() {
-  // Data Source : https://swamp-promotion-e4e.notion.site/3710d9123b314a0591997255fe100897
+  // Data Source : https://qlaffont.notion.site/3710d9123b314a0591997255fe100897
   const results = await getAllFieldsFromNotion('3710d9123b314a0591997255fe100897');
 
   return {

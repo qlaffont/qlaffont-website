@@ -13,7 +13,7 @@ import { normalize } from '../services/textUtils/normalizeString';
 const colorHash = new ColorHash({ saturation: 0.5 });
 
 export async function getStaticProps() {
-  // Data Source : https://swamp-promotion-e4e.notion.site/ad90bac785dc4d3a9eebf91fa542573a
+  // Data Source : https://qlaffont.notion.site/ad90bac785dc4d3a9eebf91fa542573a
   const results = await getAllFieldsFromNotion('ad90bac785dc4d3a9eebf91fa542573a');
 
   return {

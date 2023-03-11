@@ -28,8 +28,8 @@ const devTechnologies = [
 const otherTechnologies = ['Agile SCRUM', 'Debian', 'AWS', 'DevOps', 'Docker', 'Unifi Network', 'Wordpress'];
 
 export async function getStaticProps() {
-  // Data Source : https://swamp-promotion-e4e.notion.site/39513d6c0e1b4935a65f61b6a11ee0f4
-  // Data Source : https://swamp-promotion-e4e.notion.site/ad72018aa75b466193019a61c5331d7f
+  // Data Source : https://qlaffont.notion.site/39513d6c0e1b4935a65f61b6a11ee0f4
+  // Data Source : https://qlaffont.notion.site/ad72018aa75b466193019a61c5331d7f
   const [resultExps, resultDiplomas] = await Promise.all([
     getAllFieldsFromNotion('39513d6c0e1b4935a65f61b6a11ee0f4'),
     getAllFieldsFromNotion('ad72018aa75b466193019a61c5331d7f'),
