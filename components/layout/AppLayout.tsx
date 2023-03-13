@@ -50,18 +50,20 @@ const LinkItem = ({ title, href, isActive }: LinkType & { isActive: boolean }) =
   const { t } = useI18n();
 
   return (
-    <Link href={href} passHref>
-      <a className="hidden rounded-full p-1 hover:bg-gray-100 dark:hover:bg-[#151519] sm:px-6 sm:py-2 md:inline-block">
-        <span
-          className={clsx(
-            isActive ? 'm-1 border-b-2 border-sky-500 py-1 !font-semibold' : '',
-            'font-medium',
-            'font-rubik',
-          )}
-        >
-          {t(title as 'navbar.home')}
-        </span>
-      </a>
+    <Link
+      href={href}
+      passHref
+      className="hidden rounded-full p-1 hover:bg-gray-100 dark:hover:bg-[#151519] sm:px-6 sm:py-2 md:inline-block"
+    >
+      <span
+        className={clsx(
+          isActive ? 'm-1 border-b-2 border-sky-500 py-1 !font-semibold' : '',
+          'font-medium',
+          'font-rubik',
+        )}
+      >
+        {t(title as 'navbar.home')}
+      </span>
     </Link>
   );
 };
@@ -77,7 +79,7 @@ const LinkItemMobile = ({ title, href, isActive }: LinkType & { isActive: boolea
         push(href);
       }}
     >
-      <a
+      <div
         className={clsx(
           'rounded-full py-1 px-4 md:inline-block',
           isActive ? 'bg-gray-100 dark:bg-[#151519]' : '',
@@ -87,7 +89,7 @@ const LinkItemMobile = ({ title, href, isActive }: LinkType & { isActive: boolea
         <span className={clsx(isActive ? ' !font-semibold' : '', 'font-medium', 'font-rubik')}>
           {t(title as 'navbar.home')}
         </span>
-      </a>
+      </div>
     </button>
   );
 };

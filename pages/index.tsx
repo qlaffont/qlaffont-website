@@ -13,7 +13,7 @@ export async function getStaticProps() {
   }[];
   //Get only companies who haven't Date To
 
-  const companyNames = results
+  const companyNames = (results || [])
     .filter((exp) => exp['Date To'] === undefined)
     .reduce((prev, exp) => `${prev}, ${exp.Company}`, '')
     .slice(2);
@@ -62,10 +62,12 @@ const Home = ({ companyNames }: { companyNames: string }) => {
                 {t('pages.home.contactMe')}
               </button>
             </a>
-            <Link href="/about" passHref>
-              <a className="w-full rounded-full border bg-gray-200 py-3 px-2 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12">
-                {t('pages.home.moreAbouteMe')}
-              </a>
+            <Link
+              href="/about"
+              passHref
+              className="w-full rounded-full border bg-gray-200 py-3 px-2 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
+            >
+              {t('pages.home.moreAbouteMe')}
             </Link>
           </div>
         </div>

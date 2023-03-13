@@ -22,7 +22,10 @@ export async function getStaticProps() {
   ]);
 
   return {
-    props: { exps: JSON.parse(JSON.stringify(resultExps)), educations: JSON.parse(JSON.stringify(resultDiplomas)) },
+    props: {
+      exps: JSON.parse(JSON.stringify(resultExps || [])),
+      educations: JSON.parse(JSON.stringify(resultDiplomas || [])),
+    },
     // revalidate: 60 * 60 * 24, // 24 hours
   };
 }
@@ -92,8 +95,8 @@ const About = ({
               dangerouslySetInnerHTML={{
                 __html: HTMLStyleText(
                   t('pages.about.presentation.2', {
-                    jobTitle: experiences[0].jobTitle,
-                    company: experiences[0].company,
+                    jobTitle: experiences?.length > 0 ? experiences[0].jobTitle : '',
+                    company: experiences?.length > 0 ? experiences[0].company : '',
                   })!,
                 ),
               }}
@@ -117,15 +120,15 @@ const About = ({
             </div>
 
             <div className="text-center">
-              <Link passHref href="/cv">
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mx-auto flex w-max items-center gap-1 rounded-full border bg-gray-200 py-3 px-6 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
-                >
-                  <i className="icon icon-download h-5 w-5 bg-black dark:bg-white"></i>
-                  <p>{t('pages.about.cv')}</p>
-                </a>
+              <Link
+                passHref
+                href="/cv"
+                target="_blank"
+                rel="noreferrer"
+                className="mx-auto flex w-max items-center gap-1 rounded-full border bg-gray-200 py-3 px-6 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
+              >
+                <i className="icon icon-download h-5 w-5 bg-black dark:bg-white"></i>
+                <p>{t('pages.about.cv')}</p>
               </Link>
             </div>
           </div>

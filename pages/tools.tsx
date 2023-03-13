@@ -17,7 +17,7 @@ export async function getStaticProps() {
   const results = await getAllFieldsFromNotion('ad90bac785dc4d3a9eebf91fa542573a');
 
   return {
-    props: { data: JSON.parse(JSON.stringify(results)) },
+    props: { data: JSON.parse(JSON.stringify(results || [])) },
     // revalidate: 60 * 60 * 24, // 24 hours
   };
 }

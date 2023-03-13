@@ -5,6 +5,10 @@ export const getAllFieldsFromNotion = async (
   prevResults: string[] = [],
   start_cursor?: string,
 ): Promise<unknown> => {
+  if (process.env.NEXT_PUBLIC_TEST) {
+    return undefined;
+  }
+
   const notion = new Client({
     auth: process.env.NOTION_TOKEN,
   });
