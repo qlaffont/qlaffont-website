@@ -62,10 +62,14 @@ const Projects = ({
           {projects.map((project, index) => {
             const LayoutProject = ({ children, ...props }: React.PropsWithChildren & { className: string }) =>
               project?.link ? (
-                <Link href={project.link} passHref>
-                  <a target="_blank" {...props} className={clsx(props?.className || '', 'hover:opacity-60')}>
-                    {children}
-                  </a>
+                <Link
+                  href={project.link}
+                  passHref
+                  target="_blank"
+                  {...props}
+                  className={clsx(props?.className || '', 'hover:opacity-60')}
+                >
+                  {children}
                 </Link>
               ) : (
                 <div {...props}>{children}</div>
