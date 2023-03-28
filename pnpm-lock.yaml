@@ -37,7 +37,7 @@ specifiers:
   react-dom: 18.2.0
   react-scroll-to-top: 3.0.0
   react-transition-group: 4.4.5
-  rosetty-react: 1.4.100
+  rosetty-react: 1.4.101
   sass: 1.60.0
   tailwind: 4.0.0
   tailwind-animatecss: 1.0.0
@@ -58,7 +58,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-scroll-to-top: 3.0.0_react@18.2.0
   react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
-  rosetty-react: 1.4.100
+  rosetty-react: 1.4.101
   sass: 1.60.0
   usehooks-ts: 2.9.1_biqbaboplfbrettd7655fr4n2y
 
@@ -4244,8 +4244,8 @@ packages:
       templite: 1.2.0
     dev: false
 
-  /rosetty-react/1.4.100:
-    resolution: {integrity: sha512-CetsQL8A1MhjOVpO1mSMTIHPR8x+2XpT/TlrhJpHjN4En36ioRbDfFWrPTyR1oZ00nBAToYKJ2xejvT1wHipUA==}
+  /rosetty-react/1.4.101:
+    resolution: {integrity: sha512-f+7EvWeE6Q3zoMpj8USXuSQ2PthnYBQn+fjznlnIey+8hGjGDnxVygEjAsaaI7r4RyGU08g6yZRqSL7NoEws1w==}
     engines: {node: '>=10'}
     dependencies:
       rosetty: 1.4.84
