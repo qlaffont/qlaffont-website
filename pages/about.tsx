@@ -125,7 +125,7 @@ const About = ({
                 href="/cv"
                 target="_blank"
                 rel="noreferrer"
-                className="mx-auto flex w-max items-center gap-1 rounded-full border bg-gray-200 py-3 px-6 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
+                className="mx-auto flex w-max items-center gap-1 rounded-full border bg-gray-200 px-6 py-3 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
               >
                 <i className="icon icon-download h-5 w-5 bg-black dark:bg-white"></i>
                 <p>{t('pages.about.cv')}</p>
@@ -180,7 +180,7 @@ const About = ({
                 <div>
                   <i className="icon icon-website mx-auto block h-12 w-12 bg-sky-500" />
                 </div>
-                <p className="mt-3 mb-1 block font-rubik text-lg font-bold">
+                <p className="mb-1 mt-3 block font-rubik text-lg font-bold">
                   {t('pages.about.servicesDetails.website.title')}
                 </p>
                 <p className="text-justify">{t('pages.about.servicesDetails.website.description')}</p>
@@ -190,7 +190,7 @@ const About = ({
                 <div>
                   <i className="icon icon-desktop mx-auto block h-12 w-12 bg-gray-500 dark:bg-white" />
                 </div>
-                <p className="mt-3 mb-1 block font-rubik text-lg font-bold">
+                <p className="mb-1 mt-3 block font-rubik text-lg font-bold">
                   {t('pages.about.servicesDetails.application.title')}
                 </p>
                 <p className="text-justify">{t('pages.about.servicesDetails.application.description')}</p>
@@ -200,7 +200,7 @@ const About = ({
                 <div>
                   <i className="brand icon-discord mx-auto block h-12 w-12 bg-discord" />
                 </div>
-                <p className="mt-3 mb-1 block font-rubik text-lg font-bold">
+                <p className="mb-1 mt-3 block font-rubik text-lg font-bold">
                   {t('pages.about.servicesDetails.discord.title')}
                 </p>
                 <p className="text-justify">{t('pages.about.servicesDetails.discord.description')}</p>
@@ -224,7 +224,7 @@ const About = ({
                     rel="noreferrer"
                     className="mx-auto inline-block w-full md:w-auto"
                   >
-                    <div className="flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] py-3 px-2 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
+                    <div className="flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
                       <span className="icon icon-mail block h-4 w-4 bg-white dark:bg-black"></span>{' '}
                       <span>contact@qlaffont.com</span>
                     </div>
@@ -235,14 +235,14 @@ const About = ({
                     rel="noreferrer"
                     className="mx-auto inline-block w-full md:w-auto"
                   >
-                    <div className="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] py-3 px-2 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
+                    <div className="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
                       <span className="icon icon-phone block h-4 w-4 bg-white dark:bg-black"></span>{' '}
                       <span>+33 6 29 86 98 41</span>
                     </div>
                   </a>
                 </div>
               </div>
-              <div className="absolute top-0 left-0 z-0 h-96 w-full rounded-3xl bg-black opacity-60"></div>
+              <div className="absolute left-0 top-0 z-0 h-96 w-full rounded-3xl bg-black opacity-60"></div>
             </div>
           </div>
         </div>

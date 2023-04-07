@@ -101,7 +101,7 @@ const CV = ({
         <div className="flex h-max w-max flex-wrap items-center justify-center gap-3">
           <button
             type="button"
-            className="flex w-max items-center gap-1 rounded-full border bg-gray-200 py-3 px-6 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
+            className="flex w-max items-center gap-1 rounded-full border bg-gray-200 px-6 py-3 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
             onClick={() => {
               changeLang('fr');
 
@@ -114,7 +114,7 @@ const CV = ({
 
           <button
             type="button"
-            className="flex w-max items-center gap-1 rounded-full border bg-gray-200 py-3 px-6 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
+            className="flex w-max items-center gap-1 rounded-full border bg-gray-200 px-6 py-3 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
             onClick={() => {
               changeLang('en');
 
@@ -213,7 +213,7 @@ const CV = ({
                     key={index}
                     className={clsx('relative border-l border-black pl-5', index !== 5 ? 'pb-4' : 'pb-1')}
                   >
-                    <div className="absolute top-1 -left-[4.3px] ">
+                    <div className="absolute -left-[4.3px] top-1 ">
                       <img src="/icons/circle.svg" className="h-2 w-2 rounded-full " alt="circle exp" />
                     </div>
                     <p className="font-rubik font-semibold line-clamp-2">{experience.jobTitle}</p>

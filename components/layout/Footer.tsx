@@ -3,7 +3,7 @@ import { useI18n } from '../../i18n/useI18n';
 export const Footer = () => {
   const { t } = useI18n();
   return (
-    <footer className="mt-12 mb-6 flex shrink-0 flex-wrap items-center justify-between">
+    <footer className="mb-6 mt-12 flex shrink-0 flex-wrap items-center justify-between">
       <p className="text-xs italic">© {new Date().getFullYear()} Quentin Laffont</p>
 
       <div className="flex items-center space-x-6">

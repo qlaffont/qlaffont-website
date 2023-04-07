@@ -81,7 +81,7 @@ const LinkItemMobile = ({ title, href, isActive }: LinkType & { isActive: boolea
     >
       <div
         className={clsx(
-          'rounded-full py-1 px-4 md:inline-block',
+          'rounded-full px-4 py-1 md:inline-block',
           isActive ? 'bg-gray-100 dark:bg-[#151519]' : '',
           'hover:bg-gray-100 dark:hover:bg-[#151519]',
         )}
@@ -169,7 +169,7 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
               >
                 <Menu.Items
                   className={
-                    'absolute top-0 right-0  w-[80vw] max-w-[100vw] rounded-lg bg-white p-6 shadow-lg dark:bg-[#1E1D24] dark:text-gray-400'
+                    'absolute right-0 top-0  w-[80vw] max-w-[100vw] rounded-lg bg-white p-6 shadow-lg dark:bg-[#1E1D24] dark:text-gray-400'
                   }
                 >
                   {links.map((link, index) => (
@@ -177,7 +177,7 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
                       <LinkItemMobile {...link} key={index} isActive={isLinkActive(link.href, asPath)} />
                     </Menu.Item>
                   ))}
-                  <Menu.Item as="div" className={'absolute top-1 right-1'}>
+                  <Menu.Item as="div" className={'absolute right-1 top-1'}>
                     <button
                       className="m-1 rounded-full bg-gray-100 p-2 hover:opacity-50 dark:bg-[#151519]"
                       aria-label="close-navbar"

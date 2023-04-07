@@ -84,7 +84,7 @@ const Gaming = ({
                 <a
                   target="_blank"
                   href="https://www.twitch.tv/mirardes"
-                  className="w-full rounded-full border bg-gray-200 py-3 px-12 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
+                  className="w-full rounded-full border bg-gray-200 px-12 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
                   rel="noreferrer"
                 >
                   {t('pages.gaming.twitch')}
@@ -95,7 +95,7 @@ const Gaming = ({
                 <a
                   target="_blank"
                   href="https://streamelements.com/mirardes/tip"
-                  className="w-full rounded-full border bg-gray-200 py-3 px-12 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
+                  className="w-full rounded-full border bg-gray-200 px-12 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
                   rel="noreferrer"
                 >
                   {t('pages.gaming.donation')}
