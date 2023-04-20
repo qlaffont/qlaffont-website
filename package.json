@@ -32,7 +32,7 @@
     "@tailwindcss/line-clamp": "0.4.4",
     "@types/color-hash": "1.0.2",
     "@types/lodash": "4.14.194",
-    "@types/node": "18.15.11",
+    "@types/node": "18.15.12",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
     "@types/react-transition-group": "4.4.5",
