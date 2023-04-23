@@ -64,8 +64,8 @@ devDependencies:
     specifier: 4.14.194
     version: 4.14.194
   '@types/node':
-    specifier: 18.15.13
-    version: 18.15.13
+    specifier: 18.16.0
+    version: 18.16.0
   '@types/react':
     specifier: 18.0.38
     version: 18.0.38
@@ -274,15 +274,15 @@ packages:
       '@commitlint/execute-rule': 17.4.0
       '@commitlint/resolve-extends': 17.4.4
       '@commitlint/types': 17.4.4
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       chalk: 4.1.2
       cosmiconfig: 8.0.0
-      cosmiconfig-typescript-loader: 4.0.0(@types/node@18.15.13)(cosmiconfig@8.0.0)(ts-node@10.9.1)(typescript@5.0.4)
+      cosmiconfig-typescript-loader: 4.0.0(@types/node@18.16.0)(cosmiconfig@8.0.0)(ts-node@10.9.1)(typescript@5.0.4)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@types/node@18.15.13)(typescript@5.0.4)
+      ts-node: 10.9.1(@types/node@18.16.0)(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
       - '@swc/core'
@@ -648,12 +648,12 @@ packages:
   /@types/node-fetch@2.6.2:
     resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
     dependencies:
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       form-data: 3.0.1
     dev: false
 
-  /@types/node@18.15.13:
-    resolution: {integrity: sha512-N+0kuo9KgrUQ1Sn/ifDXsvg0TTleP7rIy4zOBGECxAljqvqfqpTfzx0Q1NUedOixRMBfe2Whhb056a42cWs26Q==}
+  /@types/node@18.16.0:
+    resolution: {integrity: sha512-BsAaKhB+7X+H4GnSjGhJG9Qi8Tw+inU9nJDwmD5CgOmBLEI6ArdhikpLX7DjbjDRDTbqZzU2LSQNZg8WGPiSZQ==}
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -1480,7 +1480,7 @@ packages:
       vary: 1.1.2
     dev: true
 
-  /cosmiconfig-typescript-loader@4.0.0(@types/node@18.15.13)(cosmiconfig@8.0.0)(ts-node@10.9.1)(typescript@5.0.4):
+  /cosmiconfig-typescript-loader@4.0.0(@types/node@18.16.0)(cosmiconfig@8.0.0)(ts-node@10.9.1)(typescript@5.0.4):
     resolution: {integrity: sha512-cVpucSc2Tf+VPwCCR7SZzmQTQkPbkk4O01yXsYqXBIbjE1bhwqSyAgYQkRK1un4i0OPziTleqFhdkmOc4RQ/9g==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -1489,9 +1489,9 @@ packages:
       ts-node: '>=10'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       cosmiconfig: 8.0.0
-      ts-node: 10.9.1(@types/node@18.15.13)(typescript@5.0.4)
+      ts-node: 10.9.1(@types/node@18.16.0)(typescript@5.0.4)
       typescript: 5.0.4
     dev: true
 
@@ -3802,7 +3802,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.18
-      ts-node: 10.9.1(@types/node@18.15.13)(typescript@5.0.4)
+      ts-node: 10.9.1(@types/node@18.16.0)(typescript@5.0.4)
       yaml: 1.10.2
     dev: true
 
@@ -4757,7 +4757,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-node@10.9.1(@types/node@18.15.13)(typescript@5.0.4):
+  /ts-node@10.9.1(@types/node@18.16.0)(typescript@5.0.4):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -4776,7 +4776,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
