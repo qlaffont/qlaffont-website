@@ -210,6 +210,7 @@ const About = ({
             <div
               className="relative !mt-16 h-96 rounded-3xl"
               style={{ background: "url('/imgs/bg-pro.jpg') center center", backgroundClip: 'content-box' }}
+              id="contact"
             >
               <div className="sticky z-50 flex h-96 items-center justify-center text-center">
                 <div className="max-w-md">

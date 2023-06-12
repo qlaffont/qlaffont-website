@@ -41,6 +41,7 @@ const lng = {
       footer: {
         source: 'See Source',
       },
+      available: 'I am currently available for a new mission ! Contact me !',
     },
   },
   pages: {

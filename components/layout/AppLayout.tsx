@@ -98,9 +98,11 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
   const { asPath } = useRouter();
   const { isDarkMode, toggle } = useDark();
   const { value: darkMode, setValue: setDarkMode } = useBoolean();
-  const { actualLang, changeLang } = useI18n();
+  const { actualLang, changeLang, t } = useI18n();
   const { isBrowser } = useSsr();
   useI18nSEO();
+
+  const currentlyAvailable = true;
 
   useEffect(() => {
     if (isBrowser) {
@@ -190,6 +192,12 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
             </Menu>
           </div>
         </div>
+
+        {currentlyAvailable && (
+          <a href="/about#contact" className="my-4 block animate-pulse rounded-lg bg-error p-2 text-center text-white">
+            {t('components.layout.available')}
+          </a>
+        )}
 
         {children}
       </div>

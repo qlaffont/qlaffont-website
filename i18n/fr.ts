@@ -43,6 +43,7 @@ const lng: typeof enDict = {
       footer: {
         source: 'Voir le code',
       },
+      available: 'Je suis actuellement disponible pour une nouvelle mission ! Contactez moi !',
     },
   },
   pages: {
