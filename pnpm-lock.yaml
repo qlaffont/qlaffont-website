@@ -25,7 +25,7 @@ dependencies:
     version: 4.17.21
   next:
     specifier: 13.4.4
-    version: 13.4.4(react-dom@18.2.0)(react@18.2.0)(sass@1.63.2)
+    version: 13.4.4(react-dom@18.2.0)(react@18.2.0)(sass@1.63.3)
   next-seo:
     specifier: 6.0.0
     version: 6.0.0(next@13.4.4)(react-dom@18.2.0)(react@18.2.0)
@@ -45,8 +45,8 @@ dependencies:
     specifier: 1.4.141
     version: 1.4.141
   sass:
-    specifier: 1.63.2
-    version: 1.63.2
+    specifier: 1.63.3
+    version: 1.63.3
   usehooks-ts:
     specifier: 2.9.1
     version: 2.9.1(react-dom@18.2.0)(react@18.2.0)
@@ -3425,12 +3425,12 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      next: 13.4.4(react-dom@18.2.0)(react@18.2.0)(sass@1.63.2)
+      next: 13.4.4(react-dom@18.2.0)(react@18.2.0)(sass@1.63.3)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /next@13.4.4(react-dom@18.2.0)(react@18.2.0)(sass@1.63.2):
+  /next@13.4.4(react-dom@18.2.0)(react@18.2.0)(sass@1.63.3):
     resolution: {integrity: sha512-C5S0ysM0Ily9McL4Jb48nOQHT1BukOWI59uC3X/xCMlYIh9rJZCv7nzG92J6e1cOBqQbKovlpgvHWFmz4eKKEA==}
     engines: {node: '>=16.8.0'}
     hasBin: true
@@ -3455,7 +3455,7 @@ packages:
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      sass: 1.63.2
+      sass: 1.63.3
       styled-jsx: 5.1.1(react@18.2.0)
       zod: 3.21.4
     optionalDependencies:
@@ -4288,8 +4288,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass@1.63.2:
-    resolution: {integrity: sha512-u56TU0AIFqMtauKl/OJ1AeFsXqRHkgO7nCWmHaDwfxDo9GUMSqBA4NEh6GMuh1CYVM7zuROYtZrHzPc2ixK+ww==}
+  /sass@1.63.3:
+    resolution: {integrity: sha512-ySdXN+DVpfwq49jG1+hmtDslYqpS7SkOR5GpF6o2bmb1RL/xS+wvPmegMvMywyfsmAV6p7TgwXYGrCZIFFbAHg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
