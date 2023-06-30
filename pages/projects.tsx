@@ -78,13 +78,13 @@ const Projects = ({
             return (
               <LayoutProject key={index} className="flex flex-col space-y-3 ">
                 {project?.picture ? (
-                  <div className="flex h-[200px] w-full items-center justify-center">
+                  <div className="flex max-h-[200px] w-full items-center justify-center">
                     <Image
                       src={`/website/${project.picture}`}
                       height="200"
                       width="400"
                       alt={`${project.name} cover`}
-                      className="mx-auto"
+                      className="mx-auto !h-auto"
                     />
                   </div>
                 ) : (
