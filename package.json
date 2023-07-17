@@ -12,7 +12,7 @@
   "dependencies": {
     "@headlessui/react": "1.7.15",
     "@notionhq/client": "2.2.7",
-    "clsx": "1.2.1",
+    "clsx": "2.0.0",
     "color-hash": "2.0.2",
     "date-fns": "2.30.0",
     "lodash": "4.17.21",
