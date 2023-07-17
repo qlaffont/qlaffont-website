@@ -82,13 +82,13 @@ const News = ({ data }: { data: News[] }) => {
                   )}
 
                   <h2 className="w-max max-w-full">
-                    <span className="border-b border-sky-500 font-rubik text-base font-semibold uppercase line-clamp-1">
+                    <span className="line-clamp-1 border-b border-sky-500 font-rubik text-base font-semibold uppercase">
                       {article.title}
                     </span>
                   </h2>
                   <p className="text-sm italic text-gray-500">{format(new Date(article.dateAdded), 'MMM yyyy')}</p>
 
-                  <p className="text-justify line-clamp-3">{article.brief}</p>
+                  <p className="line-clamp-3 text-justify">{article.brief}</p>
                 </Link>
               );
             })}

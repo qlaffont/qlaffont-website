@@ -194,6 +194,7 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
         </div>
 
         {currentlyAvailable && (
+          // eslint-disable-next-line @next/next/no-html-link-for-pages
           <a href="/about#contact" className="my-4 block animate-pulse rounded-lg bg-error p-2 text-center text-white">
             {t('components.layout.available')}
           </a>

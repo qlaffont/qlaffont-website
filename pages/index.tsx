@@ -35,7 +35,7 @@ const Home = ({ companyNames }: { companyNames: string }) => {
           <div className="grid grid-cols-1 items-center gap-x-0 gap-y-3 text-center md:mt-24 md:grid-cols-6 md:gap-x-6 md:text-left">
             <div className="order-2 col-span-5 mb-5 md:order-1">
               <h1 className="text-3xl leading-tight md:leading-normal">
-                <i className="float-left pr-3 animatecss-infinite animatecss-slow animatecss animatecss-tada">👋</i>
+                <i className="float-left pr-3 animatecss animatecss-infinite animatecss-slow animatecss-tada">👋</i>
                 <p>
                   {t('pages.home.Im')} <span className="text-sky-500 dark:text-sky-400">Quentin</span>.{' '}
                   {t('pages.home.jobTitle', { company: companyNames })}.

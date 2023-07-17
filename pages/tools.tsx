@@ -51,7 +51,7 @@ const Tools = ({
               //@ts-ignore
               items: [...(prev[next.category]?.items || []), next],
             },
-          } as Record<string, { items: typeof tools }>),
+          }) as Record<string, { items: typeof tools }>,
         {},
       ),
     )
