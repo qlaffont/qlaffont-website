@@ -9,8 +9,8 @@ dependencies:
     specifier: 1.7.15
     version: 1.7.15(react-dom@18.2.0)(react@18.2.0)
   '@notionhq/client':
-    specifier: 2.2.7
-    version: 2.2.7
+    specifier: 2.2.8
+    version: 2.2.8
   clsx:
     specifier: 2.0.0
     version: 2.0.0
@@ -595,8 +595,8 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@notionhq/client@2.2.7:
-    resolution: {integrity: sha512-ackhUZiCTxsDacHPfnuwfJmo7fmi6Il6BK+YByCZM5NEXVIohyEBWm/r18OQkuJzJjeC6Q+Jhh+0yhxjvWq/cA==}
+  /@notionhq/client@2.2.8:
+    resolution: {integrity: sha512-tRA6fqi9CgeWFyBA4NLU4OLAqETxCO44J6R9fv93kJQtYDNiQ5IB5Oqz7kC+vLT6Mlxc2zqrJa5rgzLfRnbiSA==}
     engines: {node: '>=12'}
     dependencies:
       '@types/node-fetch': 2.6.2
