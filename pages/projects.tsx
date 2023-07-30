@@ -78,13 +78,12 @@ const Projects = ({
             return (
               <LayoutProject key={index} className="flex flex-col space-y-3 ">
                 {project?.picture ? (
-                  <div className="flex max-h-[200px] w-full items-center justify-center">
+                  <div className="relative aspect-video h-[200px]">
                     <Image
                       src={`/website/${project.picture}`}
-                      height="200"
-                      width="400"
                       alt={`${project.name} cover`}
-                      className="mx-auto !h-auto"
+                      fill
+                      className="object-contain"
                     />
                   </div>
                 ) : (
@@ -95,7 +94,6 @@ const Projects = ({
 
                 <h2 className="mx-auto block w-max ">
                   <span className="border-b border-sky-500 font-rubik text-base font-semibold uppercase">
-                    {' '}
                     {project.name}
                   </span>{' '}
                   - <span className="text-center text-sm font-semibold">{format(project.date, 'MMM yyyy')}</span>
