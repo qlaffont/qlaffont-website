@@ -1,4 +1,23 @@
 import { Client } from '@notionhq/client';
+import Redis from 'ioredis';
+import { NextApiResponse } from 'next';
+
+const redisURL = new URL(process.env.REDIS_URL!);
+const connectionObject = {
+  dialect: redisURL.protocol.split(':')[0],
+  database: redisURL.pathname.split('/')[1],
+  username: redisURL.username,
+  password: redisURL.password,
+  host: redisURL.hostname,
+  port: redisURL.port ? parseInt(redisURL.port, 10) : undefined,
+  schema: redisURL.searchParams.get('schema') || undefined,
+};
+
+const redis = new Redis(connectionObject);
+
+const notion = new Client({
+  auth: process.env.NOTION_TOKEN,
+});
 
 export const getAllFieldsFromNotion = async (
   database_id: string,
@@ -9,9 +28,12 @@ export const getAllFieldsFromNotion = async (
     return undefined;
   }
 
-  const notion = new Client({
-    auth: process.env.NOTION_TOKEN,
-  });
+  //Check if redis key existing
+  const key = `${database_id}_data`;
+
+  if (await redis.exists(key)) {
+    return JSON.parse((await redis.get(key)) as string);
+  }
 
   const page_size = 100;
 
@@ -72,6 +94,23 @@ export const getAllFieldsFromNotion = async (
       }),
     );
 
+    await redis.set(key, JSON.stringify(data));
+
     return data;
   }
+};
+
+export const invalidatePages = async (res: NextApiResponse) => {
+  const keys = await redis.keys('*');
+  for (const key of keys) {
+    await redis.del(key);
+  }
+
+  await res.revalidate('/about');
+  await res.revalidate('/cv');
+  await res.revalidate('/gaming');
+  await res.revalidate('/');
+  await res.revalidate('/news');
+  await res.revalidate('/projects');
+  await res.revalidate('/tools');
 };

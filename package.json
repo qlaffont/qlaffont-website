@@ -15,6 +15,7 @@
     "clsx": "2.0.0",
     "color-hash": "2.0.2",
     "date-fns": "2.30.0",
+    "ioredis": "^5.3.2",
     "lodash": "4.17.21",
     "next": "13.4.12",
     "next-seo": "6.1.0",

@@ -29,6 +29,12 @@ You need to duplicate .env.example to .env and replace with your values
 - Copy Token to .env
 - Precise your username in pages/news.tsx
 
+## Redis / Invalidation
+To reduce issue with Notion Rate limit, we use Redis as Data cache.
+You can force invalidation with /api/revalidate.
+
+To automate your website updates, you can use Zappier to automatically update your website as soon as a data is updated. More info : [https://zapier.com/shared/5163410c91f0b88704fc27f6fb59548549e6294a](https://zapier.com/shared/5163410c91f0b88704fc27f6fb59548549e6294a)
+
 ## Start (dev)
 
 ```sh
