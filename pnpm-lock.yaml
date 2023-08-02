@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/config-conventional': 17.6.7
   '@headlessui/react': 1.7.16
-  '@notionhq/client': 2.2.9
+  '@notionhq/client': 2.2.10
   '@tailwindcss/forms': 0.5.4
   '@tailwindcss/line-clamp': 0.4.4
   '@types/color-hash': 1.0.2
@@ -48,7 +48,7 @@ specifiers:
 
 dependencies:
   '@headlessui/react': 1.7.16_biqbaboplfbrettd7655fr4n2y
-  '@notionhq/client': 2.2.9
+  '@notionhq/client': 2.2.10
   clsx: 2.0.0
   color-hash: 2.0.2
   date-fns: 2.30.0
@@ -557,8 +557,8 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@notionhq/client/2.2.9:
-    resolution: {integrity: sha512-g/JKWTELNhe4SdJj5nBXNGB0tkOkOlOH81QSa3oG1855QWiRhOv/ti6LeWNWEPR3BettNztDv5zC/I05wDkFtg==}
+  /@notionhq/client/2.2.10:
+    resolution: {integrity: sha512-MggdzjB320UI2fUFR5XmUBbRBaqNr3QCBHQyK2CqbiO2T29p8RzzQBm5c7RJqvFhi7P0MaLjuY1CI8ypGEYssg==}
     engines: {node: '>=12'}
     dependencies:
       '@types/node-fetch': 2.6.4
