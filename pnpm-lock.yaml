@@ -28,7 +28,7 @@ specifiers:
   eslint-plugin-simple-import-sort: 10.0.0
   husky: 8.0.3
   ioredis: ^5.3.2
-  lint-staged: 13.3.0
+  lint-staged: 14.0.0
   lodash: 4.17.21
   next: 13.4.13
   next-seo: 6.1.0
@@ -86,7 +86,7 @@ devDependencies:
   eslint-plugin-prettier: 5.0.0_4yfyba5p2kiuemohe3j5rnttwm
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.47.0
   husky: 8.0.3
-  lint-staged: 13.3.0
+  lint-staged: 14.0.0
   prettier: 3.0.1
   prettier-plugin-tailwindcss: 0.5.2_prettier@3.0.1
   tailwind: 4.0.0
@@ -3224,8 +3224,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/13.3.0:
-    resolution: {integrity: sha512-mPRtrYnipYYv1FEE134ufbWpeggNTo+O/UPzngoaKzbzHAthvR55am+8GfHTnqNRQVRRrYQLGW9ZyUoD7DsBHQ==}
+  /lint-staged/14.0.0:
+    resolution: {integrity: sha512-0tLf0pqZYkar/wu3nTctk4rVIG+d7PanDYv4/IQR4qwdqfQkTDziLRFnqMcLuLBTuUqmcLwsHPD2EjQ18d/oaA==}
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
     dependencies:
