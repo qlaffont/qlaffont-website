@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { isBefore } from 'date-fns';
 import { isEmpty } from 'lodash';
 import { useEffect, useMemo, useState } from 'react';
 import { useSsr } from 'usehooks-ts';
@@ -9,6 +8,7 @@ import { DescriptionModal } from '../components/molecule/DescriptionModal';
 import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
+import { isBefore } from '../services/isBefore';
 import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
 
 export async function getStaticProps() {

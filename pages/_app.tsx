@@ -1,20 +1,22 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import '../scss/index.scss';
 
+import enGB from 'dayjs/locale/en-gb';
+import fr from 'dayjs/locale/fr';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import ScrollToTop from 'react-scroll-to-top';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
-import { locales, RosettyProvider } from 'rosetty-react';
+import { RosettyProvider } from 'rosetty-react';
 
 import { AppLayout } from '../components/layout/AppLayout';
 import enDict from '../i18n/en';
 import frDict from '../i18n/fr';
 
 const rosettyLocales = {
-  fr: { dict: frDict, locale: locales.fr },
-  en: { dict: enDict, locale: locales.enGB },
+  fr: { dict: frDict, locale: fr },
+  en: { dict: enDict, locale: enGB },
 };
 
 const MyApp = ({ Component, pageProps }: AppProps) => {

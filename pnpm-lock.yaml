@@ -19,7 +19,7 @@ specifiers:
   clsx: 2.0.0
   color-hash: 2.0.2
   commitlint: 17.7.1
-  date-fns: 2.30.0
+  dayjs: ^1.11.9
   eslint: 8.47.0
   eslint-config-next: 13.4.16
   eslint-config-prettier: 9.0.0
@@ -38,7 +38,7 @@ specifiers:
   react-dom: 18.2.0
   react-scroll-to-top: 3.0.0
   react-transition-group: 4.4.5
-  rosetty-react: 1.4.188
+  rosetty-react: 2.0.0
   sass: 1.65.1
   tailwind: 4.0.0
   tailwind-animatecss: 1.0.0
@@ -51,7 +51,7 @@ dependencies:
   '@notionhq/client': 2.2.11
   clsx: 2.0.0
   color-hash: 2.0.2
-  date-fns: 2.30.0
+  dayjs: 1.11.9
   ioredis: 5.3.2
   lodash: 4.17.21
   next: 13.4.16_vb2pl3v3c374f3zvbljtf72dhq
@@ -60,7 +60,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-scroll-to-top: 3.0.0_react@18.2.0
   react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
-  rosetty-react: 1.4.188
+  rosetty-react: 2.0.0
   sass: 1.65.1
   usehooks-ts: 2.9.1_biqbaboplfbrettd7655fr4n2y
 
@@ -1586,11 +1586,8 @@ packages:
       lodash: 4.17.5
     dev: true
 
-  /date-fns/2.30.0:
-    resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
-    engines: {node: '>=0.11'}
-    dependencies:
-      '@babel/runtime': 7.22.6
+  /dayjs/1.11.9:
+    resolution: {integrity: sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA==}
     dev: false
 
   /debug/2.6.9:
@@ -4362,18 +4359,18 @@ packages:
       templite: 1.2.0
     dev: false
 
-  /rosetty-react/1.4.188:
-    resolution: {integrity: sha512-xbT0SprRs0F8J7mp27bePmU3WE/AyXMpUIkoW8poa0mSLgQQnG9sa+As/3KQ+ST9w5iTfiCU1o6fRrmDQIK3QQ==}
+  /rosetty-react/2.0.0:
+    resolution: {integrity: sha512-4W9XSUk5BD7Xll0ybnhctlMfCra09pffXobF43Nkl5OI9CmNeLOsTSWc0Qrv1wOKQSMq9mrl/eJrl7KGFXXB4g==}
     engines: {node: '>=10'}
     dependencies:
-      rosetty: 1.4.149
+      rosetty: 2.0.0
     dev: false
 
-  /rosetty/1.4.149:
-    resolution: {integrity: sha512-DrCAQngNFDxfQP8Yj938Ine7mwepyVlHgX94Dryf3PZezYWDO4gZWullQ4DBbP7Iu8TTKA7GxuZgXF5gopcDzw==}
+  /rosetty/2.0.0:
+    resolution: {integrity: sha512-OuE3zuv2xGtsBp1CYkCSQqS6sEtnSF7gzUKXeMm0cTLc8lf8b0yt9ttEfjJyrqMNXJtoQ+HnVLUgrpzPkeS9tg==}
     engines: {node: '>=10'}
     dependencies:
-      date-fns: 2.30.0
+      dayjs: 1.11.9
       rosetta: 1.1.0
     dev: false
 

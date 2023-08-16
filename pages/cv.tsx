@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import clsx from 'clsx';
-import { isBefore } from 'date-fns';
 import { isEmpty } from 'lodash';
 import { useMemo } from 'react';
 
 import { useI18n } from '../i18n/useI18n';
+import { isBefore } from '../services/isBefore';
 import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
 import { PDFStyleText } from '../services/textUtils/HTMLStyleText';
 
