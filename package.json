@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@headlessui/react": "1.7.16",
+    "@headlessui/react": "1.7.17",
     "@notionhq/client": "2.2.11",
     "clsx": "2.0.0",
     "color-hash": "2.0.2",
