@@ -39,7 +39,7 @@ specifiers:
   react-scroll-to-top: 3.0.0
   react-transition-group: 4.4.5
   rosetty-react: 2.0.3
-  sass: 1.66.0
+  sass: 1.66.1
   tailwind: 4.0.0
   tailwind-animatecss: 1.0.0
   tailwindcss: 3.3.3
@@ -54,14 +54,14 @@ dependencies:
   dayjs: 1.11.9
   ioredis: 5.3.2
   lodash: 4.17.21
-  next: 13.4.19_ii6d63o7j2f7e323lxiza67e2u
+  next: 13.4.19_tmjnz6z74jqyaklcl2ti4hi67a
   next-seo: 6.1.0_m2l4knchnqa6bzxbbtfxlzoxdy
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scroll-to-top: 3.0.0_react@18.2.0
   react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
   rosetty-react: 2.0.3
-  sass: 1.66.0
+  sass: 1.66.1
   usehooks-ts: 2.9.1_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
@@ -3546,12 +3546,12 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      next: 13.4.19_ii6d63o7j2f7e323lxiza67e2u
+      next: 13.4.19_tmjnz6z74jqyaklcl2ti4hi67a
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /next/13.4.19_ii6d63o7j2f7e323lxiza67e2u:
+  /next/13.4.19_tmjnz6z74jqyaklcl2ti4hi67a:
     resolution: {integrity: sha512-HuPSzzAbJ1T4BD8e0bs6B9C1kWQ6gv8ykZoRWs5AQoiIuqbGHHdQO7Ljuvg05Q0Z24E2ABozHe6FxDvI6HfyAw==}
     engines: {node: '>=16.8.0'}
     hasBin: true
@@ -3573,7 +3573,7 @@ packages:
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      sass: 1.66.0
+      sass: 1.66.1
       styled-jsx: 5.1.1_react@18.2.0
       watchpack: 2.4.0
       zod: 3.21.4
@@ -4415,8 +4415,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass/1.66.0:
-    resolution: {integrity: sha512-C3U+RgpAAlTXULZkWwzfysgbbBBo8IZudNAOJAVBLslFbIaZv4MBPkTqhuvpK4lqgdoFiWhnOGMoV4L1FyOBag==}
+  /sass/1.66.1:
+    resolution: {integrity: sha512-50c+zTsZOJVgFfTgwwEzkjA3/QACgdNsKueWPyAR0mRINIvLAStVQBbPg14iuqEQ74NPDbXzJARJ/O4SI1zftA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
