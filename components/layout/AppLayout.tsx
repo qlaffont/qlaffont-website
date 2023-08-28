@@ -102,7 +102,7 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
   const { isBrowser } = useSsr();
   useI18nSEO();
 
-  const currentlyAvailable = true;
+  const currentlyAvailable = false;
 
   useEffect(() => {
     if (isBrowser) {
