@@ -96,7 +96,7 @@ const Projects = ({
                   <span className="border-b border-sky-500 font-rubik text-base font-semibold uppercase">
                     {project.name}
                   </span>{' '}
-                  - <span className="text-center text-sm font-semibold">{format(project.date, 'MMM yyyy')}</span>
+                  - <span className="text-center text-sm font-semibold">{format(project.date, 'MMM YYYY')}</span>
                 </h2>
 
                 <p className="grow text-justify">{project.description}</p>
