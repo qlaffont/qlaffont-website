@@ -11,7 +11,7 @@ specifiers:
   '@types/node': 18.18.0
   '@types/react': 18.2.23
   '@types/react-dom': 18.2.8
-  '@types/react-transition-group': 4.4.6
+  '@types/react-transition-group': 4.4.7
   '@typescript-eslint/eslint-plugin': 6.7.3
   '@typescript-eslint/parser': 6.7.3
   animate.css: 4.1.1
@@ -73,7 +73,7 @@ devDependencies:
   '@types/node': 18.18.0
   '@types/react': 18.2.23
   '@types/react-dom': 18.2.8
-  '@types/react-transition-group': 4.4.6
+  '@types/react-transition-group': 4.4.7
   '@typescript-eslint/eslint-plugin': 6.7.3_ptdtxirkj6smbsapfa2xu7c5iq
   '@typescript-eslint/parser': 6.7.3_jk7qbkaijtltyu4ajmze3dfiwa
   animate.css: 4.1.1
@@ -665,8 +665,8 @@ packages:
       '@types/react': 18.2.23
     dev: true
 
-  /@types/react-transition-group/4.4.6:
-    resolution: {integrity: sha512-VnCdSxfcm08KjsJVQcfBmhEQAPnLB8G08hAxn39azX1qYBQ/5RVQuoHuKIcfKOdncuaUvEpFKFzEvbtIMsfVew==}
+  /@types/react-transition-group/4.4.7:
+    resolution: {integrity: sha512-ICCyBl5mvyqYp8Qeq9B5G/fyBSRC0zx3XM3sCC6KkcMsNeAHqXBKkmat4GqdJET5jtYUpZXrxI5flve5qhi2Eg==}
     dependencies:
       '@types/react': 18.2.23
     dev: true
