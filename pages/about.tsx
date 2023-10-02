@@ -89,7 +89,7 @@ const About = ({
 
         <div className="divide-y divide-dotted divide-gray-500/50">
           <div className="mb-12 space-y-6">
-            <p dangerouslySetInnerHTML={{ __html: HTMLStyleText(t('pages.about.presentation.1')!) }}></p>
+            <p dangerouslySetInnerHTML={{ __html: HTMLStyleText(t('pages.about.presentation.1')!) }}> COUCOU</p>
 
             <p
               dangerouslySetInnerHTML={{
