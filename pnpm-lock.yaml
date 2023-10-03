@@ -8,7 +8,7 @@ specifiers:
   '@tailwindcss/line-clamp': 0.4.4
   '@types/color-hash': 1.0.2
   '@types/lodash': 4.14.199
-  '@types/node': 18.18.1
+  '@types/node': 18.18.3
   '@types/react': 18.2.24
   '@types/react-dom': 18.2.8
   '@types/react-transition-group': 4.4.7
@@ -70,7 +70,7 @@ devDependencies:
   '@tailwindcss/line-clamp': 0.4.4_tailwindcss@3.3.3
   '@types/color-hash': 1.0.2
   '@types/lodash': 4.14.199
-  '@types/node': 18.18.1
+  '@types/node': 18.18.3
   '@types/react': 18.2.24
   '@types/react-dom': 18.2.8
   '@types/react-transition-group': 4.4.7
@@ -640,12 +640,12 @@ packages:
   /@types/node-fetch/2.6.4:
     resolution: {integrity: sha512-1ZX9fcN4Rvkvgv4E6PAY5WXUFWFcRWxZa3EW83UjycOB9ljJCedb2CupIP4RZMEwF/M3eTcCihbBRgwtGbg5Rg==}
     dependencies:
-      '@types/node': 18.18.1
+      '@types/node': 18.18.3
       form-data: 3.0.1
     dev: false
 
-  /@types/node/18.18.1:
-    resolution: {integrity: sha512-3G42sxmm0fF2+Vtb9TJQpnjmP+uKlWvFa8KoEGquh4gqRmoUG/N0ufuhikw6HEsdG2G2oIKhog1GCTfz9v5NdQ==}
+  /@types/node/18.18.3:
+    resolution: {integrity: sha512-0OVfGupTl3NBFr8+iXpfZ8NR7jfFO+P1Q+IO/q0wbo02wYkP5gy36phojeYWpLQ6WAMjl+VfmqUk2YbUfp0irA==}
 
   /@types/node/20.5.1:
     resolution: {integrity: sha512-4tT2UrL5LBqDwoed9wZ6N3umC4Yhz3W3FloMmiiG4JwmUJWpie0c7lcnUNd4gtMKuDEO4wRVS8B6Xa0uMRsMKg==}
