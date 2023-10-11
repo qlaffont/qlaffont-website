@@ -24,7 +24,7 @@ specifiers:
   eslint-config-next: 13.5.4
   eslint-config-prettier: 9.0.0
   eslint-plugin-import: 2.28.1
-  eslint-plugin-prettier: 5.0.0
+  eslint-plugin-prettier: 5.0.1
   eslint-plugin-simple-import-sort: 10.0.0
   husky: 8.0.3
   ioredis: ^5.3.2
@@ -83,7 +83,7 @@ devDependencies:
   eslint-config-next: 13.5.4_srhnpoqmhm6ulnern6fnsuapfi
   eslint-config-prettier: 9.0.0_eslint@8.51.0
   eslint-plugin-import: 2.28.1_umm74vfmfsk3myhhl7swlhxwh4
-  eslint-plugin-prettier: 5.0.0_o7yfm5ysghuptm2tk3i6zuwvty
+  eslint-plugin-prettier: 5.0.1_o7yfm5ysghuptm2tk3i6zuwvty
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.51.0
   husky: 8.0.3
   lint-staged: 14.0.1
@@ -2142,8 +2142,8 @@ packages:
       semver: 6.3.1
     dev: true
 
-  /eslint-plugin-prettier/5.0.0_o7yfm5ysghuptm2tk3i6zuwvty:
-    resolution: {integrity: sha512-AgaZCVuYDXHUGxj/ZGu1u8H8CYgDY3iG6w5kUFw4AzMVXzB7VvbKgYR4nATIN+OvUrghMbiDLeimVjVY5ilq3w==}
+  /eslint-plugin-prettier/5.0.1_o7yfm5ysghuptm2tk3i6zuwvty:
+    resolution: {integrity: sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
