@@ -28,7 +28,7 @@ specifiers:
   eslint-plugin-simple-import-sort: 10.0.0
   husky: 8.0.3
   ioredis: ^5.3.2
-  lint-staged: 15.0.0
+  lint-staged: 15.0.1
   lodash: 4.17.21
   next: 13.5.4
   next-seo: 6.1.0
@@ -86,7 +86,7 @@ devDependencies:
   eslint-plugin-prettier: 5.0.1_o7yfm5ysghuptm2tk3i6zuwvty
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.51.0
   husky: 8.0.3
-  lint-staged: 15.0.0
+  lint-staged: 15.0.1
   prettier: 3.0.3
   prettier-plugin-tailwindcss: 0.5.6_prettier@3.0.3
   tailwind: 4.0.0
@@ -3318,8 +3318,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/15.0.0:
-    resolution: {integrity: sha512-OdrAd/qZhO4MnPyNRehI1Fh6j8kcfQoGpjQ1Vw8dSkDkNONdqe/HpKXqtKpFIPCAYeF4/tfnE11MnjLYuLKjqA==}
+  /lint-staged/15.0.1:
+    resolution: {integrity: sha512-2IU5OWmCaxch0X0+IBF4/v7sutpB+F3qoXbro43pYjQTOo5wumckjxoxn47pQBqqBsCWrD5HnI2uG/zJA7isew==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
@@ -4063,7 +4063,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.27
-      yaml: 2.3.1
+      yaml: 2.3.2
     dev: true
 
   /postcss-nested/6.0.1_postcss@8.4.27:
@@ -5428,11 +5428,6 @@ packages:
 
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
-    dev: true
-
-  /yaml/2.3.1:
-    resolution: {integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==}
-    engines: {node: '>= 14'}
     dev: true
 
   /yaml/2.3.2:
