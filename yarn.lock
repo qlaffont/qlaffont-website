@@ -3835,10 +3835,10 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-next-seo@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-6.1.0.tgz#b60b06958cc77e7ed56f0a61b2d6cd0afed88ebb"
-  integrity sha512-iMBpFoJsR5zWhguHJvsoBDxDSmdYTHtnVPB1ij+CD0NReQCP78ZxxbdL9qkKIf4oEuZEqZkrjAQLB0bkII7RYA==
+next-seo@6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-6.3.0.tgz#1dcd4187bd4869707131e8f7ddecff1a6c2b12c2"
+  integrity sha512-ieaE7kDYHCPcwfmTTmA8D7EnNGnzvkG/o9QBua0Z9ZlrZUlkT42kfOsWO4TUyuZJH5juAGJ0/mDRie1r2b9tXw==
 
 next@14.0.0:
   version "14.0.0"
