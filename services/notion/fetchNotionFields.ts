@@ -106,11 +106,13 @@ export const invalidatePages = async (res: NextApiResponse) => {
     await redis.del(key);
   }
 
-  await res.revalidate('/about');
-  await res.revalidate('/cv');
-  await res.revalidate('/gaming');
-  await res.revalidate('/');
-  await res.revalidate('/news');
-  await res.revalidate('/projects');
-  await res.revalidate('/tools');
+  await Promise.all([
+    res.revalidate('/about'),
+    res.revalidate('/cv'),
+    res.revalidate('/gaming'),
+    res.revalidate('/'),
+    res.revalidate('/news'),
+    res.revalidate('/projects'),
+    res.revalidate('/tools'),
+  ]);
 };
