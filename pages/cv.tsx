@@ -12,13 +12,13 @@ import { PDFStyleText } from '../services/textUtils/HTMLStyleText';
 const devTechnologies = [
   'Node.JS',
   'React',
+  'SolidJS',
   'Fastify',
   'Next.JS',
   'Electron',
   'SEO',
   'SASS',
   'Tailwind',
-  'Angular',
   'NPM / PNPM',
   'MySQL / PostgresSQL',
   'Redis',
@@ -198,7 +198,7 @@ const CV = ({
                   <div key={index}>
                     <p className="line-clamp-2 font-rubik font-semibold">{diploma.name}</p>
                     <p>{diploma.company}</p>
-                    <p>{format(new Date(diploma.date), 'MMMM uuuu')}</p>
+                    <p>{format(new Date(diploma.date), 'MMMM YYYY')}</p>
                   </div>
                 ))}
               </div>
@@ -219,12 +219,12 @@ const CV = ({
                     <p className="line-clamp-2 font-rubik font-semibold">{experience.jobTitle}</p>
                     <p>{experience.company}</p>
                     <div className="text-gray-700">
-                      {!isEmpty(experience.dateTo)
-                        ? `${format(new Date(experience.dateFrom), 'MMMM uuuu')} - ${format(
+                      {experience.dateTo
+                        ? `${format(new Date(experience.dateFrom), 'MMMM YYYY')} - ${format(
                             new Date(experience.dateTo!),
                             'MMMM uuuu',
                           )}`
-                        : `${t('pages.cv.since')} ${format(new Date(experience.dateFrom), 'MMMM uuuu')}`}
+                        : `${t('pages.cv.since')} ${format(new Date(experience.dateFrom), 'MMMM YYYY')}`}
                     </div>
                   </div>
                 ))}
