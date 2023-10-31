@@ -222,7 +222,7 @@ const CV = ({
                       {experience.dateTo
                         ? `${format(new Date(experience.dateFrom), 'MMMM YYYY')} - ${format(
                             new Date(experience.dateTo!),
-                            'MMMM uuuu',
+                            'MMMM YYYY',
                           )}`
                         : `${t('pages.cv.since')} ${format(new Date(experience.dateFrom), 'MMMM YYYY')}`}
                     </div>
