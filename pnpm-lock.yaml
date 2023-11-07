@@ -6,7 +6,7 @@ specifiers:
   '@notionhq/client': 2.2.13
   '@tailwindcss/forms': 0.5.6
   '@tailwindcss/line-clamp': 0.4.4
-  '@types/color-hash': 1.0.3
+  '@types/color-hash': 1.0.4
   '@types/lodash': 4.14.200
   '@types/node': 20.8.10
   '@types/react': 18.2.36
@@ -68,7 +68,7 @@ devDependencies:
   '@commitlint/config-conventional': 18.1.0
   '@tailwindcss/forms': 0.5.6_tailwindcss@3.3.5
   '@tailwindcss/line-clamp': 0.4.4_tailwindcss@3.3.5
-  '@types/color-hash': 1.0.3
+  '@types/color-hash': 1.0.4
   '@types/lodash': 4.14.200
   '@types/node': 20.8.10
   '@types/react': 18.2.36
@@ -583,8 +583,8 @@ packages:
       tailwindcss: 3.3.5
     dev: true
 
-  /@types/color-hash/1.0.3:
-    resolution: {integrity: sha512-UkGu7j1RvcsjhYOIrzIRZygS4MBiIzTXBS6+RFNkw6XU/F6nLlTgR4QAOmjepRY0pJa+i6SXaf5sAU5rzy0xrw==}
+  /@types/color-hash/1.0.4:
+    resolution: {integrity: sha512-lRHjA675rw+lN4Zf+EXpV42wUA0YPUXdk7ECEhgljovbw5dPiHLrDwCpZmczWSrPDXFpyA78mmkY9I/PXAZDPw==}
     dev: true
 
   /@types/json-schema/7.0.12:
