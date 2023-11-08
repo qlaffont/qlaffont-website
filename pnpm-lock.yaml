@@ -9,8 +9,8 @@ specifiers:
   '@types/color-hash': 1.0.4
   '@types/lodash': 4.14.201
   '@types/node': 20.8.10
-  '@types/react': 18.2.36
-  '@types/react-dom': 18.2.14
+  '@types/react': 18.2.37
+  '@types/react-dom': 18.2.15
   '@types/react-transition-group': 4.4.9
   '@typescript-eslint/eslint-plugin': 6.10.0
   '@typescript-eslint/parser': 6.10.0
@@ -71,8 +71,8 @@ devDependencies:
   '@types/color-hash': 1.0.4
   '@types/lodash': 4.14.201
   '@types/node': 20.8.10
-  '@types/react': 18.2.36
-  '@types/react-dom': 18.2.14
+  '@types/react': 18.2.37
+  '@types/react-dom': 18.2.15
   '@types/react-transition-group': 4.4.9
   '@typescript-eslint/eslint-plugin': 6.10.0_u434aypout3c3z2ybwpl5ggmim
   '@typescript-eslint/parser': 6.10.0_5iy6f2d3forlnf27wdbuobyvmm
@@ -627,20 +627,20 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom/18.2.14:
-    resolution: {integrity: sha512-V835xgdSVmyQmI1KLV2BEIUgqEuinxp9O4G6g3FqO/SqLac049E53aysv0oEFD2kHfejeKU+ZqL2bcFWj9gLAQ==}
+  /@types/react-dom/18.2.15:
+    resolution: {integrity: sha512-HWMdW+7r7MR5+PZqJF6YFNSCtjz1T0dsvo/f1BV6HkV+6erD/nA7wd9NM00KVG83zf2nJ7uATPO9ttdIPvi3gg==}
     dependencies:
-      '@types/react': 18.2.36
+      '@types/react': 18.2.37
     dev: true
 
   /@types/react-transition-group/4.4.9:
     resolution: {integrity: sha512-ZVNmWumUIh5NhH8aMD9CR2hdW0fNuYInlocZHaZ+dgk/1K49j1w/HoAuK1ki+pgscQrOFRTlXeoURtuzEkV3dg==}
     dependencies:
-      '@types/react': 18.2.36
+      '@types/react': 18.2.37
     dev: true
 
-  /@types/react/18.2.36:
-    resolution: {integrity: sha512-o9XFsHYLLZ4+sb9CWUYwHqFVoG61SesydF353vFMMsQziiyRu8np4n2OYMUSDZ8XuImxDr9c5tR7gidlH29Vnw==}
+  /@types/react/18.2.37:
+    resolution: {integrity: sha512-RGAYMi2bhRgEXT3f4B92WTohopH6bIXw05FuGlmJEnv/omEn190+QYEIYxIAuIBdKgboYYdVved2p1AxZVQnaw==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
