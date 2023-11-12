@@ -18,7 +18,7 @@ specifiers:
   autoprefixer: 10.4.16
   clsx: 2.0.0
   color-hash: 2.0.2
-  commitlint: 18.4.0
+  commitlint: 18.4.1
   dayjs: ^1.11.9
   eslint: 8.53.0
   eslint-config-next: 14.0.2
@@ -78,7 +78,7 @@ devDependencies:
   '@typescript-eslint/parser': 6.10.0_5iy6f2d3forlnf27wdbuobyvmm
   animate.css: 4.1.1
   autoprefixer: 10.4.16
-  commitlint: 18.4.0_typescript@5.2.2
+  commitlint: 18.4.1_typescript@5.2.2
   eslint: 8.53.0
   eslint-config-next: 14.0.2_5iy6f2d3forlnf27wdbuobyvmm
   eslint-config-prettier: 9.0.0_eslint@8.53.0
@@ -151,14 +151,14 @@ packages:
       regenerator-runtime: 0.12.1
     dev: true
 
-  /@commitlint/cli/18.4.0_typescript@5.2.2:
-    resolution: {integrity: sha512-iz3KJtmsRRFm6OlyrORxRR6qcrznuoFDzcvMXTMpl6E/wj9Vr2crolDk6cG3bFpJCjWd9C7KidXerRha6hh1kQ==}
+  /@commitlint/cli/18.4.1_typescript@5.2.2:
+    resolution: {integrity: sha512-4+jljfd29Udw9RDDyigavLO9LvdbmB8O9xjDzVZ0R3lJuG7nCeyHgnKWIVpFaN590isZMV/cMeQK0gH7hRF40A==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
       '@commitlint/format': 18.4.0
       '@commitlint/lint': 18.4.0
-      '@commitlint/load': 18.4.0_typescript@5.2.2
+      '@commitlint/load': 18.4.1_typescript@5.2.2
       '@commitlint/read': 18.4.0
       '@commitlint/types': 18.4.0
       execa: 5.1.1
@@ -228,8 +228,8 @@ packages:
       '@commitlint/types': 18.4.0
     dev: true
 
-  /@commitlint/load/18.4.0_typescript@5.2.2:
-    resolution: {integrity: sha512-7unGl1HGRNMgWrUPmj8OFkJyuNUMb6xA1i53/OAFKd9l+U3C4WTfoJe3t/TUz8vKZLCaDcWWR/b2cw5HveBBFg==}
+  /@commitlint/load/18.4.1_typescript@5.2.2:
+    resolution: {integrity: sha512-o/plBiPJQgbSq/4ipDpsq4HCmURjBAEjr1EO/p2falr3VhwV0WGXTvb8NlihgI8xtSyO6lHvtycrE535GMLQbA==}
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/config-validator': 18.4.0
@@ -238,8 +238,8 @@ packages:
       '@commitlint/types': 18.4.0
       '@types/node': 18.18.6
       chalk: 4.1.2
-      cosmiconfig: 8.2.0
-      cosmiconfig-typescript-loader: 5.0.0_yjxmqq6uerlxg3qouxu7gly2se
+      cosmiconfig: 8.3.6_typescript@5.2.2
+      cosmiconfig-typescript-loader: 5.0.0_5o3wgjp6k4ubjduodi4xdhrhym
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -1372,12 +1372,12 @@ packages:
       uuidv4: 2.0.0
     dev: true
 
-  /commitlint/18.4.0_typescript@5.2.2:
-    resolution: {integrity: sha512-AWfYec8uEejSOnJFGI+rjx9mo1zsn/7CGgHDA5mAcVya76ki3oPw5pxcYX2DUcMnRJHHxOD5n8ke7SuuHiWkkA==}
+  /commitlint/18.4.1_typescript@5.2.2:
+    resolution: {integrity: sha512-l/whrYk3bxhSOJchjPPwWOI5mRaYBvV8yb2GtgVU5Nuu6v/Z5Do9+T0uGMkSL9YDWKdtUm0MtFGsGXLANWGxgA==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
-      '@commitlint/cli': 18.4.0_typescript@5.2.2
+      '@commitlint/cli': 18.4.1_typescript@5.2.2
       '@commitlint/types': 18.4.0
     transitivePeerDependencies:
       - typescript
@@ -1482,7 +1482,7 @@ packages:
       vary: 1.1.2
     dev: true
 
-  /cosmiconfig-typescript-loader/5.0.0_yjxmqq6uerlxg3qouxu7gly2se:
+  /cosmiconfig-typescript-loader/5.0.0_5o3wgjp6k4ubjduodi4xdhrhym:
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
     peerDependencies:
@@ -1491,19 +1491,25 @@ packages:
       typescript: '>=4'
     dependencies:
       '@types/node': 18.18.6
-      cosmiconfig: 8.2.0
+      cosmiconfig: 8.3.6_typescript@5.2.2
       jiti: 1.19.1
       typescript: 5.2.2
     dev: true
 
-  /cosmiconfig/8.2.0:
-    resolution: {integrity: sha512-3rTMnFJA1tCOPwRxtgF4wd7Ab2qvDbL8jX+3smjIbS4HlZBagTlpERbdN7iAbWlrfxE3M8c27kTwTawQ7st+OQ==}
+  /cosmiconfig/8.3.6_typescript@5.2.2:
+    resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
+    peerDependencies:
+      typescript: '>=4.9.5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
+      typescript: 5.2.2
     dev: true
 
   /cross-spawn/7.0.3:
