@@ -456,10 +456,10 @@
   resolved "https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.4.4.tgz#767cf8e5d528a5d90c9740ca66eb079f5e87d423"
   integrity sha512-5U6SY5z8N42VtrCrKlsTAA35gy2VSyYtHWCsg1H87NU1SXnEfekTVlrga9fzUDrrHcGi2Lb5KenUWb4lRQT5/g==
 
-"@types/color-hash@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@types/color-hash/-/color-hash-1.0.4.tgz#f96a283fff23f6107515c0b63f8d22c87172adee"
-  integrity sha512-lRHjA675rw+lN4Zf+EXpV42wUA0YPUXdk7ECEhgljovbw5dPiHLrDwCpZmczWSrPDXFpyA78mmkY9I/PXAZDPw==
+"@types/color-hash@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@types/color-hash/-/color-hash-1.0.5.tgz#ea3dd3d89a0f5ca2889d5b3e9d8701b4c96434f4"
+  integrity sha512-miV7Z8zvOnRn0ZjbP/D/qb1VWHrWkKOnfC764SJvnCeIziW4pZy3tPK/542seSgccGAXlPQd/seuNyVAS/p5Ug==
 
 "@types/json-schema@^7.0.12":
   version "7.0.12"
