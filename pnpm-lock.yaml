@@ -8,7 +8,7 @@ specifiers:
   '@tailwindcss/line-clamp': 0.4.4
   '@types/color-hash': 1.0.5
   '@types/lodash': 4.14.202
-  '@types/node': 20.10.0
+  '@types/node': 20.10.2
   '@types/react': 18.2.39
   '@types/react-dom': 18.2.17
   '@types/react-transition-group': 4.4.9
@@ -70,7 +70,7 @@ devDependencies:
   '@tailwindcss/line-clamp': 0.4.4_tailwindcss@3.3.5
   '@types/color-hash': 1.0.5
   '@types/lodash': 4.14.202
-  '@types/node': 20.10.0
+  '@types/node': 20.10.2
   '@types/react': 18.2.39
   '@types/react-dom': 18.2.17
   '@types/react-transition-group': 4.4.9
@@ -606,7 +606,7 @@ packages:
   /@types/node-fetch/2.6.4:
     resolution: {integrity: sha512-1ZX9fcN4Rvkvgv4E6PAY5WXUFWFcRWxZa3EW83UjycOB9ljJCedb2CupIP4RZMEwF/M3eTcCihbBRgwtGbg5Rg==}
     dependencies:
-      '@types/node': 20.10.0
+      '@types/node': 20.10.2
       form-data: 3.0.1
     dev: false
 
@@ -614,8 +614,8 @@ packages:
     resolution: {integrity: sha512-wf3Vz+jCmOQ2HV1YUJuCWdL64adYxumkrxtc+H1VUQlnQI04+5HtH+qZCOE21lBE7gIrt+CwX2Wv8Acrw5Ak6w==}
     dev: true
 
-  /@types/node/20.10.0:
-    resolution: {integrity: sha512-D0WfRmU9TQ8I9PFx9Yc+EBHw+vSpIub4IDvQivcp26PtPrdMGAq5SDcpXEo/epqa/DXotVpekHiLNTg3iaKXBQ==}
+  /@types/node/20.10.2:
+    resolution: {integrity: sha512-37MXfxkb0vuIlRKHNxwCkb60PNBpR94u4efQuN4JgIAm66zfCDXGSAFCef9XUWFovX2R1ok6Z7MHhtdVXXkkIw==}
     dependencies:
       undici-types: 5.26.5
 
