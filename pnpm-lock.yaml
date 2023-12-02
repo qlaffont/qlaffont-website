@@ -22,7 +22,7 @@ specifiers:
   dayjs: ^1.11.9
   eslint: 8.55.0
   eslint-config-next: 14.0.3
-  eslint-config-prettier: 9.0.0
+  eslint-config-prettier: 9.1.0
   eslint-plugin-import: 2.29.0
   eslint-plugin-prettier: 5.0.1
   eslint-plugin-simple-import-sort: 10.0.0
@@ -81,9 +81,9 @@ devDependencies:
   commitlint: 18.4.3_typescript@5.3.2
   eslint: 8.55.0
   eslint-config-next: 14.0.3_gvxfkgnhba3ramrjrewhsl7ftu
-  eslint-config-prettier: 9.0.0_eslint@8.55.0
+  eslint-config-prettier: 9.1.0_eslint@8.55.0
   eslint-plugin-import: 2.29.0_wm6axe6xgt5bb5v5td7xcxjwka
-  eslint-plugin-prettier: 5.0.1_gsc2hwbqoroc3b23pg3tbf6qja
+  eslint-plugin-prettier: 5.0.1_o75464lhkqcixil6hbknprr7pe
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.55.0
   husky: 8.0.3
   lint-staged: 15.1.0
@@ -1903,8 +1903,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-config-prettier/9.0.0_eslint@8.55.0:
-    resolution: {integrity: sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw==}
+  /eslint-config-prettier/9.1.0_eslint@8.55.0:
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -2100,7 +2100,7 @@ packages:
       semver: 6.3.1
     dev: true
 
-  /eslint-plugin-prettier/5.0.1_gsc2hwbqoroc3b23pg3tbf6qja:
+  /eslint-plugin-prettier/5.0.1_o75464lhkqcixil6hbknprr7pe:
     resolution: {integrity: sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2115,7 +2115,7 @@ packages:
         optional: true
     dependencies:
       eslint: 8.55.0
-      eslint-config-prettier: 9.0.0_eslint@8.55.0
+      eslint-config-prettier: 9.1.0_eslint@8.55.0
       prettier: 3.1.0
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
