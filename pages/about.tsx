@@ -142,7 +142,7 @@ const About = ({
                   <p className="font-semibold">
                     {experience.jobTitle} - <span className="border-b border-sky-500">{experience.company}</span>
                   </p>
-                  <span className="hidden grow border-t border-dashed border-gray-300 dark:border-gray-700 md:block"></span>
+                  <span className="hidden grow border-t border-dashed border-gray-300 md:block dark:border-gray-700"></span>
                   <p className="text-gray-500">
                     {format(experience.dateFrom, 'MMM YYYY')}
                     {experience.dateTo && ` - ${format(experience.dateTo!, 'MMM YYYY')}`}
@@ -162,7 +162,7 @@ const About = ({
                   <p className="font-semibold">
                     {diploma.name} - <span className="border-b border-sky-500">{diploma.name}</span>
                   </p>
-                  <span className="hidden grow border-t border-dashed border-gray-300 dark:border-gray-700 md:block"></span>
+                  <span className="hidden grow border-t border-dashed border-gray-300 md:block dark:border-gray-700"></span>
                   <p className="text-gray-500">
                     {format(diploma.date, 'MMM YYYY')}
                     {!isEmpty(diploma.description) && <DescriptionModal description={diploma.description} />}
@@ -225,7 +225,7 @@ const About = ({
                     rel="noreferrer"
                     className="mx-auto inline-block w-full md:w-auto"
                   >
-                    <div className="flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
+                    <div className="flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 md:w-80 md:px-12 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20">
                       <span className="icon icon-mail block h-4 w-4 bg-white dark:bg-black"></span>{' '}
                       <span>contact@qlaffont.com</span>
                     </div>
@@ -236,7 +236,7 @@ const About = ({
                     rel="noreferrer"
                     className="mx-auto inline-block w-full md:w-auto"
                   >
-                    <div className="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
+                    <div className="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 md:w-80 md:px-12 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20">
                       <span className="icon icon-phone block h-4 w-4 bg-white dark:bg-black"></span>{' '}
                       <span>+33 6 29 86 98 41</span>
                     </div>

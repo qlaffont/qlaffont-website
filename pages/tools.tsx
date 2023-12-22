@@ -156,7 +156,7 @@ const Tools = ({
                           <a
                             target="_blank"
                             href={link.url}
-                            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gray-200 px-2 py-3 font-medium text-white shadow-lg hover:opacity-70 dark:bg-gray-500 md:px-6"
+                            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gray-200 px-2 py-3 font-medium text-white shadow-lg hover:opacity-70 md:px-6 dark:bg-gray-500"
                             style={{ backgroundColor: link?.color || colorHash.hex(link.name) }}
                             rel="noreferrer"
                           >

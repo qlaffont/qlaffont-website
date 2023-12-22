@@ -57,7 +57,7 @@ const Home = ({ companyNames }: { companyNames: string }) => {
             <a target="_blank" href="mailto:contact@qlaffont.com" rel="noreferrer" className="w-full md:w-auto">
               <button
                 type="button"
-                className="w-full rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-auto md:px-12"
+                className="w-full rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 md:w-auto md:px-12 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20"
               >
                 {t('pages.home.contactMe')}
               </button>
@@ -65,7 +65,7 @@ const Home = ({ companyNames }: { companyNames: string }) => {
             <Link
               href="/about"
               passHref
-              className="w-full rounded-full border bg-gray-200 px-2 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
+              className="w-full rounded-full border bg-gray-200 px-2 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 md:w-auto md:px-12 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
             >
               {t('pages.home.moreAbouteMe')}
             </Link>

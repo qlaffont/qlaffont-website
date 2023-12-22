@@ -84,7 +84,7 @@ const Gaming = ({
                 <a
                   target="_blank"
                   href="https://www.twitch.tv/mirardes"
-                  className="w-full rounded-full border bg-gray-200 px-12 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
+                  className="w-full rounded-full border bg-gray-200 px-12 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 md:w-auto md:px-12 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
                   rel="noreferrer"
                 >
                   {t('pages.gaming.twitch')}
@@ -95,7 +95,7 @@ const Gaming = ({
                 <a
                   target="_blank"
                   href="https://streamelements.com/mirardes/tip"
-                  className="w-full rounded-full border bg-gray-200 px-12 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
+                  className="w-full rounded-full border bg-gray-200 px-12 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 md:w-auto md:px-12 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
                   rel="noreferrer"
                 >
                   {t('pages.gaming.donation')}
@@ -113,7 +113,7 @@ const Gaming = ({
                   <p className="font-semibold">
                     {experience.jobTitle} - <span className="border-b border-sky-500">{experience.company}</span>
                   </p>
-                  <span className="hidden grow border-t border-dashed border-gray-300 dark:border-gray-700 md:block"></span>
+                  <span className="hidden grow border-t border-dashed border-gray-300 md:block dark:border-gray-700"></span>
                   <p className="text-gray-500">
                     {format(experience.dateFrom, 'MMM YYYY')}
                     {experience.dateTo && ` - ${format(experience.dateTo!, 'MMM YYYY')}`}
