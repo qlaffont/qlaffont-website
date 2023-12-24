@@ -24,7 +24,7 @@ specifiers:
   eslint-config-next: 14.0.4
   eslint-config-prettier: 9.1.0
   eslint-plugin-import: 2.29.1
-  eslint-plugin-prettier: 5.1.1
+  eslint-plugin-prettier: 5.1.2
   eslint-plugin-simple-import-sort: 10.0.0
   husky: 8.0.3
   ioredis: ^5.3.2
@@ -83,7 +83,7 @@ devDependencies:
   eslint-config-next: 14.0.4_xdgzedli73k7lw4xlyzszm74om
   eslint-config-prettier: 9.1.0_eslint@8.56.0
   eslint-plugin-import: 2.29.1_gwrryp6rbgjivv6yd6arsho5zq
-  eslint-plugin-prettier: 5.1.1_glhtlnotbb6crparhn2ogh22s4
+  eslint-plugin-prettier: 5.1.2_glhtlnotbb6crparhn2ogh22s4
   eslint-plugin-simple-import-sort: 10.0.0_eslint@8.56.0
   husky: 8.0.3
   lint-staged: 15.2.0
@@ -553,7 +553,7 @@ packages:
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: true
 
   /@rushstack/eslint-patch/1.4.0:
@@ -2100,8 +2100,8 @@ packages:
       semver: 6.3.1
     dev: true
 
-  /eslint-plugin-prettier/5.1.1_glhtlnotbb6crparhn2ogh22s4:
-    resolution: {integrity: sha512-WQpV3mSmIobb77s4qiCZu3dBrZZ0rj8ckSfBtRrgNK9Wnh2s3eiaxNTWloz1LJ1WtvqZES/PAI7PLvsrGt/CEA==}
+  /eslint-plugin-prettier/5.1.2_glhtlnotbb6crparhn2ogh22s4:
+    resolution: {integrity: sha512-dhlpWc9vOwohcWmClFcA+HjlvUpuyynYs0Rf+L/P6/0iQE6vlHW9l5bkfzN62/Stm9fbq8ku46qzde76T1xlSg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
@@ -2118,7 +2118,7 @@ packages:
       eslint-config-prettier: 9.1.0_eslint@8.56.0
       prettier: 3.1.1
       prettier-linter-helpers: 1.0.0
-      synckit: 0.8.5
+      synckit: 0.8.6
     dev: true
 
   /eslint-plugin-react-hooks/5.0.0-canary-7118f5dd7-20230705_eslint@8.56.0:
@@ -4883,6 +4883,14 @@ packages:
       tslib: 2.6.1
     dev: true
 
+  /synckit/0.8.6:
+    resolution: {integrity: sha512-laHF2savN6sMeHCjLRkheIU4wo3Zg9Ln5YOjOo7sZ5dVQW8yF5pPE5SIw1dsPhq3TRp1jisKRCdPhfs/1WMqDA==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    dependencies:
+      '@pkgr/utils': 2.4.2
+      tslib: 2.6.2
+    dev: true
+
   /tailwind-animatecss/1.0.0_fxaw3df64iy6om5iyuhwnvvyli:
     resolution: {integrity: sha512-CHoRvMMR6aTv2fS1A/i6DA8LJkOwzeP0l96sdzuIHu/g79BsGuqQwjOoZS9edFYlJaHZiIwGdmxblm6DdJVK4w==}
     peerDependencies:
@@ -5052,6 +5060,10 @@ packages:
 
   /tslib/2.6.1:
     resolution: {integrity: sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==}
+
+  /tslib/2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+    dev: true
 
   /tsscmp/1.0.6:
     resolution: {integrity: sha512-LxhtAkPDTkVCMQjt2h6eBVY28KCjikZqZfMcC15YBeNjkgUpdCfBu5HoiOTDu86v6smE8yOjyEktJ8hlbANHQA==}
