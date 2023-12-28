@@ -9,7 +9,7 @@ specifiers:
   '@types/color-hash': 1.0.5
   '@types/lodash': 4.14.202
   '@types/node': 20.10.5
-  '@types/react': 18.2.45
+  '@types/react': 18.2.46
   '@types/react-dom': 18.2.18
   '@types/react-transition-group': 4.4.10
   '@typescript-eslint/eslint-plugin': 6.16.0
@@ -71,7 +71,7 @@ devDependencies:
   '@types/color-hash': 1.0.5
   '@types/lodash': 4.14.202
   '@types/node': 20.10.5
-  '@types/react': 18.2.45
+  '@types/react': 18.2.46
   '@types/react-dom': 18.2.18
   '@types/react-transition-group': 4.4.10
   '@typescript-eslint/eslint-plugin': 6.16.0_bzmrvv2elrxwu6gm3fkk6yklke
@@ -630,17 +630,17 @@ packages:
   /@types/react-dom/18.2.18:
     resolution: {integrity: sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==}
     dependencies:
-      '@types/react': 18.2.45
+      '@types/react': 18.2.46
     dev: true
 
   /@types/react-transition-group/4.4.10:
     resolution: {integrity: sha512-hT/+s0VQs2ojCX823m60m5f0sL5idt9SO6Tj6Dg+rdphGPIeJbJ6CxvBYkgkGKrYeDjvIpKTR38UzmtHJOGW3Q==}
     dependencies:
-      '@types/react': 18.2.45
+      '@types/react': 18.2.46
     dev: true
 
-  /@types/react/18.2.45:
-    resolution: {integrity: sha512-TtAxCNrlrBp8GoeEp1npd5g+d/OejJHFxS3OWmrPBMFaVQMSN0OFySozJio5BHxTuTeug00AVXVAjfDSfk+lUg==}
+  /@types/react/18.2.46:
+    resolution: {integrity: sha512-nNCvVBcZlvX4NU1nRRNV/mFl1nNRuTuslAJglQsq+8ldXe5Xv0Wd2f7WTE3jOxhLH2BFfiZGC6GCp+kHQbgG+w==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
