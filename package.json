@@ -12,7 +12,7 @@
   "dependencies": {
     "@headlessui/react": "1.7.17",
     "@notionhq/client": "2.2.14",
-    "clsx": "2.0.0",
+    "clsx": "2.1.0",
     "color-hash": "2.0.2",
     "dayjs": "^1.11.9",
     "ioredis": "^5.3.2",
