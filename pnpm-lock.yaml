@@ -16,7 +16,7 @@ specifiers:
   '@typescript-eslint/parser': 6.16.0
   animate.css: 4.1.1
   autoprefixer: 10.4.16
-  clsx: 2.0.0
+  clsx: 2.1.0
   color-hash: 2.0.2
   commitlint: 18.4.3
   dayjs: ^1.11.9
@@ -49,7 +49,7 @@ specifiers:
 dependencies:
   '@headlessui/react': 1.7.17_biqbaboplfbrettd7655fr4n2y
   '@notionhq/client': 2.2.14
-  clsx: 2.0.0
+  clsx: 2.1.0
   color-hash: 2.0.2
   dayjs: 1.11.9
   ioredis: 5.3.2
@@ -1315,8 +1315,8 @@ packages:
       wrap-ansi: 7.0.0
     dev: true
 
-  /clsx/2.0.0:
-    resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
+  /clsx/2.1.0:
+    resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
     dev: false
 
