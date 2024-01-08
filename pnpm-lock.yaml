@@ -42,7 +42,7 @@ specifiers:
   sass: 1.69.7
   tailwind: 4.0.0
   tailwind-animatecss: 1.0.0
-  tailwindcss: 3.4.0
+  tailwindcss: 3.4.1
   typescript: 5.3.3
   usehooks-ts: 2.9.2
 
@@ -66,8 +66,8 @@ dependencies:
 
 devDependencies:
   '@commitlint/config-conventional': 18.4.4
-  '@tailwindcss/forms': 0.5.7_tailwindcss@3.4.0
-  '@tailwindcss/line-clamp': 0.4.4_tailwindcss@3.4.0
+  '@tailwindcss/forms': 0.5.7_tailwindcss@3.4.1
+  '@tailwindcss/line-clamp': 0.4.4_tailwindcss@3.4.1
   '@types/color-hash': 1.0.5
   '@types/lodash': 4.14.202
   '@types/node': 20.10.7
@@ -90,8 +90,8 @@ devDependencies:
   prettier: 3.1.1
   prettier-plugin-tailwindcss: 0.5.11_prettier@3.1.1
   tailwind: 4.0.0
-  tailwind-animatecss: 1.0.0_fxaw3df64iy6om5iyuhwnvvyli
-  tailwindcss: 3.4.0
+  tailwind-animatecss: 1.0.0_aix74vuszd3xsvtdo4ojlcgs44
+  tailwindcss: 3.4.1
   typescript: 5.3.3
 
 packages:
@@ -566,21 +566,21 @@ packages:
       tslib: 2.6.1
     dev: false
 
-  /@tailwindcss/forms/0.5.7_tailwindcss@3.4.0:
+  /@tailwindcss/forms/0.5.7_tailwindcss@3.4.1:
     resolution: {integrity: sha512-QE7X69iQI+ZXwldE+rzasvbJiyV/ju1FGHH0Qn2W3FKbuYtqp8LKcy6iSw79fVUT5/Vvf+0XgLCeYVG+UV6hOw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.4.0
+      tailwindcss: 3.4.1
     dev: true
 
-  /@tailwindcss/line-clamp/0.4.4_tailwindcss@3.4.0:
+  /@tailwindcss/line-clamp/0.4.4_tailwindcss@3.4.1:
     resolution: {integrity: sha512-5U6SY5z8N42VtrCrKlsTAA35gy2VSyYtHWCsg1H87NU1SXnEfekTVlrga9fzUDrrHcGi2Lb5KenUWb4lRQT5/g==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.4.0
+      tailwindcss: 3.4.1
     dev: true
 
   /@types/color-hash/1.0.5:
@@ -4885,7 +4885,7 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /tailwind-animatecss/1.0.0_fxaw3df64iy6om5iyuhwnvvyli:
+  /tailwind-animatecss/1.0.0_aix74vuszd3xsvtdo4ojlcgs44:
     resolution: {integrity: sha512-CHoRvMMR6aTv2fS1A/i6DA8LJkOwzeP0l96sdzuIHu/g79BsGuqQwjOoZS9edFYlJaHZiIwGdmxblm6DdJVK4w==}
     peerDependencies:
       animate.css: ^4
@@ -4895,7 +4895,7 @@ packages:
       animate.css: 4.1.1
       postcss-js: 3.0.3
       postcss-selector-parser: 6.0.13
-      tailwindcss: 3.4.0
+      tailwindcss: 3.4.1
     dev: true
 
   /tailwind/4.0.0:
@@ -4934,8 +4934,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /tailwindcss/3.4.0:
-    resolution: {integrity: sha512-VigzymniH77knD1dryXbyxR+ePHihHociZbXnLZHUyzf2MMs2ZVqlUrZ3FvpXP8pno9JzmILt1sZPD19M3IxtA==}
+  /tailwindcss/3.4.1:
+    resolution: {integrity: sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
