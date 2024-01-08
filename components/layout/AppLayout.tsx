@@ -53,7 +53,7 @@ const LinkItem = ({ title, href, isActive }: LinkType & { isActive: boolean }) =
     <Link
       href={href}
       passHref
-      className="hidden rounded-full p-1 hover:bg-gray-100 sm:px-6 sm:py-2 md:inline-block dark:hover:bg-[#151519]"
+      className="hidden rounded-full p-1 hover:bg-gray-100 dark:hover:bg-[#151519] sm:px-6 sm:py-2 md:inline-block"
     >
       <span
         className={clsx(

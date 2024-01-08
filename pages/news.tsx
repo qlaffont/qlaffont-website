@@ -100,7 +100,7 @@ const News = ({ data }: { data: News[] }) => {
               passHref
               target="_blank"
               rel="noreferrer"
-              className="w-full rounded-full bg-[#1c1b22] px-2 py-3 text-center font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 md:w-auto md:px-12 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20"
+              className="w-full rounded-full bg-[#1c1b22] px-2 py-3 text-center font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-auto md:px-12"
             >
               {t('pages.news.moreNews')}
             </Link>
@@ -109,7 +109,7 @@ const News = ({ data }: { data: News[] }) => {
               passHref
               target="_blank"
               rel="noreferrer"
-              className="block w-full  max-w-full rounded-full border bg-gray-200 px-2 py-3  text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 md:w-max md:px-12 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
+              className="block w-full  max-w-full rounded-full border bg-gray-200 px-2 py-3  text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-max md:px-12"
             >
               {t('pages.news.presentations')}
             </Link>
