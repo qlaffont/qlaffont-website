@@ -25,7 +25,7 @@
     "react-transition-group": "4.4.5",
     "rosetty-react": "2.0.12",
     "sass": "1.69.7",
-    "usehooks-ts": "2.9.2"
+    "usehooks-ts": "2.9.4"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "18.4.4",
