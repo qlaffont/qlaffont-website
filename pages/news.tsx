@@ -43,7 +43,6 @@ export async function getStaticProps() {
     )
   ).data.publication.posts.edges //@ts-ignore
     .map((v) => v.node);
-  console.log(results);
 
   return {
     props: { data: results },
@@ -55,8 +54,6 @@ const News = ({ data }: { data: News[] }) => {
   const { t, format } = useI18n();
 
   const articles = data;
-
-  console.log(articles[0]);
 
   return (
     <>
