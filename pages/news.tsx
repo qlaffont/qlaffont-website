@@ -11,34 +11,42 @@ type News = {
   title: string;
   brief: string;
   slug: string;
-  coverImage: string;
-  dateAdded: Date;
+  coverImage?: {
+    url: string;
+  };
+  publishedAt: Date;
 };
 
 export async function getStaticProps() {
   const results: News[] = (
     await execQueryForHashnode(
       `
-    query GetUserArticles($page: Int!, $username: String!) {
-        user(username: $username) {
-            publication {
-                posts(page: $page) {
-                    title
-                    brief
-                    slug
-                    coverImage
-                    dateAdded
-                }
+    query Publication ($host: String!){
+      publication(host: $host) {
+        posts (first:3){
+          edges{
+            node {
+              title
+              brief
+              slug
+              coverImage {
+                url
+              }
+              publishedAt
             }
+          }
         }
+      }
     }
   `,
-      { page: 0, username: 'qlaffont' },
+      { host: 'blog.qlaffont.com' },
     )
-  ).data.user.publication.posts;
+  ).data.publication.posts.edges //@ts-ignore
+    .map((v) => v.node);
+  console.log(results);
 
   return {
-    props: { data: JSON.parse(JSON.stringify(results.slice(0, 3))) },
+    props: { data: results },
     // revalidate: 60 * 60 * 24, // 24 hours
   };
 }
@@ -47,6 +55,8 @@ const News = ({ data }: { data: News[] }) => {
   const { t, format } = useI18n();
 
   const articles = data;
+
+  console.log(articles[0]);
 
   return (
     <>
@@ -65,10 +75,10 @@ const News = ({ data }: { data: News[] }) => {
                   target="_blank"
                   className="flex flex-col space-y-3 hover:opacity-60"
                 >
-                  {article?.coverImage ? (
+                  {article?.coverImage?.url ? (
                     <div className="flex h-[200px] w-full items-center justify-center">
                       <Image
-                        src={article?.coverImage}
+                        src={article?.coverImage?.url}
                         height="200"
                         width="400"
                         alt={`${article.title} cover`}
@@ -86,7 +96,7 @@ const News = ({ data }: { data: News[] }) => {
                       {article.title}
                     </span>
                   </h2>
-                  <p className="text-sm italic text-gray-500">{format(new Date(article.dateAdded), 'MMM YYYY')}</p>
+                  <p className="text-sm italic text-gray-500">{format(new Date(article.publishedAt), 'DD MMM YYYY')}</p>
 
                   <p className="line-clamp-3 text-justify">{article.brief}</p>
                 </Link>
