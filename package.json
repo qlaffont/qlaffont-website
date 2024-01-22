@@ -28,7 +28,7 @@
     "usehooks-ts": "2.9.5"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "18.4.4",
+    "@commitlint/config-conventional": "18.5.0",
     "@tailwindcss/forms": "0.5.7",
     "@tailwindcss/line-clamp": "0.4.4",
     "@types/color-hash": "1.0.5",
@@ -41,7 +41,7 @@
     "@typescript-eslint/parser": "6.19.0",
     "animate.css": "4.1.1",
     "autoprefixer": "10.4.17",
-    "commitlint": "18.4.4",
+    "commitlint": "18.5.0",
     "eslint": "8.56.0",
     "eslint-config-next": "14.1.0",
     "eslint-config-prettier": "9.1.0",
