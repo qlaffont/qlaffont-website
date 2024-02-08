@@ -23,7 +23,7 @@
     "react-dom": "18.2.0",
     "react-scroll-to-top": "3.0.0",
     "react-transition-group": "4.4.5",
-    "rosetty-react": "3.0.0",
+    "rosetty-react": "3.0.5",
     "sass": "1.70.0",
     "usehooks-ts": "2.13.0"
   },
