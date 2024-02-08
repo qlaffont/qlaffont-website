@@ -4840,10 +4840,10 @@ rosetta@^1.1.0:
     dlv "^1.1.3"
     templite "^1.1.0"
 
-rosetty-react@3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/rosetty-react/-/rosetty-react-3.0.5.tgz#6fd2d97e690f3843c569821fd14112bf4347fb5c"
-  integrity sha512-eCzc4R3bR/UTFvEDi4pdn7nldxsw/jMW6e760fkAGUe/f0muJbJs7jnkepegnlYQ8VpsNeWXqloBbBUavTQsSw==
+rosetty-react@3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/rosetty-react/-/rosetty-react-3.0.7.tgz#5689d3d830d9aaff211252a12f8da0ca79135e9a"
+  integrity sha512-fJULNvFpC7PlcfsFvrUj7Ouur7Gh5DejMVpfk9/j1vtPUhmanvakSOTnpIxw43eoBWI5wcGhIXsvtv0tDXpOXA==
   dependencies:
     rosetty "^2.0.0"
 
