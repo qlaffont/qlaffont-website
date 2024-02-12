@@ -14,6 +14,7 @@
     "@notionhq/client": "2.2.14",
     "clsx": "2.1.0",
     "color-hash": "2.0.2",
+    "date-fns": "^3.3.1",
     "dayjs": "^1.11.9",
     "ioredis": "^5.3.2",
     "lodash": "4.17.21",
@@ -23,7 +24,7 @@
     "react-dom": "18.2.0",
     "react-scroll-to-top": "3.0.0",
     "react-transition-group": "4.4.5",
-    "rosetty-react": "3.0.16",
+    "rosetty-react": "3.0.18",
     "sass": "1.70.0",
     "usehooks-ts": "2.14.0"
   },

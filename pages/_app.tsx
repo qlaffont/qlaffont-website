@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import '../scss/index.scss';
 
-import enGB from 'dayjs/locale/en-gb';
-import fr from 'dayjs/locale/fr';
+import { enGB, fr } from 'date-fns/locale';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
