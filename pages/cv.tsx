@@ -198,7 +198,7 @@ const CV = ({
                   <div key={index}>
                     <p className="line-clamp-2 font-rubik font-semibold">{diploma.name}</p>
                     <p>{diploma.company}</p>
-                    <p>{format(new Date(diploma.date), 'MMMM YYYY')}</p>
+                    <p>{format(new Date(diploma.date), 'MMMM yyyy')}</p>
                   </div>
                 ))}
               </div>
@@ -220,11 +220,11 @@ const CV = ({
                     <p>{experience.company}</p>
                     <div className="text-gray-700">
                       {experience.dateTo
-                        ? `${format(new Date(experience.dateFrom), 'MMMM YYYY')} - ${format(
+                        ? `${format(new Date(experience.dateFrom), 'MMMM yyyy')} - ${format(
                             new Date(experience.dateTo!),
-                            'MMMM YYYY',
+                            'MMMM yyyy',
                           )}`
-                        : `${t('pages.cv.since')} ${format(new Date(experience.dateFrom), 'MMMM YYYY')}`}
+                        : `${t('pages.cv.since')} ${format(new Date(experience.dateFrom), 'MMMM yyyy')}`}
                     </div>
                   </div>
                 ))}
