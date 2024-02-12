@@ -93,7 +93,7 @@ const News = ({ data }: { data: News[] }) => {
                       {article.title}
                     </span>
                   </h2>
-                  <p className="text-sm italic text-gray-500">{format(new Date(article.publishedAt), 'DD MMM yyyy')}</p>
+                  <p className="text-sm italic text-gray-500">{format(new Date(article.publishedAt), 'dd MMM yyyy')}</p>
 
                   <p className="line-clamp-3 text-justify">{article.brief}</p>
                 </Link>
