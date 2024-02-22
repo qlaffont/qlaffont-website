@@ -54,8 +54,8 @@ dependencies:
     specifier: 1.71.1
     version: 1.71.1
   usehooks-ts:
-    specifier: 2.14.0
-    version: 2.14.0(react@18.2.0)
+    specifier: 2.15.0
+    version: 2.15.0(react@18.2.0)
 
 devDependencies:
   '@commitlint/config-conventional':
@@ -5388,8 +5388,8 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /usehooks-ts@2.14.0(react@18.2.0):
-    resolution: {integrity: sha512-jnhrjTRJoJS7cFxz63tRYc5mzTKf/h+Ii8P0PDHymT9qDe4ZA2/gzDRmDR4WGausg5X8wMIdghwi3BBCN9JKow==}
+  /usehooks-ts@2.15.0(react@18.2.0):
+    resolution: {integrity: sha512-2bLQ632044hD1Hp879yAFOPabXfx7SbzEZYnpIiaCw6lTHiuvsNS1sc2UBVycasjvQImD6QsNERQXjKg7OuTaA==}
     engines: {node: '>=16.15.0'}
     peerDependencies:
       react: ^16.8.0  || ^17 || ^18
