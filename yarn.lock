@@ -4846,10 +4846,10 @@ rosetta@^1.1.0:
     dlv "^1.1.3"
     templite "^1.1.0"
 
-rosetty-react@3.0.27:
-  version "3.0.27"
-  resolved "https://registry.yarnpkg.com/rosetty-react/-/rosetty-react-3.0.27.tgz#0d4574a2b5a89556364035d59014f8711ee79226"
-  integrity sha512-YLN9/WDYhvorHzE45h8BrRtvGL+aBSSe97NSSaCJY8ebTFyrOYssIrnKSUSrDXp6FolsoY2KyGKqLITYc+Xppw==
+rosetty-react@3.0.29:
+  version "3.0.29"
+  resolved "https://registry.yarnpkg.com/rosetty-react/-/rosetty-react-3.0.29.tgz#59904b67a90a44020250543922b8e3e7d5e37434"
+  integrity sha512-pP7OTOh+emu5DOxG8NnJfDjy8o9UG/Zi02TVzWEoIq6R6tVoxTNP+VhHHDfy6VCGlfYBKu2n0xpUOs34ZNjg6A==
   dependencies:
     rosetty "^3.0.0"
 
