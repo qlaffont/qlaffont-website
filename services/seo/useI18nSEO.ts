@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
-import { useSsr } from 'usehooks-ts';
+import { useIsClient } from 'usehooks-ts';
 
 import { getDefaultLanguage, useI18n } from '../../i18n/useI18n';
 
 export const useI18nSEO = () => {
   const { actualLang, changeLang } = useI18n();
-  const { isBrowser } = useSsr();
+  const isBrowser = useIsClient();
 
   useEffect(() => {
     if (document) {

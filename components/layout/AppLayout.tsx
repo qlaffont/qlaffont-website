@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
-import { useBoolean, useSsr } from 'usehooks-ts';
+import { useBoolean, useIsClient } from 'usehooks-ts';
 
 import { useI18n } from '../../i18n/useI18n';
 import { useDark } from '../../services/dark/useDark';
@@ -99,7 +99,7 @@ export const AppLayout = ({ children }: React.PropsWithChildren) => {
   const { isDarkMode, toggle } = useDark();
   const { value: darkMode, setValue: setDarkMode } = useBoolean();
   const { actualLang, changeLang, t } = useI18n();
-  const { isBrowser } = useSsr();
+  const isBrowser = useIsClient();
   useI18nSEO();
 
   const currentlyAvailable = false;
