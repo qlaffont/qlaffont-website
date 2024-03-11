@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { isEmpty } from 'lodash';
 import { useEffect, useMemo, useState } from 'react';
-import { useSsr } from 'usehooks-ts';
+import { useIsClient } from 'usehooks-ts';
 
 import { SEO } from '../components/atoms/SEO';
 import { DescriptionModal } from '../components/molecule/DescriptionModal';
@@ -35,7 +35,7 @@ const Gaming = ({
   }[];
 }) => {
   const { t, format, actualLang } = useI18n();
-  const { isBrowser } = useSsr();
+  const isBrowser = useIsClient();
 
   const [domain, setDomain] = useState('');
 
