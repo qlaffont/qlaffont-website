@@ -19,7 +19,7 @@ dependencies:
     version: 2.0.2
   date-fns:
     specifier: ^3.3.1
-    version: 3.4.0
+    version: 3.5.0
   dayjs:
     specifier: ^1.11.9
     version: 1.11.9
@@ -1686,8 +1686,8 @@ packages:
       lodash: 4.17.5
     dev: true
 
-  /date-fns@3.4.0:
-    resolution: {integrity: sha512-Akz4R8J9MXBsOgF1QeWeCsbv6pntT5KCPjU0Q9prBxVmWJYPLhwAIsNg3b0QAdr0ttiozYLD3L/af7Ra0jqYXw==}
+  /date-fns@3.5.0:
+    resolution: {integrity: sha512-a+DwyXn7NOfdJireCzAA0B9p7jIXEu/Q9JKCyMYvH6+0vPUNbQceA0neXrdfJ/xzl3mhOh5vibQQ3936Tssm6A==}
     dev: false
 
   /dayjs@1.11.9:
@@ -4491,7 +4491,7 @@ packages:
     resolution: {integrity: sha512-xAdH+NlAnQad1gRIGHAGKPMikwOSF/qu7IE/5BvcMkZaJK1eN3rwC+VPXxg8jQc1Q/GGKXLmznYlRXl87VC+Fw==}
     engines: {node: '>=10'}
     dependencies:
-      date-fns: 3.4.0
+      date-fns: 3.5.0
       rosetta: 1.1.0
     dev: false
 
