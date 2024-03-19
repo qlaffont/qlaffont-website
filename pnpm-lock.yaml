@@ -74,8 +74,8 @@ devDependencies:
     specifier: 4.17.0
     version: 4.17.0
   '@types/node':
-    specifier: 20.11.29
-    version: 20.11.29
+    specifier: 20.11.30
+    version: 20.11.30
   '@types/react':
     specifier: 18.2.67
     version: 18.2.67
@@ -99,7 +99,7 @@ devDependencies:
     version: 10.4.18(postcss@8.4.36)
   commitlint:
     specifier: 19.2.1
-    version: 19.2.1(@types/node@20.11.29)(typescript@5.4.2)
+    version: 19.2.1(@types/node@20.11.30)(typescript@5.4.2)
   eslint:
     specifier: 8.57.0
     version: 8.57.0
@@ -200,14 +200,14 @@ packages:
       regenerator-runtime: 0.12.1
     dev: true
 
-  /@commitlint/cli@19.2.1(@types/node@20.11.29)(typescript@5.4.2):
+  /@commitlint/cli@19.2.1(@types/node@20.11.30)(typescript@5.4.2):
     resolution: {integrity: sha512-cbkYUJsLqRomccNxvoJTyv5yn0bSy05BBizVyIcLACkRbVUqYorC351Diw/XFSWC/GtpwiwT2eOvQgFZa374bg==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
       '@commitlint/format': 19.0.3
       '@commitlint/lint': 19.1.0
-      '@commitlint/load': 19.2.0(@types/node@20.11.29)(typescript@5.4.2)
+      '@commitlint/load': 19.2.0(@types/node@20.11.30)(typescript@5.4.2)
       '@commitlint/read': 19.2.1
       '@commitlint/types': 19.0.3
       execa: 8.0.1
@@ -276,7 +276,7 @@ packages:
       '@commitlint/types': 19.0.3
     dev: true
 
-  /@commitlint/load@19.2.0(@types/node@20.11.29)(typescript@5.4.2):
+  /@commitlint/load@19.2.0(@types/node@20.11.30)(typescript@5.4.2):
     resolution: {integrity: sha512-XvxxLJTKqZojCxaBQ7u92qQLFMMZc4+p9qrIq/9kJDy8DOrEa7P1yx7Tjdc2u2JxIalqT4KOGraVgCE7eCYJyQ==}
     engines: {node: '>=v18'}
     dependencies:
@@ -286,7 +286,7 @@ packages:
       '@commitlint/types': 19.0.3
       chalk: 5.3.0
       cosmiconfig: 9.0.0(typescript@5.4.2)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.29)(cosmiconfig@9.0.0)(typescript@5.4.2)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.30)(cosmiconfig@9.0.0)(typescript@5.4.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -673,7 +673,7 @@ packages:
   /@types/conventional-commits-parser@5.0.0:
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
     dependencies:
-      '@types/node': 20.11.29
+      '@types/node': 20.11.30
     dev: true
 
   /@types/json-schema@7.0.12:
@@ -691,12 +691,12 @@ packages:
   /@types/node-fetch@2.6.4:
     resolution: {integrity: sha512-1ZX9fcN4Rvkvgv4E6PAY5WXUFWFcRWxZa3EW83UjycOB9ljJCedb2CupIP4RZMEwF/M3eTcCihbBRgwtGbg5Rg==}
     dependencies:
-      '@types/node': 20.11.29
+      '@types/node': 20.11.30
       form-data: 3.0.1
     dev: false
 
-  /@types/node@20.11.29:
-    resolution: {integrity: sha512-P99thMkD/1YkCvAtOd6/zGedKNA0p2fj4ZpjCzcNiSCBWgm3cNRTBfa/qjFnsKkkojxu4vVLtWpesnZ9+ap+gA==}
+  /@types/node@20.11.30:
+    resolution: {integrity: sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==}
     dependencies:
       undici-types: 5.26.5
 
@@ -1502,12 +1502,12 @@ packages:
       uuidv4: 2.0.0
     dev: true
 
-  /commitlint@19.2.1(@types/node@20.11.29)(typescript@5.4.2):
+  /commitlint@19.2.1(@types/node@20.11.30)(typescript@5.4.2):
     resolution: {integrity: sha512-avW7E38gbdbUK7NIi/7gfkaKwlw8tjXy2HlmEdBS9A9+HeoHV1o/i96Sc9qjX0rKyPzKEsLi6cP3Wt3xM0kjEA==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
-      '@commitlint/cli': 19.2.1(@types/node@20.11.29)(typescript@5.4.2)
+      '@commitlint/cli': 19.2.1(@types/node@20.11.30)(typescript@5.4.2)
       '@commitlint/types': 19.0.3
     transitivePeerDependencies:
       - '@types/node'
@@ -1613,7 +1613,7 @@ packages:
       vary: 1.1.2
     dev: true
 
-  /cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.29)(cosmiconfig@9.0.0)(typescript@5.4.2):
+  /cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.30)(cosmiconfig@9.0.0)(typescript@5.4.2):
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
     peerDependencies:
@@ -1621,7 +1621,7 @@ packages:
       cosmiconfig: '>=8.2'
       typescript: '>=4'
     dependencies:
-      '@types/node': 20.11.29
+      '@types/node': 20.11.30
       cosmiconfig: 9.0.0(typescript@5.4.2)
       jiti: 1.19.1
       typescript: 5.4.2
