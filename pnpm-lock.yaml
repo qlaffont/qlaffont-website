@@ -48,8 +48,8 @@ dependencies:
     specifier: 4.4.5
     version: 4.4.5(react-dom@18.2.0)(react@18.2.0)
   rosetty-react:
-    specifier: 3.0.83
-    version: 3.0.83
+    specifier: 3.0.84
+    version: 3.0.84
   sass:
     specifier: 1.72.0
     version: 1.72.0
@@ -4480,8 +4480,8 @@ packages:
       templite: 1.2.0
     dev: false
 
-  /rosetty-react@3.0.83:
-    resolution: {integrity: sha512-zI9rad74HMpZc+3p1XmcGEMEM0VqkrLDgD5JPsay/aFuxkxO3pFd+TpNOP3UyKlX5wjiZrjdbfZQ8VkBtFlz9A==}
+  /rosetty-react@3.0.84:
+    resolution: {integrity: sha512-ktFTrNOVyjS/5kCLWytrAAxxGSOcv2+jwm2huGelHY717N8RE9pgy/Xqv4SV70KRaAhqxvAl5sqw8uzSVJDcug==}
     engines: {node: '>=10'}
     dependencies:
       rosetty: 3.0.13
