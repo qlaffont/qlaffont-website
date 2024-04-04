@@ -31,7 +31,7 @@ dependencies:
     version: 4.17.21
   next:
     specifier: 14.1.4
-    version: 14.1.4(react-dom@18.2.0)(react@18.2.0)(sass@1.72.0)
+    version: 14.1.4(react-dom@18.2.0)(react@18.2.0)(sass@1.74.1)
   next-seo:
     specifier: 6.5.0
     version: 6.5.0(next@14.1.4)(react-dom@18.2.0)(react@18.2.0)
@@ -51,8 +51,8 @@ dependencies:
     specifier: 3.0.84
     version: 3.0.84
   sass:
-    specifier: 1.72.0
-    version: 1.72.0
+    specifier: 1.74.1
+    version: 1.74.1
   usehooks-ts:
     specifier: 3.0.2
     version: 3.0.2(react@18.2.0)
@@ -3717,12 +3717,12 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      next: 14.1.4(react-dom@18.2.0)(react@18.2.0)(sass@1.72.0)
+      next: 14.1.4(react-dom@18.2.0)(react@18.2.0)(sass@1.74.1)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /next@14.1.4(react-dom@18.2.0)(react@18.2.0)(sass@1.72.0):
+  /next@14.1.4(react-dom@18.2.0)(react@18.2.0)(sass@1.74.1):
     resolution: {integrity: sha512-1WTaXeSrUwlz/XcnhGTY7+8eiaFvdet5z9u3V2jb+Ek1vFo0VhHKSAIJvDWfQpttWjnyw14kBeq28TPq7bTeEQ==}
     engines: {node: '>=18.17.0'}
     hasBin: true
@@ -3745,7 +3745,7 @@ packages:
       postcss: 8.4.31
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      sass: 1.72.0
+      sass: 1.74.1
       styled-jsx: 5.1.1(react@18.2.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.1.4
@@ -4538,14 +4538,14 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass@1.72.0:
-    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
+  /sass@1.74.1:
+    resolution: {integrity: sha512-w0Z9p/rWZWelb88ISOLyvqTWGmtmu2QJICqDBGyNnfG4OUnPX9BBjjYIXUpXCMOOg5MQWNpqzt876la1fsTvUA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
       immutable: 4.3.1
-      source-map-js: 1.0.2
+      source-map-js: 1.1.0
     dev: false
 
   /scheduler@0.23.0:
@@ -4676,11 +4676,6 @@ packages:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 5.0.0
     dev: true
-
-  /source-map-js@1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
-    engines: {node: '>=0.10.0'}
-    dev: false
 
   /source-map-js@1.1.0:
     resolution: {integrity: sha512-9vC2SfsJzlej6MAaMPLu8HiBSHGdRAJ9hVFYN1ibZoNkeanmDmLUcIrj6G9DGL7XMJ54AKg/G75akXl1/izTOw==}
