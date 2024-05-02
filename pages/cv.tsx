@@ -139,9 +139,7 @@ const CV = ({
             <div className="mx-auto text-gray-700">
               <p className="mb-2 font-rubik font-semibold">{t('pages.cv.address')}</p>
 
-              <p>Chemin des Gonagues</p>
-              <p>Batiment le grenadier 1</p>
-              <p>13190 ALLAUCH</p>
+              <p>Marseille</p>
               <p>FRANCE</p>
             </div>
             <div className="mx-auto text-gray-700">
