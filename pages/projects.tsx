@@ -87,7 +87,7 @@ const Projects = ({
                     />
                   </div>
                 ) : (
-                  <div className="hidden h-[200px] w-full items-center justify-center md:flex">
+                  <div className="flex h-[200px] w-full items-center justify-center">
                     <i className="icon icon-picture block h-8 w-8 bg-gray-500/50" />
                   </div>
                 )}
