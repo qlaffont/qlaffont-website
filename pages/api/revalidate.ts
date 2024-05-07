@@ -4,7 +4,7 @@ import { invalidatePages } from '../../services/notion/fetchNotionFields';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    await invalidatePages(res);
+    await invalidatePages(res, req.query.page as string);
     return res.json({ revalidated: true });
   } catch (err) {
     console.log(err);

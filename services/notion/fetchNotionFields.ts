@@ -100,19 +100,23 @@ export const getAllFieldsFromNotion = async (
   }
 };
 
-export const invalidatePages = async (res: NextApiResponse) => {
+export const invalidatePages = async (res: NextApiResponse, page: string | undefined) => {
   const keys = await redis.keys('*');
   for (const key of keys) {
     await redis.del(key);
   }
 
-  await Promise.all([
-    res.revalidate('/about'),
-    res.revalidate('/cv'),
-    res.revalidate('/gaming'),
-    res.revalidate('/'),
-    res.revalidate('/news'),
-    res.revalidate('/projects'),
-    res.revalidate('/tools'),
-  ]);
+  if (page) {
+    res.revalidate(page);
+  } else {
+    await Promise.all([
+      res.revalidate('/about'),
+      res.revalidate('/cv'),
+      res.revalidate('/gaming'),
+      res.revalidate('/'),
+      res.revalidate('/news'),
+      res.revalidate('/projects'),
+      res.revalidate('/tools'),
+    ]);
+  }
 };
