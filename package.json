@@ -33,7 +33,7 @@
     "@tailwindcss/forms": "0.5.7",
     "@tailwindcss/line-clamp": "0.4.4",
     "@types/color-hash": "2.0.0",
-    "@types/lodash": "4.17.4",
+    "@types/lodash": "4.17.6",
     "@types/node": "20.14.10",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
