@@ -51,8 +51,8 @@ importers:
         specifier: 4.4.5
         version: 4.4.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       rosetty-react:
-        specifier: 3.0.191
-        version: 3.0.191
+        specifier: 3.0.193
+        version: 3.0.193
       sass:
         specifier: 1.78.0
         version: 1.78.0
@@ -2750,8 +2750,8 @@ packages:
     resolution: {integrity: sha512-3jQaCo2ySoDqLIPjy7+AvN3rluLfkG8A27hg0virL0gRAB5BJ3V35IBdkL/t6k1dGK0TVTyUEwXVUJsygyx4pA==}
     engines: {node: '>=8'}
 
-  rosetty-react@3.0.191:
-    resolution: {integrity: sha512-W3GtoM2f8qcAwWbbw9A31a6dJcBjCarJ5GKea/ZCB/bwJPEZSypQoXSsCbDvYUYBH6qCqsuT4bBrSik6cK5C/A==}
+  rosetty-react@3.0.193:
+    resolution: {integrity: sha512-73AAGWDvYWDAZ/VwchOYMXtY3ygDYXy3hSIS7JAnNnVqroAMDV5qQRyilz7o4FwBWQFVYyktAx2Mei8A2zLqLg==}
     engines: {node: '>=10'}
 
   rosetty@3.0.13:
@@ -6203,7 +6203,7 @@ snapshots:
       dlv: 1.1.3
       templite: 1.2.0
 
-  rosetty-react@3.0.191:
+  rosetty-react@3.0.193:
     dependencies:
       rosetty: 3.0.13
 
