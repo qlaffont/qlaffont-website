@@ -25,7 +25,7 @@
     "react-scroll-to-top": "3.0.0",
     "react-transition-group": "4.4.5",
     "rosetty-react": "3.0.219",
-    "sass": "1.80.6",
+    "sass": "1.80.7",
     "usehooks-ts": "3.1.0"
   },
   "devDependencies": {
