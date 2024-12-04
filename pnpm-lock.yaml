@@ -34,10 +34,10 @@ importers:
         version: 4.17.21
       next:
         specifier: 14.2.19
-        version: 14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.1)
+        version: 14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.82.0)
       next-seo:
         specifier: 6.6.0
-        version: 6.6.0(next@14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 6.6.0(next@14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.82.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -54,8 +54,8 @@ importers:
         specifier: 3.0.232
         version: 3.0.232
       sass:
-        specifier: 1.81.1
-        version: 1.81.1
+        specifier: 1.82.0
+        version: 1.82.0
       usehooks-ts:
         specifier: 3.1.0
         version: 3.1.0(react@18.3.1)
@@ -2728,8 +2728,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sass@1.81.1:
-    resolution: {integrity: sha512-VNLgf4FC5yFyKwAumAAwwNh8X4SevlVREq3Y8aDZIkm0lI/zO1feycMXQ4hn+eB6FVhRbleSQ1Yb/q8juSldTA==}
+  sass@1.82.0:
+    resolution: {integrity: sha512-j4GMCTa8elGyN9A7x7bEglx0VgSpNUG4W4wNedQ33wSMdnkqQCT8HTwOaVSV4e6yQovcu/3Oc4coJP/l0xhL2Q==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -5443,13 +5443,13 @@ snapshots:
 
   negotiator@0.6.3: {}
 
-  next-seo@6.6.0(next@14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  next-seo@6.6.0(next@14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.82.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      next: 14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.1)
+      next: 14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.82.0)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  next@14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.1):
+  next@14.2.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.82.0):
     dependencies:
       '@next/env': 14.2.19
       '@swc/helpers': 0.5.5
@@ -5470,7 +5470,7 @@ snapshots:
       '@next/swc-win32-arm64-msvc': 14.2.19
       '@next/swc-win32-ia32-msvc': 14.2.19
       '@next/swc-win32-x64-msvc': 14.2.19
-      sass: 1.81.1
+      sass: 1.82.0
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
@@ -5906,7 +5906,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass@1.81.1:
+  sass@1.82.0:
     dependencies:
       chokidar: 4.0.0
       immutable: 5.0.2
