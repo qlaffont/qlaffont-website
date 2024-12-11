@@ -85,8 +85,8 @@ importers:
         specifier: 19.0.2
         version: 19.0.2(@types/react@19.0.1)
       '@types/react-transition-group':
-        specifier: 4.4.11
-        version: 4.4.11
+        specifier: 4.4.12
+        version: 4.4.12(@types/react@19.0.1)
       '@typescript-eslint/eslint-plugin':
         specifier: 8.18.0
         version: 8.18.0(@typescript-eslint/parser@8.18.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.6.3))(eslint@9.16.0(jiti@1.21.6))(typescript@5.6.3)
@@ -614,8 +614,10 @@ packages:
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react-transition-group@4.4.11':
-    resolution: {integrity: sha512-RM05tAniPZ5DZPzzNFP+DmrcOdD0efDUxMy3145oljWSl3x9ZV5vhme98gTxFrj2lhXvmGNnUiuDyJgY9IKkNA==}
+  '@types/react-transition-group@4.4.12':
+    resolution: {integrity: sha512-8TV6R3h2j7a91c+1DXdJi3Syo69zzIZbz7Lg5tORM5LEJG7X/E6a1V3drRyBRZq7/utz7A+c4OgYLiLcYGHG6w==}
+    peerDependencies:
+      '@types/react': '*'
 
   '@types/react@19.0.1':
     resolution: {integrity: sha512-YW6614BDhqbpR5KtUYzTA+zlA7nayzJRA9ljz9CQoxthR0sDisYZLuvSMsil36t4EH/uAt8T52Xb4sVw17G+SQ==}
@@ -3658,7 +3660,7 @@ snapshots:
     dependencies:
       '@types/react': 19.0.1
 
-  '@types/react-transition-group@4.4.11':
+  '@types/react-transition-group@4.4.12(@types/react@19.0.1)':
     dependencies:
       '@types/react': 19.0.1
 

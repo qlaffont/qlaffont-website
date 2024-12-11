@@ -37,7 +37,7 @@
     "@types/node": "22.10.2",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2",
-    "@types/react-transition-group": "4.4.11",
+    "@types/react-transition-group": "4.4.12",
     "@typescript-eslint/eslint-plugin": "8.18.0",
     "@typescript-eslint/parser": "8.18.0",
     "animate.css": "4.1.1",
