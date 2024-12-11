@@ -34,7 +34,7 @@
     "@tailwindcss/line-clamp": "0.4.4",
     "@types/color-hash": "2.0.0",
     "@types/lodash": "4.17.13",
-    "@types/node": "22.10.1",
+    "@types/node": "22.10.2",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2",
     "@types/react-transition-group": "4.4.11",
