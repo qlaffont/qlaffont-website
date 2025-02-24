@@ -94,7 +94,7 @@ const LinkItemMobile = ({ title, href, isActive }: LinkType & { isActive: boolea
   );
 };
 
-export const AppLayout = ({ children }: React.PropsWithChildren) => {
+export const AppLayout = ({ children }: React.PropsWithChildren<{}>) => {
   const { asPath } = useRouter();
   const { isDarkMode, toggle } = useDark();
   const { value: darkMode, setValue: setDarkMode } = useBoolean();

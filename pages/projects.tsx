@@ -60,7 +60,7 @@ const Projects = ({
 
         <div className="grid grid-cols-1 gap-6 py-12 md:grid-cols-3">
           {projects.map((project, index) => {
-            const LayoutProject = ({ children, ...props }: React.PropsWithChildren & { className: string }) =>
+            const LayoutProject = ({ children, ...props }: React.PropsWithChildren<{ className: string }>) =>
               project?.link ? (
                 <Link
                   href={project.link}

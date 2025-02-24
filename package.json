@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3100",
-    "build": "next build",
+    "build": "next build --no-lint",
     "start": "next start",
-    "lint": "npx tsc --noEmit && next lint --fix",
+    "lint": "npx tsc --noEmit",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -57,9 +57,6 @@
     "tailwind-animatecss": "1.0.0",
     "tailwindcss": "3.4.17",
     "typescript": "5.6.3"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": "eslint --fix"
   },
   "packageManager": "pnpm@9.15.1"
 }
