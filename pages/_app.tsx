@@ -5,6 +5,8 @@ import { enGB, fr } from 'date-fns/locale';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import posthog from 'posthog-js';
+import { useEffect } from 'react';
 import ScrollToTop from 'react-scroll-to-top';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import { RosettyProvider } from 'rosetty-react';
@@ -23,6 +25,16 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   const Layout = Component.Layout ? Component.Layout : AppLayout;
 
   const { asPath } = useRouter();
+
+  useEffect(() => {
+    posthog.init(process.env.NEXT_PUBLIC_POSTHOG_TOKEN!, {
+      api_host: '/ingest',
+      ui_host: 'https://eu.posthog.com',
+      defaults: '2026-01-30',
+      capture_exceptions: true,
+      debug: process.env.NODE_ENV === 'development',
+    });
+  }, []);
   const defaultLanguage =
     typeof navigator !== 'undefined' ? (navigator?.language?.toLowerCase()?.startsWith('fr') ? 'fr' : 'en') : 'en';
 

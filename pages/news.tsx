@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Image from 'next/image';
 import Link from 'next/link';
+import posthog from 'posthog-js';
 
 import { SEO } from '../components/atoms/SEO';
 import { PageTitle } from '../components/molecule/PageTitle';
@@ -71,6 +72,9 @@ const News = ({ data }: { data: News[] }) => {
                   key={index}
                   target="_blank"
                   className="flex flex-col space-y-3 hover:opacity-60"
+                  onClick={() =>
+                    posthog.capture('article_clicked', { article_title: article.title, article_slug: article.slug })
+                  }
                 >
                   {article?.coverImage?.url ? (
                     <div className="flex h-[200px] w-full items-center justify-center">
@@ -108,6 +112,7 @@ const News = ({ data }: { data: News[] }) => {
               target="_blank"
               rel="noreferrer"
               className="w-full rounded-full bg-[#1c1b22] px-2 py-3 text-center font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-auto md:px-12"
+              onClick={() => posthog.capture('more_news_clicked')}
             >
               {t('pages.news.moreNews')}
             </Link>
@@ -116,7 +121,8 @@ const News = ({ data }: { data: News[] }) => {
               passHref
               target="_blank"
               rel="noreferrer"
-              className="block w-full  max-w-full rounded-full border bg-gray-200 px-2 py-3  text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-max md:px-12"
+              className="block w-full max-w-full rounded-full border bg-gray-200 px-2 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-max md:px-12"
+              onClick={() => posthog.capture('presentations_clicked')}
             >
               {t('pages.news.presentations')}
             </Link>

@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { isEmpty } from 'lodash';
+import posthog from 'posthog-js';
 import { useEffect, useMemo, useState } from 'react';
 import { useIsClient } from 'usehooks-ts';
 
@@ -86,6 +87,7 @@ const Gaming = ({
                   href="https://www.twitch.tv/mirardes"
                   className="w-full rounded-full border bg-gray-200 px-12 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
                   rel="noreferrer"
+                  onClick={() => posthog.capture('twitch_clicked')}
                 >
                   {t('pages.gaming.twitch')}
                 </a>
@@ -97,6 +99,7 @@ const Gaming = ({
                   href="https://streamelements.com/mirardes/tip"
                   className="w-full rounded-full border bg-gray-200 px-12 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
                   rel="noreferrer"
+                  onClick={() => posthog.capture('donation_clicked')}
                 >
                   {t('pages.gaming.donation')}
                 </a>

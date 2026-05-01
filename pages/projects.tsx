@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { isEmpty } from 'lodash';
 import Image from 'next/image';
 import Link from 'next/link';
+import posthog from 'posthog-js';
 import { useMemo } from 'react';
 
 import { SEO } from '../components/atoms/SEO';
@@ -68,6 +69,9 @@ const Projects = ({
                   target="_blank"
                   {...props}
                   className={clsx(props?.className || '', 'hover:opacity-60')}
+                  onClick={() =>
+                    posthog.capture('project_link_clicked', { project_name: project.name, project_url: project.link })
+                  }
                 >
                   {children}
                 </Link>
@@ -76,7 +80,7 @@ const Projects = ({
               );
 
             return (
-              <LayoutProject key={index} className="flex flex-col space-y-3 ">
+              <LayoutProject key={index} className="flex flex-col space-y-3">
                 {project?.picture ? (
                   <div className="relative aspect-video h-[200px]">
                     <Image
@@ -92,7 +96,7 @@ const Projects = ({
                   </div>
                 )}
 
-                <h2 className="mx-auto block w-max ">
+                <h2 className="mx-auto block w-max">
                   <span className="border-b border-sky-500 font-rubik text-base font-semibold uppercase">
                     {project.name}
                   </span>{' '}

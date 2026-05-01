@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import posthog from 'posthog-js';
 
 import { SEO } from '../components/atoms/SEO';
 import { useI18n } from '../i18n/useI18n';
@@ -54,7 +55,13 @@ const Home = ({ companyNames }: { companyNames: string }) => {
             </div>
           </div>
           <div className="flex flex-wrap items-center space-y-4 md:space-x-4 md:space-y-0">
-            <a target="_blank" href="mailto:contact@qlaffont.com" rel="noreferrer" className="w-full md:w-auto">
+            <a
+              target="_blank"
+              href="mailto:contact@qlaffont.com"
+              rel="noreferrer"
+              className="w-full md:w-auto"
+              onClick={() => posthog.capture('contact_email_clicked', { page: 'home' })}
+            >
               <button
                 type="button"
                 className="w-full rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-auto md:px-12"
@@ -66,6 +73,7 @@ const Home = ({ companyNames }: { companyNames: string }) => {
               href="/about"
               passHref
               className="w-full rounded-full border bg-gray-200 px-2 py-3 text-center font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20 md:w-auto md:px-12"
+              onClick={() => posthog.capture('more_about_me_clicked')}
             >
               {t('pages.home.moreAbouteMe')}
             </Link>

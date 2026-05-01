@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import clsx from 'clsx';
 import ColorHash from 'color-hash';
+import posthog from 'posthog-js';
 import { useMemo } from 'react';
 
 import { SEO } from '../components/atoms/SEO';
@@ -68,7 +69,7 @@ const Tools = ({
         <PageTitle title={t('pages.tools.title')!} description={t('pages.tools.description')!} />
 
         <div className="divide-y divide-dotted divide-gray-500/50">
-          <div className="mb-12 flex flex-wrap items-center justify-start gap-y-6 ">
+          <div className="mb-12 flex flex-wrap items-center justify-start gap-y-6">
             <div>
               <p className="font-bold">{t('pages.tools.config.desktop')}</p>
               <p>&nbsp;</p>
@@ -159,6 +160,13 @@ const Tools = ({
                             className="flex w-full items-center justify-center gap-2 rounded-lg bg-gray-200 px-2 py-3 font-medium text-white shadow-lg hover:opacity-70 dark:bg-gray-500 md:px-6"
                             style={{ backgroundColor: link?.color || colorHash.hex(link.name) }}
                             rel="noreferrer"
+                            onClick={() =>
+                              posthog.capture('tool_clicked', {
+                                tool_name: link.name,
+                                tool_url: link.url,
+                                tool_category: category,
+                              })
+                            }
                           >
                             {link.icon && <i className={clsx(link.icon, 'h-4 w-4 bg-white pb-1')}></i>}{' '}
                             <span>{link.name}</span>

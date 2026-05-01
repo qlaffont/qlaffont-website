@@ -20,6 +20,7 @@
     "lodash": "4.17.21",
     "next": "14.2.21",
     "next-seo": "6.6.0",
+    "posthog-js": "^1.372.6",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-scroll-to-top": "3.0.0",

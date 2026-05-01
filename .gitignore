@@ -34,3 +34,4 @@ yarn-error.log*
 .eslintcache
 dist
 services/apis/gql/generated/graphql.ts
+.env.local

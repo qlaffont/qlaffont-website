@@ -2,6 +2,7 @@
 import { isEmpty } from 'lodash';
 import Image from 'next/image';
 import Link from 'next/link';
+import posthog from 'posthog-js';
 import { useMemo } from 'react';
 
 import { SEO } from '../components/atoms/SEO';
@@ -126,6 +127,7 @@ const About = ({
                 target="_blank"
                 rel="noreferrer"
                 className="mx-auto flex w-max items-center gap-1 rounded-full border bg-gray-200 px-6 py-3 font-medium shadow-lg shadow-gray-200 hover:opacity-70 dark:bg-[#1c1b22] dark:text-white dark:shadow-gray-200/20"
+                onClick={() => posthog.capture('cv_downloaded')}
               >
                 <i className="icon icon-download h-5 w-5 bg-black dark:bg-white"></i>
                 <p>{t('pages.about.cv')}</p>
@@ -224,6 +226,7 @@ const About = ({
                     href="mailto:contact@qlaffont.com"
                     rel="noreferrer"
                     className="mx-auto inline-block w-full md:w-auto"
+                    onClick={() => posthog.capture('contact_email_clicked', { page: 'about' })}
                   >
                     <div className="flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
                       <span className="icon icon-mail block h-4 w-4 bg-white dark:bg-black"></span>{' '}
@@ -235,6 +238,7 @@ const About = ({
                     href="tel:+33629869841"
                     rel="noreferrer"
                     className="mx-auto inline-block w-full md:w-auto"
+                    onClick={() => posthog.capture('contact_phone_clicked')}
                   >
                     <div className="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-[#1c1b22] px-2 py-3 font-medium text-white shadow-lg shadow-[#1c1b22]/20 hover:opacity-70 dark:bg-gray-200 dark:text-[#1c1b22] dark:shadow-gray-200/20 md:w-80 md:px-12">
                       <span className="icon icon-phone block h-4 w-4 bg-white dark:bg-black"></span>{' '}
