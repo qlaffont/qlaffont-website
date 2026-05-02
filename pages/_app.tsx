@@ -57,15 +57,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           href="https://fonts.googleapis.com/css2?family=Roboto%20Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet"
         />
-
-        {!process.env.NEXT_PUBLIC_DEV && (
-          <script
-            async
-            defer
-            data-website-id="73c3f86f-04e6-44f7-80a3-0441dcddfb42"
-            src="https://analytics.qlaffont.com/umami.js"
-          ></script>
-        )}
       </Head>
       <RosettyProvider languages={rosettyLocales} defaultLanguage={defaultLanguage}>
         <Layout>
