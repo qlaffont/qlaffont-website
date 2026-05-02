@@ -1,0 +1,34 @@
+[
+  {
+    "Company": "Exia CESI",
+    "Title EN": "IT Engineer",
+    "Title FR": "Ingénieur Informatique",
+    "Description EN": "IT Engineer specialised in Web & Mobile Technology.",
+    "Description FR": "Ingénieur Système d'information.",
+    "Date": "2018-08-01"
+  },
+  {
+    "Company": "Exia CESI",
+    "Title EN": "TOEIC Certification - 835 Points",
+    "Title FR": "Certification TOEIC - 835 Points",
+    "Description EN": "English Level Certification",
+    "Description FR": "Certification du niveau d'Anglais",
+    "Date": "2017-05-01"
+  },
+  {
+    "Company": "Google",
+    "Title EN": "Digital Active",
+    "Title FR": "Marketing Digital - Digital Active (SEO, SEA).",
+    "Description EN": "Digital Marketing - Digital Active (SEO, SEA).",
+    "Description FR": "Digital Active",
+    "Date": "2016-08-01"
+  },
+  {
+    "Company": "Charles Peguy",
+    "Title EN": "BTS SIO",
+    "Title FR": "BTS SIO (Services Informatiques aux Organisations) Option Solutions Logicielles et Applications Métiers (Développeur).",
+    "Description EN": "BTS SIO (IT) specialised in Web Development",
+    "Description FR": "BTS SIO - SLAM",
+    "Date": "2015-07-01"
+  }
+]

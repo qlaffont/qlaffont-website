@@ -1,0 +1,146 @@
+[
+  {
+    "Title EN": "Discord Moderation Bot",
+    "Description EN": "Discord Moderation Bot for Epic Games - Fortnite Official Discord.",
+    "Title FR": "Bot de modération Discord",
+    "Description FR": "Bot de modération sur Discord pour Epic Games - Fortnite FR Official Discord.",
+    "Tech": "Node, Fiddler, etc",
+    "Date": { "start": "2017-12-01T00:00:00.000Z" }
+  },
+  {
+    "Title EN": "Qwixx Generator",
+    "Description EN": "Application to generate Qwixx © support",
+    "Title FR": "Générateur de grille Qwixx",
+    "Description FR": "Application qui génère des grilles du jeu Qwixx ©.",
+    "Tech": "Node, Canvas Generation",
+    "Date": { "start": "2020-10-01T00:00:00.000Z" },
+    "Link": "https://qwixx.qlaffont.com"
+  },
+  {
+    "Title EN": "Exalty Events",
+    "Description EN": "Tournament management connected to Discord & Epic Games Replays.",
+    "Title FR": "Exalty Events",
+    "Description FR": "Gestion de tournois connectés à Discord & Epic Games Replays",
+    "Tech": "Typescript, Node, Discord.js, Fastify, .Net, Epic Games OAuth, Discord OAuth",
+    "Date": { "start": "2020-11-01T00:00:00.000Z" }
+  },
+  {
+    "Title EN": "Wiseguy Bot v2",
+    "Description EN": "Create a bot who link subscriptions from Stripe and Chargebee to Discord roles.",
+    "Title FR": "Wiseguy Bot v2",
+    "Description FR": "Bot permettant de connecter les abonnements Stripe & Chargebee avec les rôles Discord.",
+    "Tech": "Typescript, Node, Discord.js, Stripe, Chargebee, Paypal, Wireguard, Caddy, Debian",
+    "Date": { "start": "2021-01-01T00:00:00.000Z" }
+  },
+  {
+    "Title EN": "ACOM Bot",
+    "Description EN": "Create a bot who link Stripe subscriptions to Discord roles.",
+    "Title FR": "ACOM Bot",
+    "Description FR": "Bot permettant de connecter les abonnements Stripe avec les rôles Discord.",
+    "Tech": "Typescript, Node, Discord.js, Stripe, Wireguard, Caddy, Debian",
+    "Date": { "start": "2021-10-01T00:00:00.000Z" }
+  },
+  {
+    "Title EN": "Website Exalty",
+    "Description EN": "New website to make edit content easier with a focus on speed.",
+    "Title FR": "Exalty",
+    "Description FR": "Nouveau site internet permettant de faciliter les modifications de contenu tout en gardant un focus sur la partie performance/rapidité.",
+    "Tech": "Next, Tailwind, Discord, Stripe, Youtube, Twitter, Twitch",
+    "Date": { "start": "2021-11-01T00:00:00.000Z" },
+    "Image": "exalty.fr.png",
+    "Link": "https://exalty.fr/"
+  },
+  {
+    "Title EN": "env-vars-validator",
+    "Description EN": "Validate your environment variables with AJV",
+    "Title FR": "env-vars-validator",
+    "Description FR": "Validation de variables d'environnement par AJV",
+    "Tech": "AJV, TSDX",
+    "Date": { "start": "2022-01-08T00:00:00.000Z" },
+    "Link": "https://github.com/qlaffont/env-vars-validator"
+  },
+  {
+    "Title EN": "Le Studio Exalty",
+    "Description EN": "Website who make possible to add interaction in streams",
+    "Title FR": "Le Studio Exalty",
+    "Description FR": "Site internet permettant de rajouter de l'interaction aux streams",
+    "Tech": "Next, Streamdeck, Tailwind, Twitch",
+    "Date": { "start": "2022-03-01T00:00:00.000Z" },
+    "Image": "lestudio.exalty.fr.png",
+    "Link": "https://lestudio.exalty.fr/"
+  },
+  {
+    "Title EN": "Rosetty & Rosetty-React",
+    "Description EN": "Complete Intl/i18n solution for browser and node",
+    "Title FR": "Rosetty & Rosetty-React",
+    "Description FR": "Solution de traduction / internationalisation pour navigateur et pour environnement Node",
+    "Tech": "rosetta, date-fns, TSDX",
+    "Date": { "start": "2022-04-19T00:00:00.000Z" },
+    "Link": "https://github.com/flexper/rosetty"
+  },
+  {
+    "Title EN": "Fastify Auth Prisma",
+    "Description EN": "Fastify plugin with Prisma to make simple & secure authentification middleware.",
+    "Title FR": "Fastify Auth Prisma",
+    "Description FR": "Plugin Fastify avec Prisma pour créer un middleware d'authentification simple et sécurisé.",
+    "Tech": "fastify, unify-fastify, prisma, TSDX",
+    "Date": { "start": "2022-08-22T00:00:00.000Z" },
+    "Link": "https://github.com/flexper/fastify-auth-prisma"
+  },
+  {
+    "Title EN": "Next Protected Auth",
+    "Description EN": "Next.JS Protected auth plugin",
+    "Title FR": "Next Protected Auth",
+    "Description FR": "Système de protection des routes et d'authentification pour Next.JS",
+    "Tech": "typescript, authentication, nextjs, routing",
+    "Date": { "start": "2022-09-20T00:00:00.000Z" },
+    "Link": "https://github.com/flexper/next-protected-auth"
+  },
+  {
+    "Title EN": "Exalty Ambassador rapport",
+    "Description EN": "Generate influence stats from different social networks. Scrapping + Captcha resolving",
+    "Title FR": "Exalty Ambassadeur rapport",
+    "Description FR": "Génération de statistiques d'influence à partir de différents réseaux sociaux. Scrapping + résolution de Captcha",
+    "Tech": "typescript, puppeteer, react-pdf, Google drive, cron",
+    "Date": { "start": "2022-09-23T00:00:00.000Z" }
+  },
+  {
+    "Title EN": "LeStudio",
+    "Description EN": "Website who make possible to add interaction in streams",
+    "Title FR": "LeStudio",
+    "Description FR": "Site internet permettant de rajouter de l'interaction aux streams",
+    "Tech": "Next, Streamdeck, Tailwind, Twitch",
+    "Date": { "start": "2022-11-01T00:00:00.000Z" },
+    "Image": "lestudio.png",
+    "Link": "https://lestudio.qlaffont.com"
+  },
+  {
+    "Title EN": "Stability Test",
+    "Description EN": "Tool to check internet stability",
+    "Title FR": "Test de stabilité",
+    "Description FR": "Outil pour tester la stabilité de la connexion internet",
+    "Tech": "Next.JS, Web Worker",
+    "Date": { "start": "2023-02-27T00:00:00.000Z" },
+    "Image": "stability.qlaffont.com.png",
+    "Link": "https://stability.qlaffont.com/"
+  },
+  {
+    "Title EN": "Savim & Sendim",
+    "Description EN": "Libraries to send email + to upload file easier for everyone",
+    "Title FR": "Savim & Sendim",
+    "Description FR": "Bibliothèques envoyer des emails + pour envoyer des fichiers plus facilement pour tout le monde",
+    "Tech": "typescript, nodejs",
+    "Date": { "start": "2023-03-13T00:00:00.000Z" },
+    "Link": "https://github.com/flexper/sendim"
+  },
+  {
+    "Title EN": "Name Checker",
+    "Description EN": "With this tool you can check if your name is available on domain names and on social networks !",
+    "Title FR": "Vérificateur de nom",
+    "Description FR": "Avec cet outil, vous pouvez vérifier si votre nom est disponible sur les noms de domaine et sur les réseaux sociaux !",
+    "Tech": "typescript, Next.JS",
+    "Date": { "start": "2023-06-30T00:00:00.000Z" },
+    "Image": "name.qlaffont.com.png",
+    "Link": "https://name.qlaffont.com"
+  }
+]

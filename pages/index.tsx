@@ -4,18 +4,17 @@ import posthog from 'posthog-js';
 
 import { SEO } from '../components/atoms/SEO';
 import { useI18n } from '../i18n/useI18n';
-import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
+import experiencesData from '../static_data/experiences.json';
 
 export async function getStaticProps() {
-  // Data Source : https://qlaffont.notion.site/39513d6c0e1b4935a65f61b6a11ee0f4
-  const results = (await getAllFieldsFromNotion('39513d6c0e1b4935a65f61b6a11ee0f4')) as {
+  const results = experiencesData as {
     Company: string;
-    'Date To'?: { start: Date };
+    'Date To': null | string | { start: string };
   }[];
-  //Get only companies who haven't Date To
+  // Current roles only (no end date)
 
   const companyNames = (results || [])
-    .filter((exp) => exp['Date To'] === undefined)
+    .filter((exp) => exp['Date To'] == null)
     .reduce((prev, exp) => `${prev}, ${exp.Company}`, '')
     .slice(2);
 

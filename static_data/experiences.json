@@ -1,0 +1,92 @@
+[
+  {
+    "Company": "MadeForMed",
+    "Job Title EN": "Lead Developer / Full Stack TS Dev",
+    "Job Title FR": "Lead Developer / Full Stack TS Dev",
+    "Description EN": "Lead transition from PHP to JS in Front (Solid.JS / Tailwind) and Back (Fastify).",
+    "Description FR": "Transition de PHP vers JS en Front (Solid.JS / Tailwind) et Back (Fastify).",
+    "Date From": "2023-10-02",
+    "Date To": null
+  },
+  {
+    "Company": "Flexper",
+    "Job Title EN": "Lead Developer / Full Stack TS Dev",
+    "Job Title FR": "Lead Developer / Full Stack TS Dev",
+    "Description EN": "Tech team leader to make the transition to a faster, more stable and easier to use stack for developers. Focus on Open Source with libraries created by the community or by the company.\n\nMake the move for company to a better DX experiences + open source libraries.\nMake the move to React (Next.JS)  + Node (Fastify).\nMore alerts with BetterUptime + Logtail.\nWork on Lexagone, MaPetiteSponso, New Carrefour Energie App, Humanlinker, etc.",
+    "Description FR": "Lead d'équipe tech afin de faire la transition sur une stack plus rapide, plus stable et plus facile d'utilisation par les développeurs. Focus sur l'Open Source avec des librairies créées par la communauté ou par l'entreprise.\n\nTransition vers une meilleure expérience DX + bibliothèques open source.\nPasser à React (Next.JS) + Node (Fastify).\nPlus d'alertes avec BetterUptime + Logtail.\nRealisations sur Lexagone, MaPetiteSponso, la nouvelle application Carrefour Energie, Humanlinker, etc.",
+    "Date From": "2021-11-01",
+    "Date To": "2023-09-29"
+  },
+  {
+    "Company": "Flexper",
+    "Job Title EN": "Full-Stack Javascript Developer",
+    "Job Title FR": "Full-Stack Javascript Developer",
+    "Description EN": "Work on several softwares. Front (Angular / React) + Front Desktop (Electron) + Back (NestJS + Postgres).",
+    "Description FR": "Réalisations sur différents softwares. Front (Angular / React) + Front Desktop (Electron) + Back (Nestjs + Postgres).",
+    "Date From": "2021-02-01",
+    "Date To": "2021-11-01"
+  },
+  {
+    "Company": "Mes Docteurs",
+    "Job Title EN": "Full-Stack Javascript Developer",
+    "Job Title FR": "Full-Stack Javascript Developer",
+    "Description EN": "Work on Auth Software/Websites + Work on medical softwares sold to French Clients. Tech Teacher. (Angular, LoopBack, SASS, Jest, Cypress, Mocha, Node).",
+    "Description FR": "Réalisation de software OAuth + Sites vendus à des clients. Formation destinée à l'équipe Tech. (Angular, LoopBack, SASS, Jest, Cypress, Mocha, Node).",
+    "Date From": "2019-12-01",
+    "Date To": "2021-02-01"
+  },
+  {
+    "Company": "Wemanity",
+    "Job Title EN": "Full-Stack Javascript Developer",
+    "Job Title FR": "Full-Stack Javascript Developer",
+    "Description EN": "Work on Javascript projects for customers. Customers : Euler Hermes (React, Mobx, Hooks, SASS, WireMock, Jest, Enzyme, Mocha, Node).",
+    "Description FR": "Réalisations de projets Javascript pour des clients. Clients : Euler Hermes. (React, Mobx, Hooks, SASS, WireMock, Jest, Enzyme, Mocha, Node).",
+    "Date From": "2019-09-01",
+    "Date To": "2019-12-01"
+  },
+  {
+    "Company": "Smiirl",
+    "Job Title EN": "Manager of API-Server product & applications / Architecture Consultant",
+    "Job Title FR": "Manager of API-Server product & applications / Architecture Consultant",
+    "Description EN": "BackEnd Intern during 6 months, after work as 'Manager of API-Server product & applications (Facebook, Instagram...) / Architecture Consultant)' / Tech Manager.",
+    "Description FR": "Stagiaire pendant 6 mois, puis en CDI en tant que 'Manager of API-Server product & applications (Facebook, Instagram...) / Architecture Consultant)' / Manager de l'équipe tech.",
+    "Date From": "2018-02-01",
+    "Date To": "2019-08-01"
+  },
+  {
+    "Company": "The Spirit Brothers",
+    "Job Title EN": "Founder / Project Manager / IT Manager / Developer",
+    "Job Title FR": "Fondateur / Responsable Projet & Tech / Développeur",
+    "Description EN": "Multigaming No-Profit Community - Founder, Manager, Developer, System Admin. Work with many companies like Google, Discord, Epic Games, etc.",
+    "Description FR": "Association Multigaming - Fondateur, Gérant, Développeur, Admin Système, Graphiste. Travail en collaboration avec Google, Discord, Epic Games ainsi que de nombreux acteurs.",
+    "Date From": "2016-10-01",
+    "Date To": "2018-06-01"
+  },
+  {
+    "Company": "Dolphin Slovakia",
+    "Job Title EN": "JS Developer Internship",
+    "Job Title FR": "Stage Développeur JS",
+    "Description EN": "Business Software Developer in PERL, JS without any framework/library. Work with Google API (Maps, Direction, Chart API).",
+    "Description FR": "Développeur de logiciel interne en PERL et en JS (natif). Utilisation de Google API (Maps, Direction, Chart API).",
+    "Date From": "2016-09-01",
+    "Date To": "2017-02-01"
+  },
+  {
+    "Company": "GoJob",
+    "Job Title EN": "JS Developer Internship",
+    "Job Title FR": "Stage Développeur JS",
+    "Description EN": "IT Intern as AngularJS, Boostrap, Express, NodeJS Developer.",
+    "Description FR": "Stage en Développement Informatique sur les technologies Express, NodeJS, MongoDB, AngularJS, Bootstrap.",
+    "Date From": "2016-02-01",
+    "Date To": "2016-05-01"
+  },
+  {
+    "Company": "MobyTick",
+    "Job Title EN": "Project Manager, Technical Projet Manager.",
+    "Job Title FR": "Chef de Projet, Chef Technique",
+    "Description EN": "Create a POC to digitalize paper ticket given when you pay physically. (Apache Cordova / CakePHP)",
+    "Description FR": "Création d'un POC afin de numériser les tickets de caisses. (Apache Cordova / CakePHP)",
+    "Date From": "2015-06-01",
+    "Date To": "2015-07-01"
+  }
+]

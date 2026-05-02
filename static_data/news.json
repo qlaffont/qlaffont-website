@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Validate Your Environment Variables Easily with env-vars-validator",
+    "brief": "As a developer, you know that working with environment variables is a fundamental aspect of building applications. However, validating them can be a bit tricky. This is where env-vars-validator comes into play.\nenv-vars-validator is a TypeScript libr...",
+    "slug": "validate-your-environment-variables-easily-with-env-vars-validator",
+    "coverImage": {
+      "url": "https://cdn.hashnode.com/res/hashnode/image/upload/v1678881998350/9cbdd40b-6f5f-4a34-b22b-e69db8e96a12.png"
+    },
+    "publishedAt": "2023-03-15T12:07:33.432Z"
+  },
+  {
+    "title": "Create a portfolio : 2023 Edition",
+    "brief": "Hello 👋,\nAs a developer, you need to have a portfolio to show many things :\n\nWhat can you do ? \nWhat do you like ?\nWhich projects did you realize ?\nHow to contact you ?\n\nTo answer these questions, a simple website can be enough. But, to make the dif...",
+    "slug": "create-a-portfolio-2023-edition",
+    "coverImage": {
+      "url": "https://cdn.hashnode.com/res/hashnode/image/upload/v1659421085870/YE_8ZGGDi.png"
+    },
+    "publishedAt": "2022-08-02T06:19:20.522Z"
+  },
+  {
+    "title": "How to download a file with fetch and send it with fetch (without fs) ? 🤔",
+    "brief": "Hello 👋,\nI wrote this article because I struggle a lot to do a simple thing in Node.JS and I want to share it with you 🙂.\nOn a personal scrapping projects, I'm caching images to render it on a PDF. To do this, I save scrapped images on a dedicated ...",
+    "slug": "how-to-download-a-file-with-fetch-and-send-it-with-fetch-without-fs",
+    "coverImage": {
+      "url": "https://cdn.hashnode.com/res/hashnode/image/upload/v1658210373187/rn5t_g6of.png"
+    },
+    "publishedAt": "2022-07-19T06:00:55.754Z"
+  }
+]

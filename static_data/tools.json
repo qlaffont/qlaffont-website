@@ -1,0 +1,378 @@
+[
+  {
+    "Name EN": "JSON",
+    "Name FR": "JSON",
+    "Color": "#95a5a6",
+    "Icon": "icon icon-code",
+    "Link": "https://tableplus.com/json/",
+    "Category": "Beautify"
+  },
+  {
+    "Name EN": "SQL",
+    "Name FR": "SQL",
+    "Color": "#95a5a6",
+    "Icon": "icon icon-database !h-5",
+    "Link": "https://tableplus.com/sql/",
+    "Category": "Beautify"
+  },
+  {
+    "Name EN": "HTML",
+    "Name FR": "HTML",
+    "Color": "#95a5a6",
+    "Icon": "brand icon-html5 !h-5",
+    "Link": "https://codebeautify.org/htmlviewer/",
+    "Category": "Beautify"
+  },
+  {
+    "Name EN": "API Monitor",
+    "Name FR": "Moniteur d'API",
+    "Color": "",
+    "Icon": "icon icon-binoculars",
+    "Link": "https://github.com/louislam/uptime-kuma",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Analytics",
+    "Name FR": "Analytics",
+    "Color": "",
+    "Icon": "icon icon-magnifying-glass-chart",
+    "Link": "https://umami.is/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Audio/Video download",
+    "Name FR": "Audio/Video téléchargement",
+    "Color": "",
+    "Icon": "icon icon-server",
+    "Link": "https://cobalt.tools/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Blog Cover generator",
+    "Name FR": "Blog Cover generator",
+    "Color": "",
+    "Icon": "icon icon-file !h-5",
+    "Link": "https://slickr.vercel.app/app",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Browser Perf Tester",
+    "Name FR": "Tests de performance pour site internet",
+    "Color": "",
+    "Icon": "icon icon-gauge-high",
+    "Link": "https://gtmetrix.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Browser Tester",
+    "Name FR": "Tests navigateurs",
+    "Color": "",
+    "Icon": "icon icon-window-restore",
+    "Link": "https://lambdatest.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "DB Schema",
+    "Name FR": "Schéma de DB",
+    "Color": "",
+    "Icon": "icon icon-database !h-5",
+    "Link": "https://diagramplus.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "DNS Checker",
+    "Name FR": "Debug DNS",
+    "Color": "",
+    "Icon": "icon icon-server",
+    "Link": "https://nslookup.io/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Documentation",
+    "Name FR": "Documentation",
+    "Color": "",
+    "Icon": "icon icon-book !h-5",
+    "Link": "https://gitbook.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Email Redirect",
+    "Name FR": "Redirection d'email",
+    "Color": "",
+    "Icon": "icon icon-envelopes-bulk",
+    "Link": "https://app.improvmx.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Feature Toggling",
+    "Name FR": "Gestion de fonctionnalités",
+    "Color": "",
+    "Icon": "icon icon-toggle-on",
+    "Link": "https://unleash.github.io/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Feedbacks Board / Product Changelog",
+    "Name FR": "Feedbacks Board / Product Changelog",
+    "Color": "",
+    "Icon": "icon icon-binoculars",
+    "Link": "https://featureos.app/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "File Transfer",
+    "Name FR": "Transfert de fichiers",
+    "Color": "",
+    "Icon": "icon icon-file !h-5",
+    "Link": "https://wormhole.app/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Find best time to meeting",
+    "Name FR": "Trouver le meilleur créneau pour une réunion",
+    "Color": "",
+    "Icon": "icon icon-calendar-check !h-5",
+    "Link": "https://doodle.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Image Compressor",
+    "Name FR": "Compresseur d'image",
+    "Color": "",
+    "Icon": "icon icon-minimize",
+    "Link": "https://squoosh.app/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "JSON Translation",
+    "Name FR": "Traduction de JSON",
+    "Color": "",
+    "Icon": "icon icon-language",
+    "Link": "https://transluna.net/?ref=producthunt",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Log Monitor",
+    "Name FR": "Moniteur de log",
+    "Color": "",
+    "Icon": "icon icon-binoculars",
+    "Link": "https://axiom.co/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Meta Tags Viewer",
+    "Name FR": "Meta Tags debug",
+    "Color": "",
+    "Icon": "icon icon-tags",
+    "Link": "https://metatags.io/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Payment",
+    "Name FR": "Paiement",
+    "Color": "",
+    "Icon": "icon icon-credit-card",
+    "Link": "https://stripe.com/fr",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Profile Picture",
+    "Name FR": "Photo de profil",
+    "Color": "",
+    "Icon": "icon icon-user",
+    "Link": "https://pfpmaker.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Regex Helper",
+    "Name FR": "Debug Regex",
+    "Color": "",
+    "Icon": "icon icon-handshake-angle",
+    "Link": "https://ihateregex.io/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Requests Debugger",
+    "Name FR": "Debug des requêtes",
+    "Color": "",
+    "Icon": "icon icon-server",
+    "Link": "https://usebruno.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "SocketIO Debug",
+    "Name FR": "SocketIO Debug",
+    "Color": "",
+    "Icon": "icon icon-server",
+    "Link": "https://amritb.github.io/socketio-client-tool/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "SVG Country Flag",
+    "Name FR": "Drapeaux des pays SVG",
+    "Color": "",
+    "Icon": "icon icon-icons",
+    "Link": "https://nucleoapp.com/svg-country-icons",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "SVG Icons",
+    "Name FR": "Icônes SVG",
+    "Color": "",
+    "Icon": "icon icon-icons",
+    "Link": "https://css.gg/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "SVG Icons (Brands)",
+    "Name FR": "Icônes SVG (entreprises)",
+    "Color": "",
+    "Icon": "icon icon-icons",
+    "Link": "https://vectorwiki.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Tailwind Components",
+    "Name FR": "Composants Tailwind",
+    "Color": "",
+    "Icon": "icon icon-file-code !h-5",
+    "Link": "https://hyperui.dev/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Tailwind Components 2",
+    "Name FR": "Composants Tailwind 2",
+    "Color": "",
+    "Icon": "icon icon-file-code !h-5",
+    "Link": "https://ui.shadcn.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Terms Generation",
+    "Name FR": "Génération de CGU",
+    "Color": "",
+    "Icon": "icon icon-file !h-5",
+    "Link": "https://getterms.io/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "ThereIsAnAIForThat",
+    "Name FR": "ThereIsAnAIForThat",
+    "Color": "",
+    "Icon": "icon icon-link",
+    "Link": "https://theresanaiforthat.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "URL Shortener",
+    "Name FR": "Raccourcisseur d'URL",
+    "Color": "",
+    "Icon": "icon icon-link",
+    "Link": "https://kutt.it/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "User Flow Generator",
+    "Name FR": "Générateur de diagramme",
+    "Color": "",
+    "Icon": "icon icon-diagram-project",
+    "Link": "https://code2flow.com/",
+    "Category": "Tools"
+  },
+  {
+    "Name EN": "Dev News",
+    "Name FR": "Veille technologique",
+    "Color": "",
+    "Icon": "brand icon-dev",
+    "Link": "https://daily.dev/",
+    "Category": "Browser Extensions"
+  },
+  {
+    "Name EN": "Language Checker",
+    "Name FR": "Correction d'orthographe",
+    "Color": "",
+    "Icon": "icon icon-language",
+    "Link": "https://languagetool.org/",
+    "Category": "Browser Extensions"
+  },
+  {
+    "Name EN": "Password Management",
+    "Name FR": "Gestion des mots de passe",
+    "Color": "",
+    "Icon": "icon icon-key",
+    "Link": "https://bitwarden.com/",
+    "Category": "Browser Extensions"
+  },
+  {
+    "Name EN": "Caddy (Web Server)",
+    "Name FR": "Caddy (Serveur Web)",
+    "Color": "",
+    "Icon": "icon icon-server",
+    "Link": "https://caddyserver.com/",
+    "Category": "Softwares"
+  },
+  {
+    "Name EN": "Cursor (VSCode IDE)",
+    "Name FR": "Cursor (VSCode IDE)",
+    "Color": "",
+    "Icon": "icon icon-laptop-code",
+    "Link": "https://cursor.com/",
+    "Category": "Softwares"
+  },
+  {
+    "Name EN": "Excalidraw",
+    "Name FR": "Excalidraw",
+    "Color": "",
+    "Icon": "icon icon-icons",
+    "Link": "https://excalidraw.com/",
+    "Category": "Softwares"
+  },
+  {
+    "Name EN": "PNPM (Dep Manager)",
+    "Name FR": "PNPM (Gestion des dépendances)",
+    "Color": "",
+    "Icon": "icon icon-timeline",
+    "Link": "https://pnpm.io/",
+    "Category": "Softwares"
+  },
+  {
+    "Name EN": "Screen Studio",
+    "Name FR": "Screen Studio",
+    "Color": "",
+    "Icon": "icon icon-binoculars",
+    "Link": "https://screen.studio/#pricing",
+    "Category": "Softwares"
+  },
+  {
+    "Name EN": "TablePlus (IDE DB)",
+    "Name FR": "TablePlus (IDE BDD)",
+    "Color": "",
+    "Icon": "icon icon-database !h-5",
+    "Link": "https://tableplus.com/",
+    "Category": "Softwares"
+  },
+  {
+    "Name EN": "Tunnel To (HTTP tunnel)",
+    "Name FR": "Tunnel To (HTTP tunnel)",
+    "Color": "",
+    "Icon": "icon icon-car-tunnel",
+    "Link": "https://tunnelto.dev/",
+    "Category": "Softwares"
+  },
+  {
+    "Name EN": "Warp",
+    "Name FR": "Warp",
+    "Color": "",
+    "Icon": "icon icon-terminal",
+    "Link": "https://warp.dev/",
+    "Category": "Softwares"
+  },
+  {
+    "Name EN": "Zen Browser (Browser)",
+    "Name FR": "Zen Browser (Navigateur)",
+    "Color": "",
+    "Icon": "brand icon-firefox-browser",
+    "Link": "https://zen-browser.app/",
+    "Category": "Softwares"
+  }
+]

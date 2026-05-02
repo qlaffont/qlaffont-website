@@ -6,7 +6,7 @@ import posthog from 'posthog-js';
 import { SEO } from '../components/atoms/SEO';
 import { PageTitle } from '../components/molecule/PageTitle';
 import { useI18n } from '../i18n/useI18n';
-import { execQueryForHashnode } from '../services/hashnode/execQueryForHashnode';
+import newsData from '../static_data/news.json';
 
 type News = {
   title: string;
@@ -15,38 +15,14 @@ type News = {
   coverImage?: {
     url: string;
   };
-  publishedAt: Date;
+  publishedAt: string;
 };
 
 export async function getStaticProps() {
-  const results: News[] = (
-    await execQueryForHashnode(
-      `
-    query Publication ($host: String!){
-      publication(host: $host) {
-        posts (first:3){
-          edges{
-            node {
-              title
-              brief
-              slug
-              coverImage {
-                url
-              }
-              publishedAt
-            }
-          }
-        }
-      }
-    }
-  `,
-      { host: 'blog.qlaffont.com' },
-    )
-  ).data.publication.posts.edges //@ts-ignore
-    .map((v) => v.node);
+  const data = newsData as News[];
 
   return {
-    props: { data: results },
+    props: { data },
     // revalidate: 60 * 60 * 24, // 24 hours
   };
 }

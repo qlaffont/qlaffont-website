@@ -10,14 +10,11 @@ import { SEO } from '../components/atoms/SEO';
 import { PageTitle } from '../components/molecule/PageTitle';
 import { useI18n } from '../i18n/useI18n';
 import { isBefore } from '../services/isBefore';
-import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
+import projectsData from '../static_data/projects.json';
 
 export async function getStaticProps() {
-  // Data Source : https://qlaffont.notion.site/a861796b748d4867b4985655234a0c3e
-  const results = await getAllFieldsFromNotion('a861796b748d4867b4985655234a0c3e');
-
   return {
-    props: { data: JSON.parse(JSON.stringify(results || [])) },
+    props: { data: projectsData },
     // revalidate: 60 * 60 * 24, // 24 hours
   };
 }

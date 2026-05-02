@@ -11,21 +11,16 @@ import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
 import { isBefore } from '../services/isBefore';
-import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
+import { parseDiplomaDate, parseEndDate, parseStartDate } from '../services/staticData/parseDateFields';
 import { HTMLStyleText } from '../services/textUtils/HTMLStyleText';
+import diplomasData from '../static_data/diplomas.json';
+import experiencesData from '../static_data/experiences.json';
 
 export async function getStaticProps() {
-  // Data Source : https://qlaffont.notion.site/39513d6c0e1b4935a65f61b6a11ee0f4
-  // Data Source : https://qlaffont.notion.site/ad72018aa75b466193019a61c5331d7f
-  const [resultExps, resultDiplomas] = await Promise.all([
-    getAllFieldsFromNotion('39513d6c0e1b4935a65f61b6a11ee0f4'),
-    getAllFieldsFromNotion('ad72018aa75b466193019a61c5331d7f'),
-  ]);
-
   return {
     props: {
-      exps: JSON.parse(JSON.stringify(resultExps || [])),
-      educations: JSON.parse(JSON.stringify(resultDiplomas || [])),
+      exps: experiencesData,
+      educations: diplomasData,
     },
     // revalidate: 60 * 60 * 24, // 24 hours
   };
@@ -41,8 +36,8 @@ const About = ({
     'Description EN': string;
     'Job Title FR': string;
     'Description FR': string;
-    'Date From': { start: Date };
-    'Date To': { start: Date };
+    'Date From': string | { start: string };
+    'Date To': null | string | { start: string };
   }[];
   educations: {
     Company: string;
@@ -50,7 +45,7 @@ const About = ({
     'Description EN': string;
     'Title FR': string;
     'Description FR': string;
-    Date: { start: Date };
+    Date: string | { start: string };
   }[];
 }) => {
   const { t, format, actualLang } = useI18n();
@@ -61,8 +56,8 @@ const About = ({
         .map((exp) => ({
           jobTitle: actualLang === 'fr' ? exp['Job Title FR'] : exp['Job Title EN'],
           description: actualLang === 'fr' ? exp['Description FR'] : exp['Description EN'],
-          dateFrom: new Date(exp['Date From'].start),
-          dateTo: !isEmpty(exp['Date To']?.start) ? new Date(exp['Date To'].start) : undefined,
+          dateFrom: parseStartDate(exp['Date From']),
+          dateTo: parseEndDate(exp['Date To']),
           company: exp.Company,
         }))
         .sort((a, b) => (isBefore(a.dateFrom, b.dateFrom) ? 1 : -1)),
@@ -75,7 +70,7 @@ const About = ({
         .map((diploma) => ({
           name: actualLang === 'fr' ? diploma['Title FR'] : diploma['Title EN'],
           description: actualLang === 'fr' ? diploma['Description FR'] : diploma['Description EN'],
-          date: new Date(diploma.Date.start),
+          date: parseDiplomaDate(diploma.Date),
           company: diploma.Company,
         }))
         .sort((a, b) => (isBefore(a.date, b.date) ? 1 : -1)),

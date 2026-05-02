@@ -8,17 +8,14 @@ import { SEO } from '../components/atoms/SEO';
 import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
-import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
 import { normalize } from '../services/textUtils/normalizeString';
+import toolsData from '../static_data/tools.json';
 
 const colorHash = new ColorHash({ saturation: 0.5 });
 
 export async function getStaticProps() {
-  // Data Source : https://qlaffont.notion.site/ad90bac785dc4d3a9eebf91fa542573a
-  const results = await getAllFieldsFromNotion('ad90bac785dc4d3a9eebf91fa542573a');
-
   return {
-    props: { data: JSON.parse(JSON.stringify(results || [])) },
+    props: { data: toolsData },
     // revalidate: 60 * 60 * 24, // 24 hours
   };
 }

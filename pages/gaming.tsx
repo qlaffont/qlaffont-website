@@ -10,14 +10,12 @@ import { PageTitle } from '../components/molecule/PageTitle';
 import { SectionTitle } from '../components/molecule/SectionTitle';
 import { useI18n } from '../i18n/useI18n';
 import { isBefore } from '../services/isBefore';
-import { getAllFieldsFromNotion } from '../services/notion/fetchNotionFields';
+import { parseEndDate, parseStartDate } from '../services/staticData/parseDateFields';
+import gamingExperiencesData from '../static_data/gaming_experiences.json';
 
 export async function getStaticProps() {
-  // Data Source : https://qlaffont.notion.site/3710d9123b314a0591997255fe100897
-  const results = await getAllFieldsFromNotion('3710d9123b314a0591997255fe100897');
-
   return {
-    props: { data: JSON.parse(JSON.stringify(results || [])) },
+    props: { data: gamingExperiencesData },
     // revalidate: 60 * 60 * 24, // 24 hours
   };
 }
@@ -31,8 +29,8 @@ const Gaming = ({
     'Description EN': string;
     'Job Title FR': string;
     'Description FR': string;
-    'Date From': { start: Date };
-    'Date To': { start: Date };
+    'Date From': string | { start: string };
+    'Date To': null | string | { start: string };
   }[];
 }) => {
   const { t, format, actualLang } = useI18n();
@@ -53,8 +51,8 @@ const Gaming = ({
           jobTitle: actualLang === 'fr' ? exp['Job Title FR'] : exp['Job Title EN'],
           description: actualLang === 'fr' ? exp['Description FR'] : exp['Description EN'],
           company: exp.Company,
-          dateFrom: new Date(exp['Date From'].start),
-          dateTo: exp['Date To']?.start ? new Date(exp['Date To']?.start) : undefined,
+          dateFrom: parseStartDate(exp['Date From']),
+          dateTo: parseEndDate(exp['Date To']),
         }))
         .sort((a, b) => (isBefore(a.dateFrom, b.dateFrom) ? 1 : -1)),
     [actualLang, data],

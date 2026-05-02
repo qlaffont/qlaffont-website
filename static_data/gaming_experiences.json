@@ -1,0 +1,83 @@
+[
+  {
+    "Company": "Exalty",
+    "Job Title EN": "IT Consultant",
+    "Job Title FR": "Consultant IT",
+    "Description EN": "Managing emails & website & tools",
+    "Description FR": "Gestion des emails, sites internets & outils.",
+    "Date From": "2022-09-20",
+    "Date To": "2023-07-01"
+  },
+  {
+    "Company": "Exalty",
+    "Job Title EN": "Tournament / IT / WebTV / Influencer Leader & Board Member",
+    "Job Title FR": "Leader Tournois / Tech / WebTV / Ambassadeur & Membre du CA",
+    "Description EN": "Organize Trackmania Travel Cup / Hire Seckooh and manage her influence / Create Website and tools used by all team members / Make organization subscription automatic / Make tools for streamers",
+    "Description FR": "Organiser la Trackmania Travel Cup / Embaucher Seckooh et gérer son influence / Créer le site web et les outils utilisés par tous les membres de l'équipe / Rendre automatique l'inscription à l'association / Créer des outils pour les streamers",
+    "Date From": "2020-10-11",
+    "Date To": "2022-09-20"
+  },
+  {
+    "Company": "Gamers Assembly",
+    "Job Title EN": "Fortnite Tournament Head-Administrator, Tournament Organizer",
+    "Job Title FR": "Head Admin Fortnite Duo, Organisateur du tournoi",
+    "Description EN": "Tournament organization with team management (11 peoples)",
+    "Description FR": "Organisation du tournois et gestion d'une équipe de 11 personnes",
+    "Date From": "2019-04-20",
+    "Date To": "2019-04-22"
+  },
+  {
+    "Company": "Epic Games",
+    "Job Title EN": "Discord Bot & Fortnite API Developer",
+    "Job Title FR": "Développeur de Bot Discord & d'API Fortnite",
+    "Description EN": "Create a bot to make staff work easier (Discord Fortnite FR by Epic Games). Fortnite Open source API on Github. Website with 1 millions active users by month (FR/EN)",
+    "Description FR": "Création d'un bot discord afin de faciliter le travail des équipes (Discord Fortnite FR par Epic Games). Création d'une API Open Source Fortnite sur Github. Site internet avec 1 million d'utilisateurs actifs par mois (FR/EN)",
+    "Date From": "2017-12-01",
+    "Date To": "2019-09-01"
+  },
+  {
+    "Company": "Yoshi's Cup",
+    "Job Title EN": "Tournament Organizer, Community Management Manager",
+    "Job Title FR": "Organisateur du tournoi, Gestion du Community Management",
+    "Description EN": "1sr Influence Tournament in France",
+    "Description FR": "1er tournoi d'influenceur en France",
+    "Date From": "2018-05-01",
+    "Date To": "2018-05-01"
+  },
+  {
+    "Company": "Occitanie Esport",
+    "Job Title EN": "Fortnite Tournament Head-Administrator, Tournament Organizer",
+    "Job Title FR": "Head Admin Fortnite Duo, Organisateur du tournoi",
+    "Description EN": "Head-Administrator Fortnite, Tournament Organiser. Create a team of 11 people. Best 2018 LAN regarding the organisation (for the players). Montpellier, FRANCE",
+    "Description FR": "Head Admin Fortnite, Organisateur du tournoi. Création d'une équipe de 11 personnes indépendante. Meilleur LAN élue par les joueurs concernant l'organisation.",
+    "Date From": "2018-06-01",
+    "Date To": "2018-06-03"
+  },
+  {
+    "Company": "Gamers Assembly",
+    "Job Title EN": "Fortnite Tournament Administrator",
+    "Job Title FR": "Administrateur Tournoi Fortnite",
+    "Description EN": "Show Manager about Le Stream & Gotaga Crew Scene",
+    "Description FR": "Administrateur du tournoi Fortnite, Gestion Scène Le Stream & Gotaga Crew",
+    "Date From": "2018-03-31",
+    "Date To": "2018-04-02"
+  },
+  {
+    "Company": "The Spirit Brothers",
+    "Job Title EN": "Founder",
+    "Job Title FR": "Fondateur",
+    "Description EN": "Multigaming No-Profit Community - Founder, Manager, Developer, System Admin. Work with many companies like Google, Discord, Epic Games, etc.",
+    "Description FR": "Association Multigaming - Fondateur, Gérant, Développeur, Admin Système, Graphiste. Travail en collaboration avec Google, Discord, Epic Games ainsi que de nombreux acteurs. Créateur de Fortnite France (1ère communauté francophone), Rainbow 6 France (2ème communauté francophone), FiveM France (1ère communauté francophone), etc.",
+    "Date From": "2016-10-01",
+    "Date To": "2018-06-01"
+  },
+  {
+    "Company": "Family Of Gaming",
+    "Job Title EN": "Founder",
+    "Job Title FR": "Fondateur",
+    "Description EN": "Gaming Association - Developer, Manager, Founder.",
+    "Description FR": "Association Multigaming - Développeur, Gérant, Fondateur",
+    "Date From": "2015-07-01",
+    "Date To": "2016-10-01"
+  }
+]
